@@ -1,0 +1,115 @@
+.detail-main
+{
+    /* border: 1px solid; */
+    padding: 2rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.detail-left
+{
+    /* border: 1px solid;  */
+}
+.detail-left h3{
+    text-align: left;
+    margin-left: 3rem;
+}
+.detail-right
+{
+    /* border: 1px solid;  */
+    padding-top: 0.5rem;
+}
+.client-detail
+{
+    /* border: 1px solid rgba(0, 0, 0, 0.075); */
+    /* padding: 20px; */
+    border-radius: 20px;
+    width: 88%;
+    padding-bottom: 1rem;
+     box-shadow: rgba(50, 50, 93, 0.178) 0px 4px 10px -2px, rgba(0, 0, 0, 0.3) 0px 3px 4px -3px; 
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
+}
+.heading{
+    background-color: rgba(183, 174, 174, 0.1);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 0;
+}
+.heading p{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+
+}
+.heading h4{
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: auto;
+}
+.detail-body{
+    text-align: left;
+}
+.phone{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding: 15px 0;
+}
+.phn-icon{
+    color: rgba(102, 224, 145, 1);
+}
+.firstp,.secondp{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 1.5rem;
+}
+.calendar-main{
+    margin-top: 2rem;
+}
+.react-calendar__navigation{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+[type=button], button{
+    border: none;
+    padding: 10px 10px;
+    background: none;
+}
+.react-calendar__viewContainer{
+    width: 78%;
+    margin: auto;
+    background-color: rgba(183, 228, 199, 0.5);
+    padding: 15px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.react-calendar__month-view__weekdays{
+    text-align: center;
+    margin-bottom: 5px;
+}
+abbr[title]{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    
+}
+.react-calendar__navigation__label__labelText{
+    /* color: rgba(5, 74, 145, 1); */
+    color: #0077b6;
+    
+}
+.react-calendar__navigation__arrow:hover{
+   background: rgba(183, 228, 199, 0.5);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.react-calendar__month-view__days__day:hover{
+    background: rgba(255, 255, 255, 0.747);
+    border-radius: 50%;
+    
+}
