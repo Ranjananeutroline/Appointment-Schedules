@@ -5,11 +5,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsTelephoneFill } from 'react-icons/bs';
 import Calendar from 'react-calendar';
-
+import TimezoneSelect from 'react-timezone-select'
+// import TimezonePicker from 'react-timezone';
 
 
 function Details() {
-    const [value, onChange] = useState(new Date());
+    // const [value, onChange] = useState(new Date());
+
+    const [selectedTimezone, setSelectedTimezone] =useState(
+        Intl.DateTimeFormat().resolvedOptions().timeZone
+      )
+
+      const [date, setDate] = useState(new Date());
 
   return (
     <>
@@ -18,9 +25,48 @@ function Details() {
             <Row>
             <Col className='detail-left'>
                 <h3>Select Date and Time</h3>
-                <div className='calendar-main'>
-                    <Calendar onChange={onChange} value={value} />
-                </div>
+            <div>
+                {/* <TimezonePicker
+                    value="Asia/Yerevan"
+                    onChange={timezone => console.log('New Timezone Selected:', timezone)}
+                    inputProps={{
+                    placeholder: 'Select Timezone...',
+                    name: 'timezone',
+                    }}
+                /> */}
+
+                    <div className="select-wrapper">
+                        <TimezoneSelect
+                        value={selectedTimezone}
+                        onChange={setSelectedTimezone}
+                        />
+                    </div> 
+                    <div className='calendar-container'>
+                        <Calendar
+                        onChange={setDate}
+                        value={date}
+                        selectRange={true}
+                        />
+                    </div>
+                    {date.length > 0 ? (
+                        <p className='text-center'>
+                        <span className='bold'>Start:&nbsp;</span>{' '}
+                        {date[0].toDateString()}
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <span className='bold'>End:&nbsp;</span> {date[1].toDateString()}
+                        </p>
+                    ) : (
+                        <p className='text-center'>
+                        <span className='bold'>Selected date:&nbsp;&nbsp;</span>{' '}
+                        {date.toDateString()}
+                        </p>
+                    )}
+                                    
+            </div>
+
+                
+                 
+               
             </Col>
 
             <Col className='detail-right'>
