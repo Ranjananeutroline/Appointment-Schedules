@@ -46,6 +46,8 @@ function Details() {
                         onChange={setDate}
                         value={date}
                         selectRange={true}
+                        hideExtraDays={true}
+                       
                         />
                     </div>
                     {date.length > 0 ? (
