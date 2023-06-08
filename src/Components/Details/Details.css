@@ -17,18 +17,19 @@
 }
 .detail-left
 {
+    padding-left: 2rem;
     /* border: 1px solid;   */
 }
 .detail-left h3{
     text-align: left;
    margin-bottom: 1.2rem;
    font-weight: 400;
-   margin-left: 1.5rem;
+   
    color: #3772ff;
 }
 .select-wrapper{
     margin-bottom: 1.2rem;
-    margin-left: 1.5rem;
+    
     width: 45%;
     font-size: 12px;
     
@@ -59,7 +60,7 @@
 {
     /* border: 1px solid;   */
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
 }
 .client-detail
 {
@@ -74,9 +75,9 @@
     background: white;
 }
 .client-detail:hover{
-    
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} 
+    background: #edf6f979;
+  
+}  
 
 .heading{
     background-color: rgba(183, 174, 174, 0.205);
@@ -85,7 +86,7 @@
     border-top-right-radius: 10px;
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    padding: 3.5rem 0;
+    padding: 3rem 0;
 }
 .heading p{
     padding-top: 1.5rem; 
@@ -108,16 +109,21 @@
     margin-left: 3rem;
     margin-top: 1rem;
     padding: 1.5rem 0;
+    
 }
 .phn-icon{
     color: rgba(102, 224, 145, 1);
+}
+.phone p{
+    font-family: sans-serif;
+    font-size: 13.5px;
 }
 .firstp,.secondp{
     margin-left: 3rem;
     margin-right: 3rem;
     text-align: justify;
-    padding-bottom: 2.2rem;
-    font-size: 16px;
+    padding-bottom: 1.2rem;
+    font-size: 15px;
     font-family: sans-serif;
 }
 
