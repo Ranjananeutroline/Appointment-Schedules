@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Details.css';
+import './calendarTimeslot.css';
 import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,16 +8,28 @@ import { BsTelephoneFill } from 'react-icons/bs';
 import Calendar from 'react-calendar';
 import TimezoneSelect from 'react-timezone-select'
 // import TimezonePicker from 'react-timezone';
+import DayTimePicker from '@mooncake-dev/react-day-time-picker';
 
 
-function Details() {
+ function Details() {
     // const [value, onChange] = useState(new Date());
 
     const [selectedTimezone, setSelectedTimezone] =useState(
         Intl.DateTimeFormat().resolvedOptions().timeZone
       )
 
-      const [date, setDate] = useState(new Date());
+        const [date, setDate] = useState(new Date());
+        
+        const handleScheduled = dateTime => {
+        console.log('scheduled: ', dateTime);
+            };
+
+     
+        const [isScheduling, setIsScheduling] = useState(false);
+        const [isScheduled, setIsScheduled] = useState(false);
+        const [scheduleErr, setScheduleErr] = useState('');
+    
+       
 
   return (
     <>
@@ -41,28 +54,19 @@ function Details() {
                         onChange={setSelectedTimezone}
                         />
                     </div> 
-                    <div className='calendar-container'>
+                     {/* <div className='calendar-container'>
                         <Calendar
                         onChange={setDate}
                         value={date}
-                        selectRange={true}
-                        hideExtraDays={true}
-                       
                         />
-                    </div>
-                    {date.length > 0 ? (
-                        <p className='text-center'>
-                        <span className='bold'>Start:&nbsp;</span>{' '}
-                        {date[0].toDateString()}
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <span className='bold'>End:&nbsp;</span> {date[1].toDateString()}
-                        </p>
-                    ) : (
-                        <p className='text-center'>
-                        <span className='bold'>Selected date:&nbsp;&nbsp;</span>{' '}
-                        {date.toDateString()}
-                        </p>
-                    )}
+                    </div>  */}
+                   <DayTimePicker
+                    timeSlotSizeMinutes={15}
+                    isLoading={isScheduling}
+                    isDone={isScheduled}
+                    err={scheduleErr}
+                    onConfirm={handleScheduled}
+                     />
                                     
             </div>
 
@@ -74,8 +78,9 @@ function Details() {
             <Col className='detail-right'>
                 <div className='client-detail'>
                     <div className='heading'>
-                        <p>Law Offices of Keshav Raj Seadie, PC</p>
                         <h4>Appointments - Current Clients Only</h4>
+                        <p>Law Offices of Keshav Raj Seadie, PC</p>
+                        
                     </div>
                     <div className='detail-body'>
                         <div className='phone'>
