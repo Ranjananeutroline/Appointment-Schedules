@@ -1,21 +1,23 @@
-.jQMQWL{
+ .jQMQWL{
     height: 350px!important;
     width: 480px!important;
-    background-color: #ffffff!important;
+    background: #edf6f979!important;
     border-radius: 15px!important;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px!important;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px!important; */
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px!important; */
+    
     font-family: Arial, Helvetica, sans-serif!important;
     margin: auto!important;
     text-align: center!important;
     padding: 0 1rem 0rem 1rem!important;
-     /* position: inherit!important;  */
-     position: absolute!important; 
-     border: 1px solid rgba(0, 0, 0, 0.034)!important;
-}
+   
+     border: 1px solid #adb5bd46!important;
+    
+} 
+
 .jQMQWL:hover{
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px!important;
 }
+
 .iwLMgv{
     /* position: relative!important;  */
     position: absolute!important; 
@@ -85,16 +87,37 @@
 } 
 .gWfzAA p{
     margin-top: 10px!important;
-    font-size: 14px!important;
     font-family: sans-serif!important;
-    text-align: left!important;
-    margin-left: 3rem!important;
     margin-bottom: 12px!important;
+    color: blue!important;
 }
+/* .gWfzAA p:nth-last-of-type(1){
+   
+    top: 0!important;
+}
+.gWfzAA p:nth-child(1){
+    color: blue!important; 
+    font-size: 16px!important;
+    position: absolute!important;
+    top: 2rem!important;
+    left: 10rem!important;
+}
+.gWfzAA p:nth-child(2n){
+   
+     color: blue!important; 
+}  */
 .hvtuvo{
     border-radius: 8px!important;
-    border: 1px solid #118ab29d!important;
-
+    border: 1px solid #118ab283!important;
+    background: rgba(128, 128, 128, 0.116)!important;
+}
+.hvtuvo:nth-child(-n+10){
+  
+    display: none!important;
+}
+.hvtuvo:nth-child(even){
+    pointer-events: none!important;
+    opacity: 0.3;
 }
 .hvtuvo:hover{
     background-color: #118ab29d!important;
@@ -102,18 +125,19 @@
 }
 .epdPoJ{
     text-decoration: none!important;
-    background: #00bbf9!important;
+    /* background: #00bbf9!important; */
     padding: 8px 12px!important;
     border-radius: 5px!important;
-    color: white!important;
+    color: black!important;
     
 }
-.epdPoJ:hover{
-    background: rgba(27, 196, 252, 0.76)!important;
-}
+
 .hqlASh{
-    margin-top: 3.5rem!important;
-    padding: 15px 10px!important;
+    margin-top: 3rem!important;
+    padding: 15px 20px!important;
     font-family: sans-serif!important;
-    background: rgba(144, 190, 109, 1)!important;
+    background: #0dcaf0!important;
+    border-radius: 10px!important;
+    font-weight: 550!important;
+    font-size: 16px!important;
 }
