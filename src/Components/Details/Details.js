@@ -7,12 +7,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsTelephoneFill } from 'react-icons/bs';
 import DayTimePicker from '@mooncake-dev/react-day-time-picker';
-import TimezoneSelect, { allTimezones } from 'react-timezone-select'
 import spacetime from "spacetime";
 import Modal from 'react-bootstrap/Modal';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-
+import { SelectTimezone } from "reactjs-timezone-select";
+import { ImEarth } from 'react-icons/im';
 
  function Details() {
     // const [value, onChange] = useState(new Date());
@@ -40,7 +40,7 @@ import Form from 'react-bootstrap/Form';
         
         const [show, setShow] = useState(false);
         
-       
+        const [value, setValue] = useState();
 
   return (
     <>
@@ -49,22 +49,27 @@ import Form from 'react-bootstrap/Form';
             <Row>
             <Col className='detail-left'>
                 <h3>Select Date and Time</h3>
-                <div className="timezone--wrapper">
-                        <TimezoneSelect
-                        value={tz}
-                        onChange={setTz}
-                        labelStyle="altName"
-                        timezones={{
-                            ...allTimezones,
-                            "America/Lima": "Pittsburgh",
-                            "Europe/Berlin": "Frankfurt"
-                        }}
-                        />
+               
+                    <div className="timezonediv">
+                        <div style={{marginRight:"5px", marginLeft:"5px"}}>
+                            <p style={{color:"gray"}}><ImEarth /></p>
+                        </div>
+                    <SelectTimezone
+                        id="custom_timezone"
+                        name={"Custom timezone"}
+                        label=  "Time zone" labelStyles={{fontWeight:"bold"}}
+                        value={value}
+                        onChange={({ label, value }) => setValue(value)}
+                        defaultToSystemTimezone
+                        containerStyles={{ width: 300 }}
+                        optionLabelFormat={(timzone) =>
+                            `${timzone.name} (${timzone.abbreviation})`
+                        }
+                    />
                     </div>
-                 <div>
-                    
-                   
-                <DayTimePicker
+
+                 <div style={{paddingLeft:"0.6rem"}}>
+                    <DayTimePicker
                     timeSlotSizeMinutes={30}
                     isLoading={isScheduling}
                     isDone={isScheduled}
@@ -119,14 +124,27 @@ import Form from 'react-bootstrap/Form';
                         <Form.Control type="name" placeholder="name@example.com" />
                     </FloatingLabel>
                     <FloatingLabel 
-                    controlId="floatingTextarea2"
-                     label="Message">
+                        controlId="floatingTextarea2"
+                        label="Message">
                         <Form.Control
                         as="textarea"
                         placeholder="Leave a comment here"
-                        style={{ height: '100px' }}
+                        className='message-box'
                         />
-                </FloatingLabel>
+                    </FloatingLabel>
+                    <Form.Group className='terms-check'>
+                        <Form.Check
+                        required
+                        label="Agree to terms and conditions" style={{fontWeight:"100"}}
+                        feedback="You must agree before submitting."
+                        feedbackType="invalid"
+                        className='form-label' 
+                        />
+                    </Form.Group>
+                    <div style={{textAlign:"center", marginTop:"1rem"}}>
+                        <button className='submit-btn'>Submit</button>
+                    </div>
+                        
                     </div>
                     </Modal.Body>
                 </Modal>

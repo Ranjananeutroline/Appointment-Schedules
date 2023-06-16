@@ -27,28 +27,29 @@
    margin-left: 1.5rem;
    color: #3772ff;
 }
-.timezone--wrapper{
-    margin-top: 1.5rem;
-    margin-left: 1.3rem;
-    margin-bottom: 2rem;
-    width: 75%;
+.timezonediv{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
 }
-.css-13cymwt-control {
-    border-radius: 15px!important;
-    background-color: rgba(225, 225, 231, 0.527)!important; 
-    border: 1px solid rgba(220, 220, 220, 0.212)!important; 
-    color: rgb(109, 108, 108)!important; 
-} 
-.css-1dimb5e-singleValue{
-    color: rgb(141, 139, 139)!important;
-    font-size: 13px!important;
-}
-.css-1nmdiq5-menu{
-    /* background-color: red!important; */
-    z-index: 5!important;
-    font-size: 13.2px!important;
+.css-yk16xz-control{
+    border-color: #e9ecef!important;
+    background: #e9ecefa2!important; 
+    border-radius: 18px!important;
+   
 }
 
+.css-yk16xz-control:hover
+{
+    background: #e9ecefcc!important; 
+}
+#custom_timezone{
+    font-size: 14px!important;
+    z-index: 5!important;
+}
+.css-1uccc91-singleValue {
+    font-size: 14.2px!important;
+}
 .detail-right
 {
     /* border: 1px solid;   */
@@ -91,9 +92,10 @@
 }
 .heading h4{
     /* padding-bottom: 1.5rem; */
-    width: 80%;
+    width: 85%;
     margin: auto;
     color: blue;
+    font-family: sans-serif;
 }
 .detail-body{
     text-align: left;
@@ -115,7 +117,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     text-align: justify;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.8rem;
     font-size: 15px;
     font-family: sans-serif;
 }
