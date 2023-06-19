@@ -2,7 +2,7 @@ import React, { useState, useMemo} from 'react';
 import './Details.css';
 import './Form.css';
 import './calendarTimeslot.css';
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsTelephoneFill } from 'react-icons/bs';
@@ -10,10 +10,13 @@ import DayTimePicker from '@mooncake-dev/react-day-time-picker';
 import TimezoneSelect, { allTimezones } from 'react-timezone-select'
 import spacetime from "spacetime";
 import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import InputGroup from 'react-bootstrap/InputGroup';
-
+import { Controller, useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Select from "react-select";
+import { TextField, Button, ButtonGroup } from "@mui/material";
+import Submission from "./Submission";
 
 
  function Details() {
@@ -36,17 +39,31 @@ import InputGroup from 'react-bootstrap/InputGroup';
         
         const [value, setValue] = useState();
         
-        const [validated, setValidated] = useState(false);
+       
+        
+        const {
+            register,
+            handleSubmit,
+            reset,
+            resetField,
+            control,
+        
+            formState: { errors },
+          } = useForm();
+          const onSubmit = (data, e) => {
+            console.log(data);
+            reset();
+            resetField();
+            // const token = captchaRef.current.getValue();
+            // captchaRef.current.reset();
+            // swal("Form has been Submitted");
+            toast.success("Success\n your form has been submitted");
+          };
+          const onCaptchaComplete = (response) => {
+            console.log(response);
+          };
 
-        const handleSubmit = (event) => {
-          const form = event.currentTarget;
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-      
-          setValidated(true);
-        };
+          
 
   return (
     <>
@@ -79,14 +96,17 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 
                  <div style={{paddingLeft:"0.6rem"}}>
-                    <DayTimePicker
+                 
+                    
+                    
+                    <DayTimePicker 
                     timeSlotSizeMinutes={30}
                     onConfirm={handleScheduled}
                     confirmText={"Book Appointment"} onConfirm={() => setShow(true)}
                    
                      />
-                     
-                     
+                    
+                   
                 </div>  
                  
                 <Modal
@@ -102,112 +122,186 @@ import InputGroup from 'react-bootstrap/InputGroup';
                     </Modal.Header>
                     <Modal.Body className='form-body'>
                     <div>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Group  controlId="validationCustom01">
-                                <FloatingLabel
-                                    controlId="floatingInput"
-                                    label="Full Name"
-                                    className="mb-3"
-                                >
-                                <Form.Control 
-                                required
-                                type="text"
-                                 placeholder="Full Name"
-                                
-                                  />
-                                  <Form.Control.Feedback type="invalid">
-                                    Required.
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
-                             </Form.Group>  
+                    <div className="services-form-container">
+      {" "}
+      <div className="mainForm">
+        <ToastContainer position="top-center" />
+        <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
+          <Row
+            className="form-row m-0"
+            style={{ height: "auto", width: "auto" }}
+          >
+            <Col sm={12} lg={12} md={12} className="form-col ">
 
-                             <Form.Group  controlId="validationCustomUsername">
-                             <InputGroup hasValidation>
-                            
-                                <FloatingLabel
-                                    controlId="floatingInput"
-                                    label="Email"
-                                    className="mb-3"
-                                >
-                                    <Form.Control 
-                                    type="text"
-                                    placeholder="name@example.com"
-                                    aria-describedby="inputGroupPrepend"
-                                    required
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        Required.
-                                        </Form.Control.Feedback>
-                                </FloatingLabel>
-                            </InputGroup>
-                            </Form.Group>
+                <TextField
+                  // required
 
-                            <Form.Group  controlId="validationCustom03">
-                                <FloatingLabel
-                                    controlId="floatingInput"
-                                    label="Phone"
-                                    className="mb-3"
-                                >
-                                    <Form.Control 
-                                    required
-                                    type="number"
-                                    placeholder="Phone"
-                                    />
-                                     <Form.Control.Feedback type="invalid">
-                                     Required.
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
-                                </Form.Group>
+                  fullWidth
+                  label="Full Name"
+                  margin="dense"
+                  name="name"
+                  variant="filled"
+                  placeholder="Full Name"
+                  // value={myForm.values.name}
+                  // onChange={myForm.handleChange}
+                  // error={!!myForm.errors.companyName}
+                  // helperText={myForm.errors.name}
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("name", { required: "Required", minLength: 3 })}
+                  error={!!errors?.name}
+                  // helperText={errors?.name ? errors.name.message : null}
+                />
 
-                                <Form.Group controlId="validationCustom04">
-                                    <FloatingLabel
-                                        controlId="floatingInput"
-                                        label="Company name (Optional)"
-                                        className="mb-3"
-                                    >
-                                        <Form.Control 
-                                        required
-                                        type="text" 
-                                        placeholder="Company name"
-                                        />
-                                         <Form.Control.Feedback type="invalid">
-                                         Required.
-                                        </Form.Control.Feedback>
-                                    </FloatingLabel>
-                                    </Form.Group>
-
-                                    <Form.Group controlId="validationCustom05">
-                                    <FloatingLabel 
-                                        controlId="floatingTextarea2"
-                                        label="Message">
-                                        <Form.Control
-                                        required
-                                        as="textarea"
-                                        placeholder="Leave a comment here"
-                                        className='message-box'
-                                        />
-                                        <Form.Control.Feedback type="invalid">
-                                        Required.
-                                        </Form.Control.Feedback>
-                                    </FloatingLabel>
-                                    </Form.Group>
-
-                                    <Form.Group className='terms-check'>
-                                        <Form.Check
-                                        required
-                                        label="Agree to terms and conditions" style={{fontWeight:"100"}}
-                                        feedback="You must agree before submitting."
-                                        feedbackType="invalid"
-                                        className='form-label' 
-                                        />
-                                    </Form.Group>
-
-                                    <div style={{textAlign:"center", marginTop:"1rem"}}>
-                                        <button className='submit-btn'>Submit</button>
-                                    </div>
-                        
+                <TextField
+                  // required
+                  fullWidth
+                  label="Email"
+                  margin="dense"
+                  name="email"
+                  variant="filled"
+                  placeholder="Email"
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("email", {
+                    required: "Required field",
+                    pattern: {
+                      value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
+                  error={!!errors?.email}
+                />
+               
                   
-                    </Form>
+                  <TextField
+                    // inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
+
+                    fullWidth
+                    label="Phone"
+                    margin="dense"
+                    name="phone"
+                    autoComplete="off"
+                    variant="filled"
+                    placeholder=" Landline/Mobile Number"
+                    type="number"
+                    className="txtfield_phone "
+                    sx={{
+                      "& .MuiFilledInput-underline:before": {
+                        borderBottom: "none",
+                      },
+                      "& .MuiFilledInput-underline:after": {
+                        borderBottom: "none",
+                      },
+                      "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                        {
+                          borderBottom: "none",
+                        },
+                    }}
+                    {...register("phone", { required: "Required" })}
+                    error={!!errors?.phone}
+                  />
+                
+                <TextField
+                fullWidth
+                  id="outlined-basic"
+                  label="Company name (Optional)"
+                  variant="filled"
+                  size="small"
+                  margin="dense"
+                  name="CompanyName"
+                  placeholder="Company name"
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("CompanyName", { required: "Required" })}
+                  error={!!errors?.CompanyName}
+                />
+               
+                
+                <TextField
+                  fullWidth
+                  multiline
+                  rows={3}
+                  label="Message"
+                  margin="dense"
+                  name="message"
+                  variant="filled"
+                  placeholder="Your Message"
+                  // value={myForm.values.message}
+                  // onChange={myForm.handleChange}
+                  // error={!!myForm.errors.companyName}
+                  // helperText={myForm.errors.message}
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("message", { required: "Required" })}
+                  error={!!errors?.message}
+                />
+              
+                    
+                   
+               
+                <div className="buttonsubmit">
+                  <Button
+                    className='submit-btn'
+                   
+                    // disabled={!myForm.isValid}
+                    // onClick={myForm.submitForm}
+                    type="submit"
+                    variant="contained"
+                  >
+                    Submit
+                  </Button>
+                </div>
+              
+            </Col>
+          </Row>
+        </form>
+      </div>
+    </div>
                     </div>
                     </Modal.Body>
                 </Modal>

@@ -1,6 +1,6 @@
 .form-body{
     /* background:#86bbd8; */
-   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+   padding: 1.5rem 1.2rem 1.5rem 1.2rem;
    border-bottom-left-radius: 15px;
    border-bottom-right-radius: 15px;
 }
@@ -25,41 +25,34 @@ button.btn-close{
 }
 #example-custom-modal-styling-title{
     color: white;
-    padding: 0px 0 0 10px;
+    padding: 0px 0 0 15px;
    /* font-weight: 550; */
    font-family: sans-serif;
    font-size: 22px;
 }
-.form-control{
-    background: rgba(245, 245, 245, 0.842)!important;
+.css-2y464i-MuiInputBase-root-MuiFilledInput-root{
     border-radius: 10px!important;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px!important; */
-    /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em!important; */
     height: 55px!important;
-    border: 1px solid #dee2e6b2;
+    border: 1px solid rgba(128, 128, 128, 0.123)!important;
 }
-.form-control:hover{
-    background: whitesmoke!important;
+.css-leqjib-MuiInputBase-root-MuiFilledInput-root{
+    border-radius: 10px!important;
+    border: 1px solid rgba(128, 128, 128, 0.123)!important;
 }
-.form-floating>label{
-    font-family: sans-serif!important;
-    font-size: 14.3px!important;
-    color: gray!important;
-    font-weight: 100!important;
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 14px!important;
 }
-.message-box{
-    height: 100px!important;
+.css-1mog9k0-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 14px!important;
 }
-.terms-check{
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+.buttonsubmit{
     margin-top: 1rem;
-}
-.form-label{ 
-    font-size: 15px;
-    
-}
-label{
-    font-family: sans-serif;
-    
+    text-align: center;
 }
 .submit-btn{
   border: none;
