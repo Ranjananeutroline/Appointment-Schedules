@@ -27,7 +27,7 @@ import Time from './Time.js'
     //     Intl.DateTimeFormat().resolvedOptions().timeZone
     //   )
 
-     const [selectedTimezone, setSelectedTimezone] = useState({})
+     const [selectedTimezone, setSelectedTimezone] = useState( Intl.DateTimeFormat().resolvedOptions().timeZone)
 
         // const [date, setDate] = useState(new Date());
         
@@ -67,9 +67,10 @@ import Time from './Time.js'
                                 sx={{height: "5px"}}
                                 value={selectedTimezone}
                                 onChange={setSelectedTimezone}
-                                placeholder= {"Select Time zone"}
+                                // placeholder= {"Select Time zone"}
                                 
                               />
+                          
                             </div> 
                          
                         </div>
