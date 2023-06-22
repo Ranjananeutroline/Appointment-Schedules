@@ -6,7 +6,6 @@ import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsTelephoneFill } from 'react-icons/bs';
-import DayTimePicker from '@mooncake-dev/react-day-time-picker';
 import Modal from 'react-bootstrap/Modal';
 import { Controller, useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -14,9 +13,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { TextField, Button, ButtonGroup } from "@mui/material";
 import Submission from "./Submission";
-import TimezoneSelect from "react-timezone-select"
+import TimezoneSelect, { allTimezones } from "react-timezone-select"
 import Calendar from 'react-calendar';
 import Time from './Time.js'
+
 
 
 
@@ -27,7 +27,7 @@ import Time from './Time.js'
     //     Intl.DateTimeFormat().resolvedOptions().timeZone
     //   )
 
-    const [selectedTimezone, setSelectedTimezone] = useState({})
+     const [selectedTimezone, setSelectedTimezone] = useState({})
 
         // const [date, setDate] = useState(new Date());
         
@@ -35,7 +35,7 @@ import Time from './Time.js'
         console.log('scheduled: ', dateTime);
             };
 
-     
+            
        
         
         const [show, setShow] = useState(false);
@@ -68,9 +68,10 @@ import Time from './Time.js'
                                 value={selectedTimezone}
                                 onChange={setSelectedTimezone}
                                 placeholder= {"Select Time zone"}
-                               
+                                
                               />
-                            </div>
+                            </div> 
+                         
                         </div>
                       </div>
                   
@@ -78,7 +79,11 @@ import Time from './Time.js'
                 <div style={{paddingLeft:"0.6rem"}}>
                
                   <div className="calendar-container">
-                    <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)}/>
+                    <Calendar onChange={setDate}
+                     value={date}
+                      onClickDay={() => setShowTime(true)}
+                      minDate={new Date()}
+                      />
                     { showTime ? <Time showTime={showTime} date={date} value={date}/> : null }
                     
                   </div>
@@ -138,5 +143,7 @@ import Time from './Time.js'
     </>
   );
 }
+
+
 
 export default Details;

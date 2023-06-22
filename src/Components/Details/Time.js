@@ -10,6 +10,7 @@ import { TextField, Button, ButtonGroup } from "@mui/material";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdDateRange } from 'react-icons/md';
+import { IoIosArrowBack } from 'react-icons/io';
 
 
 const time = ['09:00','09:30','10:00','10:30','11:00','11:30','12:00','13:30','14:00','14:30',
@@ -58,6 +59,7 @@ return (
  
  <div className="times">
   <div className='date-div'>
+    <button className='backbtn'><IoIosArrowBack/></button>
   {date.length > 0 ? (
     
               <p>
@@ -68,7 +70,7 @@ return (
                 <span>End:</span>{date[1].toDateString()}
               </p>
                       ) : (
-              <p className='date-p'><MdDateRange/>&nbsp;&nbsp;
+              <p className='date-p'><MdDateRange/>&nbsp;
                   {date.toDateString()}
               </p> 
       
@@ -89,7 +91,7 @@ return (
 
      </div>
     <div className='book-div'>
-      {info ? `Your appointment is set to ${event} ${props.date.toDateString()}` : null}
+      {info ? <p className='set-p'><MdDateRange/>&nbsp;Appointment is set to {event}, {props.date.toDateString()}</p>: null}
       <div className='bookbtn-div'>
       { info ? <Button onClick={() => setShow(true)} className='bookbtn'>Book Appointment</Button> : null }
       </div>

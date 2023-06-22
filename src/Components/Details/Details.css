@@ -97,11 +97,12 @@
 .heading p{
     padding-top: 1rem; 
     /* color: #00b4d8; */
-    color: #00bbf9;
+    color: #19A7CE;
     width: 90%;
     margin: auto;
     font-family: sans-serif;
     font-size: 14px;
+    font-weight: bold;
 }
 .heading h4{
     /* padding-bottom: 1.5rem; */
