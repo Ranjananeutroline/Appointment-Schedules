@@ -10,7 +10,8 @@ import { TextField, Button, ButtonGroup } from "@mui/material";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdDateRange } from 'react-icons/md';
-import { IoIosArrowBack } from 'react-icons/io';
+import { BiArrowBack } from 'react-icons/bi';
+
 
 
 const time = ['09:00','09:30','10:00','10:30','11:00','11:30','12:00','13:30','14:00','14:30',
@@ -26,6 +27,10 @@ function Times(props) {
  const [date, setDate] = useState(new Date());
 
  const [show, setShow] = useState(false);
+
+ const handleClick = () => {
+  props.ShowTime();
+ }
 
  const {
   register,
@@ -51,15 +56,30 @@ const onCaptchaComplete = (response) => {
 
  function displayInfo(e) {
    setInfo(true);
-   setBook(true);
+   
    setEvent(e.target.innerText);
 }
+
+
+const handleCloseModal = () => {
+  setShow(false);
+  reset();
+};
+
 
 return (
  
  <div className="times">
   <div className='date-div'>
-    <button className='backbtn'><IoIosArrowBack/></button>
+    <button 
+    className='backbtn' onClick={handleClick}><BiArrowBack/>
+     <span className='tooltiptext'>
+        <span>
+          Back
+        </span>
+      </span>
+    </button>
+   
   {date.length > 0 ? (
     
               <p>
@@ -93,13 +113,14 @@ return (
     <div className='book-div'>
       {info ? <p className='set-p'><MdDateRange/>&nbsp;Appointment is set to {event}, {props.date.toDateString()}</p>: null}
       <div className='bookbtn-div'>
-      { info ? <Button onClick={() => setShow(true)} className='bookbtn'>Book Appointment</Button> : null }
+      { info ? <Button onClick={() => setShow(true)} 
+      className='bookbtn'>Book Appointment</Button> : null }
       </div>
      
     </div>
     <Modal
                     show={show}
-                    onHide={() => setShow(false)}
+                    onHide={handleCloseModal}
                     dialogClassName="modal-90w"
                     aria-labelledby="example-custom-modal-styling-title"
                 >

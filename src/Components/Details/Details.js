@@ -50,6 +50,9 @@ import Time from './Time.js'
           const [date, setDate] = useState(new Date());
           const [showTime, setShowTime] = useState(false)
 
+            const ShowTime = () => {
+              setShowTime(false);
+            }
          
 
   return (
@@ -75,32 +78,29 @@ import Time from './Time.js'
                         </div>
                       </div>
                   
-                     
+                          
                 <div style={{paddingLeft:"0.6rem"}}>
-               
-                  <div className="calendar-container">
+                  
+                    <div className="calendar-container">
+                    
                     <Calendar onChange={setDate}
                      value={date}
                       onClickDay={() => setShowTime(true)}
                       minDate={new Date()}
                       />
-                    { showTime ? <Time showTime={showTime} date={date} value={date}/> : null }
+                    { showTime ?
+                     <Time
+                    showTime={showTime} 
+                    ShowTime={ShowTime}
+                    date={date} 
+                    value={date}
+                    /> : null }
                     
                   </div>
-                
-                    {/* <DayTimePicker 
-                    timeSlotSizeMinutes={30}
-                    confirmText={"Book Appointment"} onConfirm={() => setShow(true)}
-                   
-                     /> */}
-                
-                
-                 
-                 
+
                    
                 </div>  
-                
-                
+ 
                             
                 
                    
