@@ -21,19 +21,16 @@ import Time from './Time.js'
 
 
  function Details() {
-    // const [value, onChange] = useState(new Date());
-
+   
     // const [selectedTimezone, setSelectedTimezone] =useState(
     //     Intl.DateTimeFormat().resolvedOptions().timeZone
     //   )
 
      const [selectedTimezone, setSelectedTimezone] = useState({})
 
-        // const [date, setDate] = useState(new Date());
         
-        const handleScheduled = dateTime => {
-        console.log('scheduled: ', dateTime);
-            };
+        
+        
 
             
        
@@ -71,7 +68,7 @@ import Time from './Time.js'
                                 value={selectedTimezone}
                                 onChange={setSelectedTimezone}
                                 placeholder= {"Select Time zone"}
-                                
+                                labelStyle="altName"
                               />
                             </div> 
                          

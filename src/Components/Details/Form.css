@@ -1,6 +1,6 @@
 .form-body{
     /* background:#86bbd8; */
-   padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+   padding: 1rem 1.2rem 1.5rem 1.2rem;
    border-bottom-left-radius: 15px;
    border-bottom-right-radius: 15px;
 }
@@ -95,20 +95,51 @@ label{
 .submit-btn:hover{
     background: #06afd5c9;
 }
-/* .Toastify__toast-container--top-center{
-    width: 30%!important;
-} */
+.Toastify__toast-container--top-center{
+    top: 3em!important;
+    border-radius: 10px!important;
+}
 .Toastify__toast-body{
     display: flow-root!important;
     text-align: -webkit-center!important;
-    
+    padding: 0!important;
+   
 }
+.Toastify__toast{
+    margin-bottom: 0!important;
+}
+
 .Toastify__toast-icon{
-    width: 30px!important;
+    width: 22px!important;
+    color: white!important;
+    padding-top: 0.25rem!important;
+}
+.Toastify__toast-icon svg{
+    /* fill: #50b2c0!important; */
+    fill: #57cc99!important; 
+}
+.Toastify__toast-theme--light {
+     background: white!important; 
+     height: 100px!important;
+    /* background:  #0aaf0afc!important; */
 }
 .Toastify__toast-body > div:last-child{
-    width: 85%!important;
+    /* width: 90%!important; */
+    color: green!important; 
+    /* color: #50b2c0!important; */
+    padding-bottom: 5px!important;
+    padding-top: 5px;
 }
+.Toastify__close-button--light{
+    color: green!important; 
+    /* color: #50b2c0!important; */
+    opacity: 1!important;
+}
+.Toastify__progress-bar--animated {
+    background: #57cc99!important; 
+    /* background: #50b2c0!important; */
+}
+
 /* .Toastify__toast{
     justify-content: center!important;
     padding: 8px 0!important;
