@@ -95,3 +95,21 @@ label{
 .submit-btn:hover{
     background: #06afd5c9;
 }
+/* .Toastify__toast-container--top-center{
+    width: 30%!important;
+} */
+.Toastify__toast-body{
+    display: flow-root!important;
+    text-align: -webkit-center!important;
+    
+}
+.Toastify__toast-icon{
+    width: 30px!important;
+}
+.Toastify__toast-body > div:last-child{
+    width: 85%!important;
+}
+/* .Toastify__toast{
+    justify-content: center!important;
+    padding: 8px 0!important;
+} */

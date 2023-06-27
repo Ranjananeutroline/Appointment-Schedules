@@ -73,11 +73,7 @@ return (
   <div className='date-div'>
     <button 
     className='backbtn' onClick={handleClick}><BiArrowBack/>
-     <span className='tooltiptext'>
-        <span>
-          Back
-        </span>
-      </span>
+    
     </button>
    
   {date.length > 0 ? (
@@ -96,6 +92,8 @@ return (
       
                       )
               } 
+               {info ? <p className='set-p'><MdDateRange/>&nbsp;Appointment is set to {event},&nbsp;
+               {props.date.toDateString()}</p>: null}
       </div>
 
       <div className='timeslot-div'>
@@ -111,7 +109,6 @@ return (
 
      </div>
     <div className='book-div'>
-      {info ? <p className='set-p'><MdDateRange/>&nbsp;Appointment is set to {event}, {props.date.toDateString()}</p>: null}
       <div className='bookbtn-div'>
       { info ? <Button onClick={() => setShow(true)} 
       className='bookbtn'>Book Appointment</Button> : null }
