@@ -18,17 +18,17 @@
 .detail-left
 {
     padding-left: 2rem;
-    /* border: 1px solid;   */
+    /* border: 1px solid;    */
 }
 .detail-left h3{
     text-align: left;
    margin-bottom: 1.2rem;
    font-weight: 400;
-   margin-left: 0.5rem;
+   /* margin-left: 0.5rem; */
    color: #3772ff;
 }
 .timezonediv{
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     margin-bottom: 1.5rem;
    
 }
@@ -64,7 +64,7 @@
 }
 .detail-right
 {
-    /* border: 1px solid;   */
+    /* border: 1px solid;    */
     padding-top: 0.5rem;
     padding-left: 3rem;
 }
@@ -136,3 +136,60 @@
     font-family: sans-serif;
 }
 
+
+@media only screen and (max-width: 1075px) {
+    .container{
+        max-width: 98%!important;
+        padding: 0!important;
+    }
+    .client-detail{
+       margin: auto!important;
+       width: 100%!important;
+    }
+    .heading h4{
+        width: 95%!important;
+
+    }
+    /* .heading h4{
+        font-size: 1.4rem!important;
+    }
+    .heading p{
+        font-size: 13px!important;
+    } */
+}
+@media only screen and (max-width: 975px){
+    .detail-left{
+        padding-left: 1rem!important;
+    }
+}
+@media only screen and (max-width: 895px){
+    .heading h4{
+        font-size: 1.2rem!important;
+    }
+    .heading p{
+        font-size: 13px!important;
+    }
+    .firstp,.secondp{
+        margin-left: 2.5rem!important;
+        margin-right: 2.5rem!important;
+    }
+    .phone{
+        margin-left: 2.5rem!important;
+    }
+}
+@media only screen and (max-width: 765px){
+    .heading h4{
+        font-size: 1rem!important;
+    }
+    .heading p{
+        font-size: 11px!important;
+    }
+    .firstp,.secondp{
+        margin-left: 2rem!important;
+        margin-right: 2rem!important;
+        font-size: 13.5px!important;
+    }
+    .phone{
+        margin-left: 2rem!important;
+    }
+}

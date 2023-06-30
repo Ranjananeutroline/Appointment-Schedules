@@ -10,7 +10,7 @@ import { TextField, Button, ButtonGroup } from "@mui/material";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdDateRange } from 'react-icons/md';
-import { BiArrowBack } from 'react-icons/bi';
+import { BsArrowLeft } from 'react-icons/bs';
 
 
 
@@ -74,7 +74,7 @@ return (
  <div className="times">
   <div className='date-div'>
     <button 
-    className='backbtn' onClick={handleClick}><BiArrowBack/>
+    className='backbtn' onClick={handleClick}><BsArrowLeft/>
     
     </button>
    

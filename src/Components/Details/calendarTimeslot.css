@@ -82,11 +82,14 @@
     min-width: 50px;
     /* background: none; */
   }
-   .react-calendar__navigation button:enabled:hover,
-  .react-calendar__navigation button:enabled:focus {
+   .react-calendar__navigation button:enabled:hover{
     background-color: #c4bebe60;
     border-radius: 10px;
-  } 
+   }
+
+  /* .react-calendar__navigation button:enabled:focus {
+    pointer-events: none!important;
+  }  */
   /* .react-calendar__navigation button[disabled] {
     background-color: #f0f0f0;
     
@@ -100,6 +103,7 @@
   }
   .react-calendar__month-view__weekdays__weekday {
     padding: 0.5em;
+    
   }
   .react-calendar__month-view__weekNumbers .react-calendar__tile {
     display: flex;
@@ -108,6 +112,7 @@
     font-size: 0.75em;
     font-weight: bold;
     padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
+   
   }
   .react-calendar__month-view__days__day--weekend {
     /* color: #d10000; */
@@ -181,33 +186,37 @@
   } */
   
   .date-div{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    /* text-align: center; */
+    /* display: flex;
+    flex-wrap: wrap; */
     /* background: aliceblue; */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background: #f8f9fa;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding-bottom: 0.8rem;
+    height: 100px!important;
   }
   
 .backbtn
 {
     padding: 4px 12px!important;
-    /* border: 1px solid rgba(16, 154, 233, 0.185)!important; */
     border: none!important;
     border-radius: 10px!important; 
-    /* background-color: rgba(168, 163, 163, 0.15)!important; */
     margin-top: 1.5rem;
     margin-left: 1.3rem!important;
    background: none!important;
-   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 1px 0px!important; */
+   position: fixed!important;
+   
 }
 .backbtn:hover.backbtn svg{
   /* background: #e2e4e765!important; */
-  color: blue!important;
+  color: rgba(128, 128, 128, 0.788)!important;
   font-weight: bolder!important;
+  /* transition-timing-function: ease-in!important; */
+  transition: 0.25s!important;
+  transform: translate(-.25rem)!important;
+  stroke-width: 1.5!important;
 }
 .backbtn svg{
     font-size: 18px!important;
@@ -217,6 +226,7 @@
 }
 
 .date-p{
+    text-align: center;
     margin-bottom: 0;
     padding-top: 2rem;
     font-family: sans-serif;
@@ -225,7 +235,7 @@
     color: #00bbf9;
     font-size: 17px;
     font-weight: bold;
-    padding-left: 6.5rem;
+   
 }
   .timeslot-div{
     display: flex;
@@ -251,6 +261,10 @@
   }
   .time-btn:hover{
     background-color: #90e0ef!important;
+}
+.time-btn:focus{
+  background-color: #A2FF86!important;
+  border: none!important;
 }
  .timeslot-div::-webkit-scrollbar{
     width: 7px;
@@ -279,6 +293,7 @@
   font-size: 15px!important;
   margin-left: 5rem;
   padding-top: 5px;
+  text-align: center;
   margin: auto;
 }
 .bookbtn{
@@ -295,4 +310,62 @@
 .bookbtn:hover{
     background: #5bc0eb!important;
     color: rgba(41, 40, 40, 0.616)!important;
+}
+
+
+@media only screen and (max-width: 975px){
+  .react-calendar,.times{
+    width: 460px!important;
+  }
+  .timeslot-div{
+    padding: 0.5rem 2rem!important;
+    max-height: 173px!important;
+  }
+  
+}
+@media only screen and (max-width: 890px){
+  .react-calendar,.times{
+    width: 440px!important;
+  }
+  .timeslot-div{
+    padding: 0.5rem 1rem!important;
+    max-height: 170px!important;
+  }
+}
+@media only screen and (max-width: 850px){
+  .react-calendar,.times{
+    width: 410px!important;
+  }
+  .react-calendar__viewContainer{
+    padding: 0!important;
+  }
+  .react-calendar__navigation {
+    padding: 1.5rem 3rem 0.5rem 3rem!important;
+}
+  .timeslot-div{
+    padding: 0.5rem 1rem!important;
+    max-height: 168px!important;
+  }
+  .space {
+    margin: 0.5rem 0rem 0.2rem 0rem!important;
+}
+}
+@media only screen and (max-width: 790px){
+  .react-calendar,.times{
+    width: 400px!important;
+  }
+  .react-calendar__navigation {
+    padding: 1.5rem 2rem 0.5rem 2rem!important;
+}
+}
+@media only screen and (max-width: 760px){
+  .react-calendar,.times{
+    width: 390px!important;
+  }
+  .date-p{
+    font-size: 15px!important;
+  }
+  .set-p{
+    font-size: 13px!important;
+  }
 }
