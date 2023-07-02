@@ -27,14 +27,9 @@
    /* margin-left: 0.5rem; */
    color: #3772ff;
 }
-.timezonediv{
-    /* margin-left: 0.5rem; */
-    margin-bottom: 1.5rem;
-   
-}
-.timezone--wrapper{
-    width: 70%;
-    
+.css-b62m3t-container{
+    width: 70%!important;
+    margin-bottom: 1.5rem!important;
 }
 .css-13cymwt-control{
     border-color: #e9ecef!important;
@@ -150,18 +145,16 @@
         width: 95%!important;
 
     }
-    /* .heading h4{
-        font-size: 1.4rem!important;
-    }
-    .heading p{
-        font-size: 13px!important;
-    } */
-}
-@media only screen and (max-width: 975px){
     .detail-left{
         padding-left: 1rem!important;
     }
+    
 }
+/* @media only screen and (max-width: 975px){
+    .detail-left{
+        padding-left: 1rem!important;
+    }
+} */
 @media only screen and (max-width: 895px){
     .heading h4{
         font-size: 1.2rem!important;
@@ -191,5 +184,175 @@
     }
     .phone{
         margin-left: 2rem!important;
+    }
+}
+@media only screen and (max-width: 655px){
+    .heading h4{
+        font-size: 0.9rem!important;
+    }
+    .heading p{
+        font-size: 10.5px!important;
+    }
+    .firstp,.secondp{
+        margin-left: 1.5rem!important;
+        margin-right: 1.5rem!important;
+    }
+    .phone{
+        margin-left: 1.5rem!important;
+    }
+}
+@media only screen and (max-width: 630px){
+    .detail-row{
+        flex-direction: column-reverse!important;
+        margin: auto!important;
+    }
+    .detail-right{
+        width: 85%!important;
+        margin: auto!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        padding-top: 0!important;
+    }
+    .detail-main{
+        padding-top: 1rem!important;
+    }
+    .heading h4{
+        font-size: 1.5rem!important;
+    }
+    .heading p{
+        font-size: 14px!important;
+    }
+    .phone{
+        margin-left: 3rem!important;
+        
+    }
+    .phone p{
+        font-size: 13.5px!important;
+    }
+    .firstp,.secondp{
+        margin-left: 3rem!important;
+        margin-right: 3rem!important;
+        font-size: 15px!important;
+    }
+    .detail-left{
+        width: 85%!important;
+        margin: 1.5rem auto!important;
+        padding-left: 0!important;
+    }
+    .client-detail{
+        padding-bottom: 1rem!important;
+    }
+}
+@media only screen and (max-width: 550px){
+    .detail-left{
+        width: 90%!important;
+    }
+    .detail-right{
+        width: 90%!important;
+    }
+}
+@media only screen and (max-width: 500px){
+    .heading h4{
+        font-size: 1.35rem!important;
+    }
+    .phone{
+        margin-left: 2.5rem!important;
+        
+    }
+    .firstp,.secondp{
+        margin-left: 2.5rem!important;
+        margin-right: 2.5rem!important;
+       
+    }
+    .css-b62m3t-container{
+        width: 90%!important;
+    }
+}
+@media only screen and (max-width: 460px){
+    .phone{
+        margin-left: 2rem!important;
+        
+    }
+    .firstp,.secondp{
+        margin-left: 2rem!important;
+        margin-right: 2rem!important;
+       
+    }
+}
+@media only screen and (max-width: 445px){
+    .detail-left{
+        width: 95%!important;
+    }
+    .detail-right{
+        width: 95%!important;
+    }
+}
+@media only screen and (max-width: 430px){
+    .detail-left{
+        width: 98%!important;
+        margin: 1.5rem auto!important;
+        padding-right: 0!important;
+    }
+    .detail-right{
+        width: 90%!important;
+    }
+    .heading h4{
+        font-size: 1.25rem!important;
+    }
+    .heading p{
+        font-size: 12.5px!important;
+    }
+    .firstp,.secondp{
+       font-size: 13.5px!important;
+    }
+    .detail-left h3{
+        padding-left: 1rem!important;
+    }
+   .time-calendar{
+    padding-left: 1rem!important;
+   }
+}
+@media only screen and (max-width: 425px){
+    .detail-left{
+        width: 100%!important;
+    }
+    .detail-right{
+        width: 95%!important;
+    }
+}
+@media only screen and (max-width: 400px){
+    .client-detail{
+        width: 95%!important;
+    }
+    .heading h4{
+        font-size: 1.15rem!important;
+    }
+    .heading p{
+        font-size: 12px!important;
+    }
+    .phone p{
+        font-size: 13px!important;
+    }
+    .firstp,.secondp{
+        font-size: 13px!important;
+     }
+}
+@media only screen and (max-width: 395px){
+    .detail-right{
+        width: 100%!important;
+    }
+    .detail-left h3{
+        padding-left: 0.7rem!important;
+    }
+    .time-calendar{
+        padding-left: 0.7rem!important;
+    }
+}
+@media only screen and (max-width: 365px){
+    .detail-right{
+        width: 98%!important;
+    }
+    .heading h4{
+        font-size: 1.1rem!important;
     }
 }

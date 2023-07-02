@@ -203,10 +203,10 @@
     padding: 4px 12px!important;
     border: none!important;
     border-radius: 10px!important; 
-    margin-top: 1.5rem;
+    margin-top: 1.5rem!important;
     margin-left: 1.3rem!important;
    background: none!important;
-   position: fixed!important;
+   position: absolute!important; 
    
 }
 .backbtn:hover.backbtn svg{
@@ -263,7 +263,11 @@
     background-color: #90e0ef!important;
 }
 .time-btn:focus{
-  background-color: #A2FF86!important;
+  /* background-color: #3a86ff!important; */
+   background-color: #00afb9!important; 
+  /* background-color: #5fa8d3!important; */
+  /* background-color: #2ec4b6!important;  */
+  color: white!important;
   border: none!important;
 }
  .timeslot-div::-webkit-scrollbar{
@@ -311,6 +315,8 @@
     background: #5bc0eb!important;
     color: rgba(41, 40, 40, 0.616)!important;
 }
+
+
 
 
 @media only screen and (max-width: 975px){
@@ -368,4 +374,170 @@
   .set-p{
     font-size: 13px!important;
   }
+}
+@media only screen and (max-width: 730px){
+  .react-calendar,.times{
+    width: 370px!important;
+  }
+  
+}
+@media only screen and (max-width: 690px){
+  .react-calendar,.times{
+    width: 350px!important;
+  }
+  .timeslot-div{
+    padding: 0.5rem 0.5rem!important;
+  }
+}
+@media only screen and (max-width: 630px){
+  .react-calendar{
+    margin: auto!important;
+    height: 353px!important;
+    width: 480px!important;
+}
+.times{
+  height: 353px!important;
+  width: 480px!important;
+}
+.timeslot-div{
+  padding: 0.5rem 2.5rem!important;
+}
+.space {
+  margin: 0.5rem 0.2rem 0.2rem 0.2rem!important;
+}
+.set-p{
+  font-size: 13.5px!important;
+}
+}
+@media only screen and (max-width: 600px){
+   .react-calendar,.times{
+    width: 460px!important;
+} 
+
+}
+@media only screen and (max-width: 530px){
+   .react-calendar,.times{
+    width: 440px!important;
+} 
+.timeslot-div{
+  padding: 0.5rem 2rem!important;
+}
+}
+@media only screen and (max-width: 500px){
+   .react-calendar,.times{
+    width: 420px!important;
+} 
+
+}
+@media only screen and (max-width: 480px){
+  .react-calendar,.times{
+   width: 400px!important;
+} 
+.react-calendar__month-view__weekdays, .react-calendar__month-view__days{
+  padding: 0 0.3rem!important;
+}
+.timeslot-div{
+  padding: 0.5rem 1rem!important;
+}
+}
+@media only screen and (max-width: 445px){
+  .react-calendar,.times{
+   width: 400px!important;
+} 
+}
+@media only screen and (max-width: 430px){
+  .react-calendar,.times{
+   width: 380px!important;
+} 
+.react-calendar__navigation button{
+  font-size: 16px!important;
+}
+abbr[title]{
+  font-size: 11.5px!important;
+}
+.react-calendar__tile{
+  font-size: 13.5px!important;
+}
+.react-calendar__viewContainer{
+  padding: 0 10px!important;
+}
+.timeslot-div{
+  padding: 0.5rem 0.8rem!important;
+}
+}
+@media only screen and (max-width: 415px){
+  .react-calendar,.times{
+    width: 370px!important;
+ } 
+ .timeslot-div{
+  padding: 0.5rem 1rem!important;
+}
+.time-btn{
+  padding: 8px 17px!important;
+  font-size: 15px!important;
+}
+.react-calendar__navigation {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem!important;
+}
+}
+@media only screen and (max-width: 400px){
+  .react-calendar,.times{
+    width: 360px!important;
+ } 
+ .space {
+  margin: 0.5rem 0 0.2rem 0!important;
+}
+ 
+}
+@media only screen and (max-width: 395px){
+  .react-calendar,.times{
+   width: 350px!important;
+} 
+.react-calendar__navigation button{
+  font-size: 15px!important;
+}
+abbr[title]{
+  font-size: 11.2px!important;
+}
+.react-calendar__tile{
+  font-size: 13px!important;
+}
+.react-calendar__viewContainer{
+  padding: 0 5px!important;
+}
+.time-btn{
+  padding: 8px 15px!important;
+  font-size: 14.5px!important;
+}
+/* .timeslot-div{
+  padding: 0.5rem 0.8rem!important;
+} */
+}
+@media only screen and (max-width: 375px){
+  .react-calendar,.times{
+   width: 340px!important;
+} 
+.react-calendar__navigation button{
+  font-size: 14.5px!important;
+}
+abbr[title]{
+  font-size: 11px!important;
+}
+.react-calendar__tile{
+  font-size: 12px!important;
+}
+.react-calendar__viewContainer{
+  padding: 0 5px!important;
+}
+
+/* .timeslot-div{
+  padding: 0.5rem 0.8rem!important;
+} */
+}
+@media only screen and (max-width: 365px){
+  .react-calendar,.times{
+   width: 330px!important;
+} 
+
+
 }

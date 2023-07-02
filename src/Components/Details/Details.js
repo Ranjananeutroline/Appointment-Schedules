@@ -52,30 +52,17 @@ import Time from './Time.js'
     <>
     <div className='detail-main'>
         <Container>
-            <Row>
+            <Row className="detail-row">
             <Col sm={6} className='detail-left'>
                 <h3>Select Date and Time</h3>
-               
-                    <div className="timezonediv">
-                        <div className="timezone--wrapper">
-                            <div className="select-wrapper" >
-                              <TimezoneSelect
-                                sx={{height: "5px"}}
-                                value={selectedTimezone}
-                                onChange={setSelectedTimezone}
-                                placeholder= {"Select Time zone"}
-                                labelStyle="altName"
-                              />
-                            </div> 
-                         
-                        </div>
-                      </div>
-                  
-                          
-                <div>
-                  
-                   
-                    
+                <div className="time-calendar">
+                    <TimezoneSelect
+                      sx={{height: "5px"}}
+                      value={selectedTimezone}
+                      onChange={setSelectedTimezone}
+                      placeholder= {"Select Time zone"}
+                      labelStyle="altName"
+                    />
                     <Calendar onChange={setDate}
                      value={date}
                       onClickDay={() => setShowTime(true)}
@@ -88,16 +75,9 @@ import Time from './Time.js'
                     date={date} 
                     value={date}
                     /> : null }
-                    
-                 
-
-                   
-                </div>  
- 
-                            
-                
-                   
+                </div>
             </Col>
+            
 
             <Col sm={6} className='detail-right'>
                 <div className='client-detail'>
