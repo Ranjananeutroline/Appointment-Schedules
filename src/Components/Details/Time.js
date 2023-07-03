@@ -10,6 +10,7 @@ import { TextField, Button, ButtonGroup } from "@mui/material";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdDateRange } from 'react-icons/md';
+import { MdOutlineAccessTimeFilled } from 'react-icons/md';
 import { BsArrowLeft } from 'react-icons/bs';
 
 
@@ -94,7 +95,7 @@ return (
       
                       )
               } 
-               {info ? <p className='set-p'><MdDateRange/>&nbsp;Appointment is set to {event},&nbsp;
+               {info ? <p className='set-p'><MdOutlineAccessTimeFilled/>&nbsp;Appointment is set to {event},&nbsp;
                {props.date.toDateString()}</p>: null}
       </div>
 

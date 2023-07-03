@@ -115,8 +115,9 @@
     padding: 1.5rem 0;
     
 }
-.phn-icon{
-    color: rgba(102, 224, 145, 1);
+.phn-icon svg{
+    color: #47B5FF!important;
+    font-size: 20px!important; 
 }
 .phone p{
     font-family: sans-serif;
@@ -216,6 +217,9 @@
     .detail-main{
         padding-top: 1rem!important;
     }
+    .heading{
+        padding: 2.2rem 0!important;
+    }
     .heading h4{
         font-size: 1.5rem!important;
     }
@@ -224,7 +228,7 @@
     }
     .phone{
         margin-left: 3rem!important;
-        
+        padding: 1rem 0!important;
     }
     .phone p{
         font-size: 13.5px!important;
@@ -233,6 +237,7 @@
         margin-left: 3rem!important;
         margin-right: 3rem!important;
         font-size: 15px!important;
+        padding-bottom: 1.5rem!important;
     }
     .detail-left{
         width: 85%!important;

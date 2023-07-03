@@ -5,7 +5,7 @@ import './calendarTimeslot.css';
 import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { BsTelephoneFill } from 'react-icons/bs';
+import { MdOutlineMiscellaneousServices } from 'react-icons/md';
 import "react-toastify/dist/ReactToastify.css";
 import { TextField, Button, ButtonGroup } from "@mui/material";
 import Submission from "./Submission";
@@ -83,14 +83,14 @@ import Time from './Time.js'
                 <div className='client-detail'>
                     <div className='heading'>
                         <h4>Appointments - Current Clients Only</h4>
-                        <p>Law Offices of Keshav Raj Seadie, PC</p>
+                        <p>Neutroline Pvt. Ltd.</p>
                         
                     </div>
                     <div className='detail-body'>
                         <div className='phone'>
-                            <p><span className='phn-icon'><BsTelephoneFill/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <p><span className='phn-icon'><MdOutlineMiscellaneousServices/>&nbsp;&nbsp;&nbsp;
                             </span>
-                            Phone call</p>
+                            Services</p>
                         </div>
                         <p className='firstp'>
                         Please select an available time slot and complete the appointment form. 
