@@ -18,34 +18,22 @@ import Time from './Time.js'
 
  function Details() {
    
-    // const [selectedTimezone, setSelectedTimezone] =useState(
-    //     Intl.DateTimeFormat().resolvedOptions().timeZone
-    //   )
+    const [selectedTimezone, setSelectedTimezone] =useState(
+        Intl.DateTimeFormat().resolvedOptions().timeZone
+      )
 
-     const [selectedTimezone, setSelectedTimezone] = useState({})
+    // const [selectedTimezone, setSelectedTimezone] = useState({})
 
+    const [show, setShow] = useState(false);
         
+    const [value, setValue] = useState();
         
-        
+    const [date, setDate] = useState(new Date());
+    const [showTime, setShowTime] = useState(false)
 
-            
-       
-        
-        const [show, setShow] = useState(false);
-        
-        const [value, setValue] = useState();
-        
-       
-        
-        
-
-          
-          const [date, setDate] = useState(new Date());
-          const [showTime, setShowTime] = useState(false)
-
-            const ShowTime = () => {
-              setShowTime(false);
-            }
+    const ShowTime = () => {
+      setShowTime(false);
+    }
          
 
   return (
@@ -60,13 +48,15 @@ import Time from './Time.js'
                       sx={{height: "5px"}}
                       value={selectedTimezone}
                       onChange={setSelectedTimezone}
-                      placeholder= {"Select Time zone"}
+                      //  placeholder= {"Select Time zone"}
                       labelStyle="altName"
+                      
                     />
                     <Calendar onChange={setDate}
                      value={date}
                       onClickDay={() => setShowTime(true)}
                       minDate={new Date()}
+                     
                       />
                     { showTime ?
                      <Time

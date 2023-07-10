@@ -27,6 +27,10 @@ function Times(props) {
 
  const [date, setDate] = useState(new Date());
 
+  
+ const options = { weekday: 'long', month: 'long', day: '2-digit', year: 'numeric' };
+const fullDayOfWeek = date.toLocaleString('en-US', options);
+
  const [show, setShow] = useState(false);
 
  const handleClick = () => {
@@ -42,6 +46,7 @@ function Times(props) {
 
   formState: { errors },
 } = useForm();
+
 const onSubmit = (data, e) => {
   console.log(data);
   reset();
@@ -54,6 +59,7 @@ const onSubmit = (data, e) => {
     position: toast.POSITION.TOP_CENTER
   });
  
+  
 };
 
 
@@ -90,7 +96,7 @@ return (
               </p>
                       ) : (
               <p className='date-p'><MdDateRange/>&nbsp;
-                  {date.toDateString()}
+                   {fullDayOfWeek}
               </p> 
       
                       )
