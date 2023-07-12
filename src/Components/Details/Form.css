@@ -170,6 +170,24 @@ label{
     .modal-90w{
         max-width: 90%!important;
     }
+    #example-custom-modal-styling-title{
+        font-size: 20px!important;
+    }
+    .form-body {
+        padding: 0.5rem 1.2rem 1.1rem 1.2rem;
+    }
+    .css-2y464i-MuiInputBase-root-MuiFilledInput-root{
+        height: 50px!important;
+    }
+    .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+        font-size: 12px!important;
+    }
+    .css-1mog9k0-MuiFormLabel-root-MuiInputLabel-root {
+        font-size: 12px!important;
+    }
+    .buttonsubmit{
+        margin-top: 0.8rem!important;
+    }
 }
 @media only screen and (max-width: 400px){
     .modal-90w{
@@ -194,9 +212,37 @@ label{
         font-size: 15px!important;
     }
 }
+@media only screen and (max-width: 375px){
+    .form-body {
+        padding: 0.5rem 0.7rem 1.1rem 0.7rem;
+    }
+    .modal-90w{
+        max-width: 95%!important;
+    }
+}
 @media only screen and (max-width: 371px){
     .Toastify__toast-container--top-center{
         left: 2.5rem!important;
         width: 78%!important;
+    }
+    .Toastify__toast-body > div:last-child{
+        font-size: 14px!important;
+    }
+}
+@media only screen and (max-width: 337px){
+    .modal-90w{
+        max-width: 98%!important;
+    }
+    .Toastify__toast-body > div:last-child{
+        font-size: 13px!important;
+    }
+    .Toastify__toast-theme--light {
+        height: 90px!important;
+   }
+}
+@media only screen and (max-width: 295px){
+    .Toastify__toast-container--top-center{
+        left: 1.8rem!important;
+        width: 80%!important;
     }
 }

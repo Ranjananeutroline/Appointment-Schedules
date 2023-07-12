@@ -74,11 +74,11 @@
 }
 .react-calendar__navigation {
   display: flex;
-  padding: 1.5rem 5rem 0.5rem 5rem;
+  padding: 1.5rem 4rem 0.5rem 4rem;
   margin-bottom: 1em;
 }
 .react-calendar__navigation button {
-  min-width: 50px;
+  min-width: 40px!important;
   /* background: none; */
 }
  .react-calendar__navigation button:enabled:hover{
@@ -205,7 +205,7 @@ div.react-calendar__year-view__months{
   border: none!important;
   border-radius: 10px!important; 
   margin-top: 1.5rem!important;
-  margin-left: 1rem!important;
+  margin-left: 0.8rem!important;
  background: none!important;
  position: absolute!important; 
  
@@ -245,10 +245,10 @@ margin-bottom: 4.5px!important;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 2.3rem;
   /* border-top: 1px solid rgba(175, 170, 170, 0.322);
   border-bottom:  1px solid rgba(175, 170, 170, 0.322); */
-  max-height: 174px;
+  max-height: 166px;
   overflow: auto;
   /* border-bottom: 1px solid gainsboro; */
 }
@@ -257,7 +257,7 @@ margin-bottom: 4.5px!important;
  
 }
 .time-btn{
-  padding: 8px 20px;
+  padding: 6.5px 18px;
   border-radius: 8px;
   border: 2px solid #5fa8d33d;
   background: white;
@@ -270,6 +270,7 @@ margin-bottom: 4.5px!important;
 background-color: #5fa8d3!important; 
 color: white!important;
 border: none!important;
+
 }
 .timeslot-div::-webkit-scrollbar{
   width: 7px;
@@ -330,7 +331,7 @@ font-size: 16px!important;
 }
 .timeslot-div{
   padding: 0.5rem 2rem!important;
-  max-height: 173px!important;
+  max-height: 165px!important;
 }
 
 }
@@ -339,8 +340,8 @@ font-size: 16px!important;
   width: 440px!important;
 }
 .timeslot-div{
-  padding: 0.5rem 1rem!important;
-  max-height: 178px!important;
+  padding: 0.5rem 1.5rem!important;
+ 
 }
 }
 @media only screen and (max-width: 850px){
@@ -352,10 +353,6 @@ font-size: 16px!important;
 }
 .react-calendar__navigation {
   padding: 1.5rem 3rem 0.5rem 3rem!important;
-}
-.timeslot-div{
-  padding: 0.5rem 1rem!important;
-  max-height: 175px!important;
 }
 .space {
   margin: 0.5rem 0rem 0.2rem 0rem!important;
@@ -383,9 +380,14 @@ font-size: 16px!important;
 @media only screen and (max-width: 730px){
 .react-calendar,.times{
   width: 370px!important;
+
 }
 .time-btn{
   padding: 8px 16px!important;
+}
+.timeslot-div{
+  max-height: 175px!important;
+  padding: 0.5rem 1rem!important;
 }
 }
 @media only screen and (max-width: 690px){
@@ -440,6 +442,16 @@ padding: 0.5rem 1rem!important;
   padding: 8px 18px!important;
 }
 }
+@media only screen and (max-width: 506px){
+  .timeslot-div{
+  padding: 0.5rem 0.8rem!important;
+  }
+  }
+  @media only screen and (max-width: 530px){
+    .backbtn{
+      margin-left: 0.5rem!important;
+    }
+    }
 @media only screen and (max-width: 480px){
 .times{
  width: 103.2%!important;
@@ -454,14 +466,26 @@ button.react-calendar__navigation__label{
 padding: 0.5rem 1rem!important;
 }
 }
+@media only screen and (max-width: 447px){
+  .timeslot-div{
+  padding: 0.5rem 0.8rem!important;
+  }
+  .time-btn{
+    padding: 8px 15px!important;
+  }
+  }
 @media only screen and (max-width: 445px){
 .react-calendar{
  width: 93%!important;
 } 
 }
 @media only screen and (max-width: 430px){
+  .react-calendar{
+    height: 345px!important;
+  }
 .times{
  width: 99.5%!important;
+ height: 345px!important;
 }  
 .react-calendar__navigation button{
 font-size: 16px!important;
@@ -481,6 +505,9 @@ padding: 0.5rem 1rem!important;
 .time-btn{
 padding: 8px 15px!important;
 }
+.bookbtn-div{
+  margin-top: 0.5rem!important;
+}
 }
 @media only screen and (max-width: 415px){
 /* .react-calendar,.times{
@@ -497,13 +524,13 @@ font-size: 15px!important;
 padding: 1.5rem 0.5rem 0.5rem 0.5rem!important;
 }
 .timeslot-div{
-max-height: 176px!important;
+max-height: 173px!important;
 }
 }
 @media only screen and (max-width: 400px){
-/* .react-calendar,.times{
-  width: 360px!important;
-}  */
+  .react-calendar,.times{
+    height: 335px!important;
+  }
 .space {
 margin: 0.5rem 0 0.2rem 0!important;
 }
@@ -554,8 +581,12 @@ max-height: 168px!important;
   }
 }
 @media only screen and (max-width: 375px){
+  .react-calendar{
+    height: 327px!important;
+  }
   .times{
     width: 98%!important;
+    height: 327px!important;
   }
 .react-calendar__navigation button{
 font-size: 14px!important;
@@ -573,7 +604,7 @@ padding: 0 5px!important;
   font-size: 12px!important;
 }
 .book-div{
-  margin-top: 1.2rem!important;
+  margin-top: 0.8rem!important;
 }
  .timeslot-div{
 padding: 0.5rem 0.8rem!important;
@@ -592,6 +623,9 @@ max-height: 160px!important;
   padding: 7px 12px!important;
   font-size: 13px!important;
 }
+.book-div{
+  margin-top: 0.5rem!important;
+}
 .date-p{
   font-size: 13px!important;
 }
@@ -599,18 +633,24 @@ max-height: 160px!important;
   font-size: 11.5px!important;
 }
 }
+@media only screen and (max-width: 337px){
+  .react-calendar__navigation button {
+    font-size: 12.5px!important;
+    min-width: 40px!important;
+}
+}
 @media only screen and (max-width: 315px){
-  .backbtn{
-    margin-top: 0.5rem!important;
-  }
   .timeslot-div{
     max-height: 155px!important;
   }
   .book-div{
-    margin-top: 1.8rem!important;
+    margin-top: 0.8rem!important;
   }
 }
 @media only screen and (max-width: 295px){
+  .react-calendar,.times{
+    height: 315px!important;
+  }
   .react-calendar__navigation button{
     font-size: 12.5px!important;
     }
