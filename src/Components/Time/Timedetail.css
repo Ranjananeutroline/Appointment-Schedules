@@ -1,0 +1,65 @@
+.time-title{
+    /* border: 1px solid; */
+    width: 60%;
+    margin: auto;
+    padding: 1rem 0 0 0;
+}
+.time-title h5{
+    color: #219ebc;
+}
+.time-box{
+    /* border: 1px solid;  */
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 18px; 
+    padding: 1rem 0;
+}
+.time-col{
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.time-col:nth-child(1){
+    background: linear-gradient(180deg, rgba(218, 255, 251, 0.5) 0%, rgba(218, 255, 251, 0) 100%);
+}
+.time-col:nth-child(2){
+    background: linear-gradient(180deg, rgba(213, 235, 186, 0.5) 0%, rgba(213, 235, 186, 0) 100%);
+}
+.time-col:nth-child(3){
+    background: linear-gradient(180deg, rgb(247 197 209 / 38%) 0%, rgba(247, 197, 209, 0) 100%);
+}
+.time-col:nth-child(4){
+    background: linear-gradient(180deg, rgb(247 197 209 / 38%) 0%, rgba(247, 197, 209, 0) 100%);
+}
+.time-col:nth-child(5){
+    background: linear-gradient(180deg, rgba(218, 255, 251, 0.5) 0%, rgba(218, 255, 251, 0) 100%);
+}
+.time-col:nth-child(6){
+    background: linear-gradient(180deg, rgba(213, 235, 186, 0.5) 0%, rgba(213, 235, 186, 0) 100%);
+}
+.time-col:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.inner-time{
+    display: flex;
+    padding: 0 0.5rem;
+}
+.time-icon{
+    font-size: 30px;
+}
+.time-p{
+    padding-top: 10px;
+    font-size: 13px;
+}
+.more-btn{
+    border: none;
+    padding: 5px 12px;
+    background: none;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #0582ca;
+}
