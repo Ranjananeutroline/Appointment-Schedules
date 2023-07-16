@@ -1,13 +1,29 @@
-import React from 'react';
-import Header from "./Components/Header/Header";
-import Time from "./Components/Time/Timedetail";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Appointment from "./pages/Appointment";
+
+
+
 
 function App() {
   return (
-   <>
-    <Header/>
-    <Time/>
-   </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Appointment" element={<Appointment />} />
+       
+
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </div>
   );
 }
 

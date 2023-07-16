@@ -6,13 +6,15 @@ import './Header.css'
 function Header() {
     return(
     <>
-        
-            <Row className='header-row'>
+        <div className='body-header'>
+        <Row className='header-row'>
                 <Col  className='header-col'>
                     <h3>Neutroline Pvt. Ltd.</h3>
                     <p>Dallas, Texas, USA</p>
                 </Col>
             </Row>
+        </div>
+           
        
     </>
 

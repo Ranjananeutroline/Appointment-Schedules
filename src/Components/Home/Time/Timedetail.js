@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
 import './Timedetail.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { GoClock } from 'react-icons/go';
 import { BsArrowRight } from 'react-icons/bs';
+import { ImArrowRight } from 'react-icons/im';
 import Data from "./Data";
 import Modal from "react-bootstrap/Modal";
 import Firstappointment from "./Firstappointment";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Secondappointment from "./Secondappointment";
+import Thirdappointment from "./Thirdappointment";
+import Fourthappointment from "./Fourthappointment";
+import Fifthappointment from "./Fifthappointment";
+import Sixthappointment from "./Sixthappointment";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 
 
 function Timedetail() {
 
     const [state, setstate] = useState(false);
   const [nextstate, setNextstate] = useState();
+
+  const [show, setShow] = useState(false);
  
 
   const callMe = (item) => {
@@ -21,20 +30,20 @@ function Timedetail() {
       setNextstate(<Firstappointment />);
     } else if (item.id == 2) {
       setstate(!state);
-      setNextstate(<Firstappointment />);
+      setNextstate(<Secondappointment />);
     } else if(item.id==3) {
       setstate(!state);
-      setNextstate(<Firstappointment />);
+      setNextstate(<Thirdappointment />);
     }else if(item.id==4) {
         setstate(!state);
-        setNextstate(<Firstappointment />);
+        setNextstate(<Fourthappointment />);
     }else if(item.id==5) {
         setstate(!state);
-        setNextstate(<Firstappointment />);
+        setNextstate(<Fifthappointment />);
     }
     else {
       setstate(!state);
-      setNextstate(<Firstappointment />);
+      setNextstate(<Sixthappointment />);
     }
     
   };
@@ -46,7 +55,7 @@ function Timedetail() {
 
     return(
     <>
-      
+      <div className='body-div'>
         <div className='time-title'>
             <h5>Choose Time Duration</h5>
         </div>
@@ -72,13 +81,31 @@ function Timedetail() {
             
           );
         })}
+
+        <div className='next-div'>
+          <button className='nxt-btn'>
+            <Link to="Appointment">
+            <ImArrowRight />
+            </Link>
+              <Outlet />
+          </button>
+            
+        </div>
       </Row>
 
-      <Modal show={state} onHide={closeButton}>
-        <Modal.Header closeButton  className="modalheader"> 
+      <Modal 
+      show={state} 
+      onHide={closeButton}
+      className='modal-box'
+      dialogClassName="modal-width"
+      >
+        <Modal.Header closeButton className="modalheader"> 
         </Modal.Header>
-        <Modal.Body className="modalbody">{nextstate}</Modal.Body>
-      </Modal>
+        <Modal.Body className="body-modal">{nextstate}</Modal.Body>
+      </Modal> 
+
+
+     </div> 
     </>
 
     );

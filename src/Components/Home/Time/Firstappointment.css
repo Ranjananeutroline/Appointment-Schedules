@@ -1,0 +1,36 @@
+.inner-main{
+     /* border: 1px solid;  */
+}
+.inner-time-detail
+{
+    display: flex;
+    /* border: 1px solid; */
+}
+.modaltime-icon{
+    font-size: 30px;
+    color: white;
+}
+.modaltime-icon svg{
+    margin-bottom: 15px;
+}
+.inner-main{
+    background: #35dab9;
+    padding: 0 0 0 2rem;
+}
+.inner-time-detail h6{
+    padding: 0 0 0 2rem;
+    font-size: 22px;
+    color: white;
+}
+.modaltime-p{
+    padding-top: 8px;
+    font-size: 14px;
+}
+.second{
+    /* background: red; */
+    padding: 15px 20px 8px 20px;
+}
+.second p{
+    font-size: 15px;
+    text-align: justify;
+}
