@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdOutlineMiscellaneousServices } from 'react-icons/md';
-import { ImArrowLeft } from 'react-icons/im';
+import { BsArrowLeft  } from 'react-icons/bs';
 import "react-toastify/dist/ReactToastify.css";
 import { TextField, Button, ButtonGroup } from "@mui/material";
 import Submission from "./Submission";
@@ -43,7 +43,7 @@ import { useNavigate } from "react-router-dom";
         <Container>
           <Row>
             <Col>
-            <button className="back-btn" onClick={() => navigate(-1)}><ImArrowLeft /></button>
+            <button className="back-btn" onClick={() => navigate(-1)}><BsArrowLeft /></button>
             </Col>
           </Row>
             <Row className="detail-row">

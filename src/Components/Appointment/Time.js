@@ -14,6 +14,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 
 
 
+
 const time = ['09:00','09:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30',
 '15:00','15:30','16:00','16:30']
 
@@ -31,7 +32,6 @@ function Times(props) {
 const fullDayOfWeek = date.toLocaleString('en-US', options);
 
  const [show, setShow] = useState(false);
-
 
  const handleClick = () => {
   props.ShowTime();
@@ -66,6 +66,7 @@ const onSubmit = (data, e) => {
    setInfo(true);
    setEvent(e.target.innerText);
 }
+
 
 
 
@@ -108,10 +109,9 @@ return (
    {time.map(times => {
     return (
     <div className="space">
-       <button onClick={(e)=> displayInfo(e)}
+       <button onClick={(e)=> displayInfo(e)} 
         className='time-btn'
        > {times} </button>
-     
     </div>
     
         )
