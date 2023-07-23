@@ -53,6 +53,7 @@
     background: linear-gradient(180deg, rgba(132, 252, 146, 0.315) 0%, rgba(213, 235, 186, 0) 100%);
 }
 .time-col:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
     /* transform: scale(1.05);
 	transition-duration: 1s; */
@@ -78,6 +79,7 @@
 .inner-second{
     display: flex;
     padding-left: 2px;
+    padding-top: 1rem;
 }
 .more-btn{
     border: none;
@@ -98,7 +100,7 @@
 }
 .modal-width{
     max-width: 60%!important;
-    margin-top: 4rem;
+    margin-top: 3rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .modal-box{
@@ -152,8 +154,8 @@
     /* Position the tooltip */
     position: relative; 
     z-index: 1;
-    bottom: -73%;
-    right: -50%;
+    bottom: -25%;
+    right: -100%;
     font-size: 12px;
 }
 .nxt-btn:hover .tooltiptext
@@ -161,7 +163,11 @@
     visibility: visible;
 }
 
-
+@media only screen and (max-width: 1075px){
+    .modal-width{
+        margin-top: 1rem;
+    } 
+   }
 @media only screen and (max-width: 864px){
  .nxt-btn{
     margin-left: 3.5rem;
@@ -261,6 +267,19 @@
         max-width: 95%!important;
     }
    }
+   @media only screen and (max-width: 525px){
+    .nxt-btn{
+        margin-left: 2.5rem;
+    }
+    .inner-second{
+        padding-top: 0.5rem;
+    }
+   }
+   @media only screen and (max-width: 498px){
+    .nxt-btn{
+        margin-left: 2rem;
+    }
+   }
    @media only screen and (max-width: 487px){
     .clock-img{
         height: 35px!important;
@@ -347,6 +366,11 @@
         width: 30px!important;
     }
    }
+   @media only screen and (max-width: 442px){
+        .more-btn{
+            padding: 5px 8px;
+        }
+   }
    @media only screen and (max-width: 355px){
     .inner-time h6{
         font-size: 11px;
@@ -360,5 +384,51 @@
     .nxt-img{
         height: 18px!important;
         width: 18px!important;
+    }
+   }
+   @media only screen and (max-width: 334px){
+    .inner-second{
+        padding-top: 0;
+    }
+   }
+   @media only screen and (max-width: 327px){
+    .inner-second{
+        padding-top: 0;
+    }
+    .more-btn{
+        padding: 8px;
+    }
+   }
+   @media only screen and (max-width: 311px){
+    .more-btn{
+       font-size: 10px;
+    }
+    .nxt-img{
+        height: 16px!important;
+        width: 16px!important;
+    }
+   }
+   @media only screen and (max-width: 300px){
+        .time-title{
+            width: 84%;
+        }
+        .time-box{
+            width: 85%;
+        }
+        .time-col{
+            padding: 0.6rem 1.5rem!important;
+            max-width: 90%!important;
+            margin: 0 auto 1rem auto;
+        }
+        .second-div{
+            padding: 0.7rem 0 0 2rem!important;
+        }
+        .nxt-btn{
+            margin-left: 3rem;
+        }
+   }
+   @media only screen and (max-width: 316px){
+    .more-btn{
+        padding: 5px;
     }
    }

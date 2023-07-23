@@ -8,9 +8,12 @@ function Thirdappointment() {
     <>
         <div className='inner-main'>
             <div className='inner-time-detail'>
-                <p className='modaltime-icon'><GoClock /></p> 
+                {/* <p className='modaltime-icon'><GoClock /></p> */}
+                <img src="first1.png" alt="" className='modaltime-icon'
+                      style={{height:"47px", width:"47px"}}
+                       /> 
                 <h6>Appointment Basic
-                <p className='modaltime-p'>20 Min</p>
+                <p className='modaltime-p'>15 Min</p>
                 </h6>
             </div>
             </div>

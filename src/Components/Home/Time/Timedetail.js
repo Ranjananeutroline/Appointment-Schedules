@@ -84,7 +84,7 @@ function Timedetail() {
                 <button className='more-btn'
                      key={item.id}
                      onClick={() => callMe(item)}>
-                        Details&nbsp;<BiSolidDownArrow />
+                        Details&nbsp;&nbsp;<BiSolidDownArrow />
                     </button>
                     <button className='nxt-btn'>
                     <span className='tooltiptext'>

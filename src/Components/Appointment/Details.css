@@ -165,7 +165,9 @@
     .detail-left{
         padding-left: 1rem!important;
     }
-    
+    .back-btn{
+        margin-left: 1rem;
+    }
 }
  @media only screen and (max-width: 915px){
     .css-1dimb5e-singleValue{
@@ -232,6 +234,9 @@
     }
 }
 @media only screen and (max-width: 630px){
+    .back-btn{
+        margin-left: 2rem;
+    }
     .detail-row{
         flex-direction: column-reverse!important;
         margin: auto!important;
@@ -329,6 +334,9 @@
     }
     .detail-right{
         width: 95%!important;
+    }
+    .back-btn{
+        margin-left: 1rem;
     }
 }
 @media only screen and (max-width: 430px){

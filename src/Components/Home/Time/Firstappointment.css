@@ -18,7 +18,7 @@
     padding: 0 0 0 2rem;
 }
 .inner-time-detail h6{
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1rem;
     font-size: 22px;
     color: white;
 }
@@ -28,9 +28,19 @@
 }
 .second{
     /* background: red; */
-    padding: 15px 25px 8px 25px;
+    padding: 20px 35px 8px 35px;
 }
 .second p{
     font-size: 15px;
     text-align: justify;
 }
+
+
+@media only screen and (max-width: 1075px){
+    .second{
+        max-height: 400px;
+        overflow: auto;
+        margin-bottom: 1rem;
+        padding: 20px 35px 0 35px
+    }
+   }
