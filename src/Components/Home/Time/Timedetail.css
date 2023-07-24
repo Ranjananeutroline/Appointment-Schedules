@@ -94,10 +94,10 @@
     font-size: 10px; 
     margin-bottom: 2px;
 }
-.more-btn:hover{
+/* .more-btn:hover{
     transform: scale(1.05);
 	transition-duration: 1s;
-}
+} */
 .modal-width{
     max-width: 60%!important;
     margin-top: 3rem;
@@ -145,7 +145,8 @@
     visibility: hidden;
     width: 70px;
     /* background-color: skyblue; */
-    color: rgb(3, 141, 221);
+    /* color: rgb(3, 141, 221); */
+    color: gray;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -154,8 +155,8 @@
     /* Position the tooltip */
     position: relative; 
     z-index: 1;
-    bottom: -25%;
-    right: -100%;
+    top: -50%;
+    right: -20%;
     font-size: 12px;
 }
 .nxt-btn:hover .tooltiptext
@@ -430,5 +431,16 @@
    @media only screen and (max-width: 316px){
     .more-btn{
         padding: 5px;
+    }
+   }
+   @media only screen and (min-width: 1140px) and (max-width: 1300px) {
+    .time-box{
+        width: 65%;
+    }
+    .time-title{
+        width: 65%;
+    }
+    .nxt-btn{
+        margin-left: 3rem;
     }
    }

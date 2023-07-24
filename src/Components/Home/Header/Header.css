@@ -84,4 +84,8 @@
         width: 80%;
     }
    }
-
+   @media only screen and (min-width: 1140px) and (max-width: 1300px) {
+    .header-row{
+        width: 63%;
+    }
+   }

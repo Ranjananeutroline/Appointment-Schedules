@@ -40,7 +40,15 @@
     .second{
         max-height: 400px;
         overflow: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         padding: 20px 35px 0 35px
+    }
+   }
+   @media only screen and (max-width: 620px){
+    .inner-main{
+        padding: 0 0 0 1rem;
+    }
+    .second {
+        padding: 20px 25px 0 25px;
     }
    }
