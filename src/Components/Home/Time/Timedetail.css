@@ -156,7 +156,7 @@
     position: relative; 
     z-index: 1;
     top: -50%;
-    right: -20%;
+    right: -90%;
     font-size: 12px;
 }
 .nxt-btn:hover .tooltiptext
@@ -441,6 +441,6 @@
         width: 65%;
     }
     .nxt-btn{
-        margin-left: 3rem;
+        margin-left: 3.7rem;
     }
    }

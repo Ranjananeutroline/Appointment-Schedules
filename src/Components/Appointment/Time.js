@@ -33,6 +33,10 @@ const fullDayOfWeek = date.toLocaleString('en-US', options);
 
  const [show, setShow] = useState(false);
 
+ 
+  // const [toggle, setToggle] = React.useState(false);
+  // const toggleButton = () => setToggle(!toggle);
+
  const handleClick = () => {
   props.ShowTime();
  }
@@ -109,9 +113,12 @@ return (
    {time.map(times => {
     return (
     <div className="space">
-       <button onClick={(e)=> displayInfo(e)} 
+      <div className='btn-width'>
+       <button onClick={(e)=> displayInfo(e)}
+      //  style={{backgroundColor: toggle ? '#FFF' : 'blue'}}
         className='time-btn'
        > {times} </button>
+       </div>
     </div>
     
         )
@@ -123,7 +130,8 @@ return (
       { info ? <Button onClick={() => setShow(true)} 
       className='bookbtn'>Book Appointment</Button> : null }
       </div>
-     
+      {/* <button style={{backgroundColor: toggle ? '#FFF' : 'blue'}}
+       onClick={toggleButton}>Click Me</button> */}
     </div>
     
     { show ? (

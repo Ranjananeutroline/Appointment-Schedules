@@ -263,14 +263,17 @@ margin-bottom: 4.5px!important;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.time-btn:hover{
+ .time-btn:hover{
   background-color: #5fa8d380!important;
+}
+.btn-width{
+  width: 80px;
 }
 .time-btn:focus{
 background-color: #5fa8d3!important; 
 color: white!important;
 border: none!important;
-}  
+}   
 
 .timeslot-div::-webkit-scrollbar{
   width: 7px;

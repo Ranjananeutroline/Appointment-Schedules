@@ -18,18 +18,20 @@
 .back-btn{
     border: none;
     padding: 5px 12px;
-    background:  rgba(0,213,255,1);
+    /* background:  rgba(0,213,255,1); */
+    background: white;
     border-radius: 10px;
     margin-bottom: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .back-btn svg{
-    color: white;
+    color: rgba(0,213,255,1);
     font-size: 16px;
     stroke-width: 2px;
     margin-bottom: 2px;
 }
 .back-btn:hover{
-    background: rgb(4, 202, 241);
+    background: rgba(179, 178, 178, 0.137);
 }
 .detail-left
 {
