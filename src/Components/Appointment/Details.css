@@ -22,7 +22,7 @@
     background: white;
     border-radius: 10px;
     margin-bottom: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px;
 }
 .back-btn svg{
     color: rgba(0,213,255,1);
@@ -31,7 +31,7 @@
     margin-bottom: 2px;
 }
 .back-btn:hover{
-    background: rgba(179, 178, 178, 0.137);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .detail-left
 {

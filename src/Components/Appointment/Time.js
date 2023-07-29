@@ -158,7 +158,7 @@ return (
               style={{ height: "auto", width: "auto" }}
             >
               <Col sm={12} lg={12} md={12} className="form-col ">
-
+        
                   <TextField
                     // required
 
@@ -185,11 +185,15 @@ return (
                           borderBottom: "none",
                         },
                     }}
-                    {...register("name", { required: "Required", minLength: 3 })}
+                    {...register("name", {
+                      required: "Required",
+                     
+                    })}
+                    {...register("name", { required: "Required" })}
                     error={!!errors?.name}
-                    // helperText={errors?.name ? errors.name.message : null}
+                     helperText={errors?.name ? errors.name.message : null}
                   />
-
+                
                   <TextField
                     // required
                     fullWidth
@@ -212,13 +216,16 @@ return (
                         },
                     }}
                     {...register("email", {
-                      required: "Required field",
+                      required: "Required",
                       pattern: {
                         value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
                         message: "Invalid email address",
                       },
                     })}
+                    {...register("email", { required: "Required" })}
                     error={!!errors?.email}
+                     helperText={errors?.email ? errors.email.message : null}
+                    
                   />
                 
                     
@@ -247,7 +254,8 @@ return (
                           },
                       }}
                       {...register("phone", { required: "Required" })}
-                      error={!!errors?.phone}
+                    error={!!errors?.phone}
+                     helperText={errors?.phone ? errors.phone.message : null}
                     />
                   
                   <TextField

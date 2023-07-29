@@ -274,7 +274,7 @@ background-color: #5fa8d3!important;
 color: white!important;
 border: none!important;
 }   
-
+  
 .timeslot-div::-webkit-scrollbar{
   width: 7px;
 }
@@ -292,7 +292,7 @@ border: none!important;
 }
 .bookbtn-div{
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
  
  
 }
@@ -406,6 +406,7 @@ font-size: 16px!important;
   margin: auto!important;
   height: 353px!important;
   width: 83%!important;
+  background: #edf6f9;
 }
 .times{
 height: 353px!important;
@@ -465,9 +466,9 @@ padding: 0 0.3rem!important;
 button.react-calendar__navigation__label{
   font-size: 15.5px!important;
 }
-.timeslot-div{
+/* .timeslot-div{
 padding: 0.5rem 1rem!important;
-}
+} */
 }
 @media only screen and (max-width: 447px){
   .timeslot-div{
@@ -482,6 +483,11 @@ padding: 0.5rem 1rem!important;
  width: 93%!important;
 } 
 }
+@media only screen and (max-width: 456px){
+  .timeslot-div{
+    padding: 0.5rem 0.5rem!important;
+    }
+  }
 @media only screen and (max-width: 430px){
   .react-calendar{
     height: 345px!important;
@@ -517,7 +523,7 @@ padding: 8px 15px!important;
   width: 370px!important;
 }  */
 .timeslot-div{
-padding: 0.5rem 1rem!important;
+padding: 0.5rem 0.8rem!important;
 }
 .time-btn{
 padding: 8px 17px!important;
@@ -529,6 +535,11 @@ padding: 1.5rem 0.5rem 0.5rem 0.5rem!important;
 .timeslot-div{
 max-height: 173px!important;
 }
+}
+@media only screen and (max-width: 406px){
+  .timeslot-div{
+    padding: 0.5rem 0.6rem!important;
+    }
 }
 @media only screen and (max-width: 400px){
   .react-calendar,.times{
@@ -610,12 +621,18 @@ padding: 0 5px!important;
   margin-top: 0.8rem!important;
 }
  .timeslot-div{
-padding: 0.5rem 0.8rem!important;
+padding: 0.5rem 0.3rem!important;
 max-height: 160px!important;
 } 
+
 .time-btn{
   padding: 7px 15px!important;
 }
+}
+@media only screen and (max-width: 364px){
+  .btn-width{
+    width: 65px;
+  }
 }
 @media only screen and (max-width: 345px){
  .timeslot-div{
@@ -648,6 +665,16 @@ max-height: 160px!important;
   }
   .book-div{
     margin-top: 0.8rem!important;
+  }
+}
+@media only screen and (max-width: 316px){
+  .timeslot-div{
+    padding: 0.5rem 0.3rem!important;
+    }
+}
+@media only screen and (max-width: 299px){
+  .btn-width{
+    width: 60px;
   }
 }
 @media only screen and (max-width: 295px){

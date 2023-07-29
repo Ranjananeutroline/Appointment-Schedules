@@ -131,15 +131,15 @@
     background: none;
     /* background: #8CC0DE;  */
     border-radius: 10px;
-    margin-left: 4rem; 
+    margin-left: 4.2rem; 
     margin-top: 5px;
 }
-/* .nxt-btn svg{
-    color: #7895CB;
+ .nxt-btn svg{
+    color: #57cc99;
     margin-bottom: 2px; 
     font-size: 15px;
     stroke-width: 1.5;
-} */
+} 
 .nxt-btn .tooltiptext
 {
     visibility: hidden;
@@ -150,14 +150,14 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    font-size: 15px;
+    font-size: 5px;
     font-family: sans-serif;
     /* Position the tooltip */
     position: relative; 
     z-index: 1;
-    top: -50%;
+    top: -62%;
     right: -90%;
-    font-size: 12px;
+    font-size: 11px;
 }
 .nxt-btn:hover .tooltiptext
 {

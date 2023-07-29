@@ -91,10 +91,10 @@ function Timedetail() {
                       Next
                     </span> 
                       <Link to="Appointment">
-                      {/* <BsArrowRight /> */}
-                      <img src={item.image} alt="" className='nxt-img'
-                      style={{height:"20px", width:"25px"}}
-                       />
+                      <BsArrowRight /> 
+                       {/* <img src={item.image} alt="" className='nxt-img'
+                      style={{height:"20px", width:"25px"}} 
+                       /> */}
                       </Link>
                         <Outlet />
                     </button>
