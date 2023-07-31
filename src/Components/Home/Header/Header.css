@@ -89,3 +89,23 @@
         width: 63%;
     }
    }
+   @media only screen and (min-width: 901px) and (max-width: 940px){
+    .header-row{
+        width: 56%;
+    }
+   }
+   @media only screen and (min-width: 1000px) and (max-width: 1100px){
+    .header-row{
+        width: 52%;
+    }
+   }
+   @media only screen and (min-width: 1001px) and (max-width: 1200px){
+    .header-row{
+        width: 51%;
+    }
+   }
+   @media only screen and (min-width: 1526px) and (max-width: 1664px){
+    .header-row{
+        width: 54%;
+    }
+   }
