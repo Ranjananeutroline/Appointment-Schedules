@@ -40,7 +40,7 @@ import { useNavigate } from "react-router-dom";
     <>
     <div className='detail-main'>
         <Container>
-          <Row>
+          <Row className="back-row">
             <Col>
             <button className="back-btn" onClick={() => navigate(-1)}><BsArrowLeft /></button>
             </Col>

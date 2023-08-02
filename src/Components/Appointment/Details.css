@@ -430,3 +430,13 @@
         font-size: 0.95rem!important;
     }
 }
+@media only screen and (min-width: 1400px) and (max-width: 1920px){
+    .detail-row{
+        width: 90%;
+        margin: auto;
+    }
+    .back-row{
+        width: 90%;
+        margin: auto;
+    }
+}
