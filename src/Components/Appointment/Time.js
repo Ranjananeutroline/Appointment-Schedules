@@ -21,11 +21,12 @@ const time = ['09:00','09:30','10:00','10:30','11:00','11:30','12:00','12:30','1
 
 function Times(props) {
 
- const [event, setEvent] = useState(null)
- const [info, setInfo] = useState(false)
- const [book, setBook] = useState(false)
-
- const [date, setDate] = useState(new Date());
+  const [event, setEvent] = useState(null)
+  const [info, setInfo] = useState(false)
+  const [book, setBook] = useState(false)
+ const [focus, setFocus] = useState('00:00')
+ const [showClicked, setShowClicked] = useState(false)
+  const [date, setDate] = useState(new Date());
 
   
  const options = { weekday: 'long', month: 'long', day: '2-digit', year: 'numeric' };
@@ -70,7 +71,16 @@ const onSubmit = (data, e) => {
    setInfo(true);
    setEvent(e.target.innerText);
 }
-
+const handleTimeButtonClick = (time)=>{
+  console.log('yesma');
+  setInfo(true)
+  setEvent(time)
+  console.log(time);
+  setFocus(time)
+  setShowClicked(!showClicked)
+  console.log(focus);
+  }
+  console.log('focys', focus);
 
 
 
@@ -110,20 +120,23 @@ return (
       </div>
 
       <div className='timeslot-div'>
-   {time.map(times => {
+      {time.map(times => {
     return (
     <div className="space">
       <div className='btn-width'>
-       <button onClick={(e)=> displayInfo(e)}
+       {/* <button onClick={(e)=> displayInfo(e)}
       //  style={{backgroundColor: toggle ? '#FFF' : 'blue'}}
         className='time-btn'
+       > {times} </button> */}
+       <button key={times} onClick={(e)=> handleTimeButtonClick(times)}
+      //  style={{backgroundColor: toggle ? '#FFF' : 'blue'}}
+        className={showClicked ? (focus === times? 'new-time-btn' : 'time-btn') : ('time-btn')}
        > {times} </button>
        </div>
     </div>
     
         )
      })}
-
      </div>
     <div className='book-div'>
       <div className='bookbtn-div'>

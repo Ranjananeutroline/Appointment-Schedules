@@ -128,4 +128,3 @@ function Timedetail() {
     
     
     export default Timedetail;
-   

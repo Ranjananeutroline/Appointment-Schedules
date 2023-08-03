@@ -119,8 +119,9 @@
  
 }
 .react-calendar__month-view__days__day--weekend {
-  /* color: #d10000; */
+  color: #da4444a8; 
   /* color: black; */
+  pointer-events: none;
 }
 .react-calendar__month-view__days{
   line-height: 16.1px;
@@ -272,12 +273,19 @@ margin-bottom: 4.5px!important;
 .btn-width{
   width: 80px;
 }
-.time-btn:focus{
+/* .time-btn:focus{
 background-color: #5fa8d3!important; 
 color: white!important;
 border: none!important;
-}   
-  
+}    */
+.new-time-btn{
+  background-color: #5fa8d3!important; 
+  border: 2px solid #5fa8d33d;
+  padding: 6.5px 18px;
+  border-radius: 8px;
+  color: white!important;
+  border: none!important;
+} 
 .timeslot-div::-webkit-scrollbar{
   width: 7px;
 }
