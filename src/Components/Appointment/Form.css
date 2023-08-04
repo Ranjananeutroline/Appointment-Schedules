@@ -177,6 +177,7 @@ label{
 @media only screen and (max-width: 500px){
     .modal-90w{
         max-width: 90%!important;
+        margin-top: 2.5rem!important;
     }
     #example-custom-modal-styling-title{
         font-size: 20px!important;

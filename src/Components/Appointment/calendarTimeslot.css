@@ -399,6 +399,9 @@ font-size: 16px!important;
 .time-btn{
   padding: 8px 16px!important;
 }
+.new-time-btn{
+  padding: 8px 16px!important;
+}
 .timeslot-div{
   max-height: 175px!important;
   padding: 0.5rem 1rem!important;
@@ -435,6 +438,9 @@ font-size: 13.5px!important;
 .time-btn{
 padding: 8px 20px!important;
 }
+.new-time-btn{
+  padding: 8px 20px!important;
+  }
 }
  @media only screen and (max-width: 600px){
   .timeslot-div{
@@ -454,6 +460,9 @@ padding: 0.5rem 2rem!important;
 padding: 0.5rem 1rem!important;
 }
 .time-btn{
+  padding: 8px 18px!important;
+}
+.new-time-btn{
   padding: 8px 18px!important;
 }
 }
@@ -486,6 +495,9 @@ padding: 0.5rem 1rem!important;
   padding: 0.5rem 0.8rem!important;
   }
   .time-btn{
+    padding: 8px 15px!important;
+  }
+  .new-time-btn{
     padding: 8px 15px!important;
   }
   }
@@ -525,6 +537,9 @@ padding: 0.5rem 1rem!important;
 .time-btn{
 padding: 8px 15px!important;
 }
+.new-time-btn{
+  padding: 8px 15px!important;
+  }
 .bookbtn-div{
   margin-top: 0.5rem!important;
 }
@@ -540,6 +555,10 @@ padding: 0.5rem 0.8rem!important;
 padding: 8px 17px!important;
 font-size: 15px!important;
 }
+.new-time-btn{
+  padding: 8px 17px!important;
+  font-size: 15px!important;
+  }
 .react-calendar__navigation {
 padding: 1.5rem 0.5rem 0.5rem 0.5rem!important;
 }
@@ -573,6 +592,9 @@ abbr[title]{
       padding-top: 8px!important;
     }
     .time-btn{
+      font-size: 14px!important;
+    }
+    .new-time-btn{
       font-size: 14px!important;
     }
     .timeslot-div{
@@ -639,6 +661,9 @@ max-height: 160px!important;
 .time-btn{
   padding: 7px 15px!important;
 }
+.new-time-btn{
+  padding: 7px 15px!important;
+}
 }
 @media only screen and (max-width: 364px){
   .btn-width{
@@ -651,6 +676,10 @@ max-height: 160px!important;
   max-height: 160px!important;
   }     
 .time-btn{
+  padding: 7px 12px!important;
+  font-size: 13px!important;
+}
+.new-time-btn{
   padding: 7px 12px!important;
   font-size: 13px!important;
 }
@@ -702,6 +731,10 @@ max-height: 160px!important;
     font-size: 11.5px!important;
     }
     .time-btn{
+      padding: 6px 10px!important;
+      font-size: 12px!important;
+    }
+    .new-time-btn{
       padding: 6px 10px!important;
       font-size: 12px!important;
     }

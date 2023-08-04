@@ -79,6 +79,7 @@ const handleTimeButtonClick = (time)=>{
   setFocus(time)
   setShowClicked(!showClicked)
   console.log(focus);
+ 
   }
   console.log('focys', focus);
 
