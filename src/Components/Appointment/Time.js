@@ -79,7 +79,7 @@ const handleTimeButtonClick = (time)=>{
   setFocus(time)
   setShowClicked(!showClicked)
   console.log(focus);
- 
+  
   }
   console.log('focys', focus);
 
@@ -116,7 +116,7 @@ return (
       
                       )
               } 
-               {info ? <p className='set-p'><MdOutlineAccessTimeFilled/>&nbsp;Appointment is set to {event},&nbsp;
+               {showClicked && info ? <p className='set-p'><MdOutlineAccessTimeFilled/>&nbsp;Appointment is set to {event},&nbsp;
                {props.date.toDateString()}</p>: null}
       </div>
 

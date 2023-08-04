@@ -6,7 +6,7 @@ import data from "./Data";
 function AppointmentComponent({ itemid }) {
   console.log(itemid);
   console.log(data);
-  const id = itemid +1
+  const id = itemid -1
   return (
     <>
       <div className="inner-main">
@@ -19,14 +19,14 @@ function AppointmentComponent({ itemid }) {
             style={{ height: "47px", width: "47px" }}
           />
           <h6>
-            {data[id].heading}
+            {data[id]?.heading}
             <p className="modaltime-p">{data[id].desc}</p>
           </h6>
         </div>
       </div>
 
       <div className="second">
-        <p>{data[id].completedesc}</p>
+        <p>{data[id]?.completedesc}</p>
       </div>
     </>
   );
