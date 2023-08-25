@@ -1,0 +1,28 @@
+/* .customButton {
+    top: 10px;
+    right: 8px;
+    padding: 20px;
+  } */
+  .customModal {
+    background:none;
+    padding:0;
+  }
+  .allservice-div{
+    /* border: 1px solid; */
+    padding: 0;
+  }
+  .servicescroll::-webkit-scrollbar{
+    width: 7px;
+  }
+  .servicescroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.24);
+  }
+  
+  .servicescroll::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.24);
+    border-radius: 15px; 
+  } 
+.addservice-btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

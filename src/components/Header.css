@@ -1,0 +1,18 @@
+.header-div{
+    max-width: 100%;
+    display: flex;
+    background: #78C1F3;
+    height: 65px;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 795px) {
+    .logo-title img{
+        width: 90px;
+        height: 55px;
+    }
+    .logo-title h3{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,9 @@
+.settings-main{
+    width: 100%;
+    background: #f3f7f9b0;
+    overflow-y: hidden;
+    padding: 1.25rem 3.5rem;
+}
+.sett-title{
+    padding-bottom: 0.75rem;
+}

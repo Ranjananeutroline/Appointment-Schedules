@@ -1,0 +1,60 @@
+.offer-main{
+    background: #f3f7f9b0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: hidden;
+    /* gap: 0.75rem; */
+    padding: 1.25rem 3.5rem;
+}
+.title-div{
+    padding-bottom: 0.75rem;
+}
+.addoffer-div{
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    
+}
+
+.scrolldiv::-webkit-scrollbar{
+    width: 7px;
+  }
+  .scrolldiv::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.24);
+  }
+  
+  .scrolldiv::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.24);
+    border-radius: 15px; 
+  } 
+.offer-box{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+} 
+.announce-box{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.expired-main{
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 1075px){
+  .addoffer-div{
+    justify-content: left;
+    padding: 2rem 0 0 0;
+  }
+  .expired-main{
+    display: block;
+    margin-top: 0;
+  }
+  .inner-expire{
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 560px){
+  .offer-main{
+    padding: 1.25rem 1.5rem;
+  }
+}

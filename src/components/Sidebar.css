@@ -1,0 +1,109 @@
+.logo-img{
+    height: 60px;
+}
+.nav-right{
+    display: flex;
+}
+
+.nav-menu{
+    display: none!important;
+}
+.dKFRGS{
+    display: none!important;
+}
+.jQKvrQ{
+    display: none!important;
+}
+.icon-div svg{
+    margin-top: 5px!important;
+}
+.bottom-menu-link{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 768px){
+    .nav-menu{
+        display: block!important;
+        height: 30px!important;
+        margin-left: 1.2rem!important;
+        font-size: 1.8rem!important;
+    }
+    .nav-right{
+        gap:5px!important;
+        margin-right: 0.5rem!important;
+    }
+    .fBfwOB{
+        height: 35px!important;
+    }
+    .fRquCD{
+        height: 35px!important;
+    }
+    .dKFRGS{
+        display: none!important;
+    }
+    .jQKvrQ{
+        display: none!important;
+    }
+    .icon-div svg{
+        margin-top: 5px!important;
+    }
+}
+@media only screen and (max-width: 515px){
+    .fBfwOB{
+        margin-left: 1rem!important;
+        font-size: 1.5rem!important;
+        height: 25px!important;
+    }
+    .hqbeWT{
+        margin-left: 1rem!important;
+        font-size: 1.5rem!important;
+        height: 25px!important;
+    }
+    .fRquCD{
+        margin-left: 1rem!important;
+        font-size: 1.5rem!important;
+        height: 25px!important;
+    }
+    .logo-img{
+        height: 55px!important;
+    }
+    .logo-div h3{
+        font-size: 23px!important;
+        padding-top: 8px!important;
+    }
+    .nav-right{
+        margin-right: 0.5rem!important;
+    }
+}
+@media only screen and (max-width: 450px){
+    .logo-div{
+        width: 80%!important;
+    }
+    .nav-right{
+        margin-right: 2.5rem!important;
+    }
+}
+@media only screen and (max-width: 400px){
+    .logo-img{
+        height: 45px!important;
+    }
+    .logo-div h3{
+        font-size: 20px!important;
+        padding-top: 5px!important;
+    }
+}
+@media only screen and (max-width: 370px){
+   .bell-img{
+    height: 22px;
+    width: 18px;
+   }
+   .avatar-img{
+    height: 20px;
+    width: 20px;
+   }
+   .down-img{
+    height: 15px;
+    width: 15px;
+   }
+    
+}
