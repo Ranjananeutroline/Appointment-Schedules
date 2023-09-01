@@ -12,105 +12,105 @@ const Expired = () => {
           Offers
         </h2>
         <div className="h-[325px] w-full bg-white rounded-[10px] overflow-y-auto border shadow-md scrolldiv">
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
@@ -125,75 +125,75 @@ const Expired = () => {
           Announcement
         </h2>
         <div className="h-[325px] w-full bg-white rounded-[10px] overflow-y-auto border shadow-md scrolldiv">
-        <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+        <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>
@@ -201,15 +201,15 @@ const Expired = () => {
             </div>
           </div>
           
-          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm ">
+          <div className=" flex flex-col h-[50px] bg-[#F1F6F9] m-3 rounded-[10px]  justify-center hover:bg-[#e1edf3] hover:shadow-sm inner-scroll-div">
             <div className=" flex w-full   justify-between ">
-              <div className=" flex w-full  px-4  gap-4 items-center ">
-                <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
+              <div className=" flex w-full  px-4  gap-4 items-center second-inner">
+                <img src={radio} alt="radio" className="w-[12x] h-[12px] e-radio-img" />
                 <p className="text-[13px]">20% off for 30 min consultant</p>
-                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500]">
+                <p className="text-[14px] text-[#4A55A2] ml-[20px] font-[500] e-right-p">
                   Jun 15 - 16
                 </p>
-                <div className="flex gap-1 ml-[25px]">
+                <div className="flex gap-1 ml-[25px] e-right-div">
                   <img src={edit} alt="edit" className="w-[14px] h-[14px]" title="Reuse"/>
                   <img src={trash} alt="trash" className="w-[14px] h-[14px]" title="Delete" />
                 </div>

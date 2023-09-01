@@ -83,6 +83,15 @@
         margin-right: 2.5rem!important;
     }
 }
+@media only screen and (max-width: 415px){
+    .logo-div{
+        width: 70%!important;
+    }
+    .nav-right{
+        margin-right: 1rem!important;
+        gap: 2px!important;
+    }
+}
 @media only screen and (max-width: 400px){
     .logo-img{
         height: 45px!important;
@@ -90,6 +99,20 @@
     .logo-div h3{
         font-size: 20px!important;
         padding-top: 5px!important;
+    }
+}
+@media only screen and (max-width: 380px){
+    .nav-menu{
+        margin-left: 1rem!important;
+        font-size: 1.5rem!important;
+        height: 25px!important;
+    }
+    .logo-div{
+        width: 60%!important;
+    }
+    .nav-right{
+        margin-right: 0.5rem!important;
+        gap: 2px!important;
     }
 }
 @media only screen and (max-width: 370px){
@@ -105,5 +128,44 @@
     height: 15px;
     width: 15px;
    }
-    
+    .logo-img{
+        width: 62px!important;
+        height: 42px!important;
+    }
 }
+@media only screen and (max-width: 345px){
+    .nav-menu {
+        font-size: 1.2rem!important;
+        height: 20px!important;
+    }
+    .logo-img {
+        width: 52px!important;
+        height: 38px!important;
+    }
+    .logo-div h3 {
+        font-size: 18px!important;
+    }
+    .nav-right h3{
+        font-size: 12px;
+    }
+    .nav-right p{
+        font-size: 15px!important;
+    }
+}
+@media only screen and (max-width: 302px){
+    .nav-menu {
+      margin-left: 0.8rem!important;
+      height: 18px!important;
+  }
+  .logo-img {
+    width: 48px!important;
+    height: 33px!important;
+  }
+  .logo-div h3 {
+    font-size: 16px!important;
+  }
+  .nav-right {
+    margin-right: 0.3rem!important;
+    gap: 1px!important;
+  }
+  }

@@ -156,29 +156,29 @@ const Service = () => {
         </button>
       </div>
       <div className=" flex justify-center mt-[8px] rounded-[10px] allservice-div">
-        <div className="max-h-[250px] overflow-y-auto rounded-[10px] w-full servicescroll">
+        <div className="max-h-[230px] overflow-y-auto rounded-[10px] w-full servicescroll">
           <table className="table-auto border rounded-md w-full">
             <thead className="border rounded-[100px] sticky top-0 z-10">
               <tr className="h-[50px]  text-[15px] bg-[#d6e0fa] rounded-[10px] ">
-                <th className=" font-man font-medium md:w-[50px] ">ID</th>
-                <th className=" font-man font-medium md:w-[220px]">
+                <th className=" font-man font-medium w-[65px] t-id">ID</th>
+                <th className=" font-man font-medium w-[280px] t-ser">
                   Service Name
                 </th>
-                <th className=" font-man font-medium md:w-[200px]">
+                <th className=" font-man font-medium w-[185px] t-ava">
                   Availability
                 </th>
-                <th className="font-man font-medium md:w-[150px]">Duration</th>
-                <th className="font-man font-medium md:w-[130px]">
+                <th className="font-man font-medium w-[150px] t-du">Duration</th>
+                <th className="font-man font-medium w-[150px] t-vis">
                   Visibility
                 </th>
-                <th className="font-man font-medium md:w-[200px]">Action</th>
+                <th className="font-man font-medium w-[170px] t-act">Action</th>
               </tr>
             </thead>
             <tbody>
               {data.map((item) => (
                 <tr key={item.id} className="border h-[40px] bg-[#f4f2f2]">
                   <td className=" text-center">{item.id}</td>
-                  <td className="text-center">{item.servicename}</td>
+                  <td className="text-left px-[35px] service-name">{item.servicename}</td>
                   <td className="text-center flex items-center justify-center gap-[3px]">
                     {getAvailabilityDays(item.availability).map(
                       (day, index) =>
@@ -208,7 +208,7 @@ const Service = () => {
                         />
                         {/* Track (background) */}
                         <div
-                          className={`w-[35px] h-[16px] rounded-full shadow-inner ${
+                          className={`w-[35px] h-[16px] rounded-full shadow-inner vis-toggle${
                             item.checked ? "bg-[#08A0E9]" : " bg-gray-300"
                           }`}
                         ></div>
@@ -223,7 +223,7 @@ const Service = () => {
                   </td>
 
                   <td className="  text-center ">
-                    <div className="flex gap-2 items-center justify-center w-[200px]  ">
+                    <div className="flex gap-2 items-center justify-center w-[200px] action-inner-div ">
                       <img src={edit} className="w-5" alt="yellow"></img>
 
                       <button onClick={() => viewDetails(item)}>

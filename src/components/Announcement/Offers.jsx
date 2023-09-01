@@ -50,7 +50,7 @@ const Offers = () => {
   }, [formDataFromModal]);
 
   return (
-    <div className=" flex flex-wrap gap-8">
+    <div className=" flex flex-wrap gap-8 offer-details">
       <Modal
         open={modalOpen}
         onClose={onCloseModal}
@@ -69,23 +69,23 @@ const Offers = () => {
 
       {formDataFromModal.map((offer, index) => (
         <div key={index} className="w-[450px] h-[145px] rounded-[7px] bg-white offer-box">
-          <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center">
+          <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center offer-box-title">
             <h2 className="text-white text-[17px] font-[600]">{offer.title}</h2>
           </div>
-          <div className="flex w-full px-4 py-[17px] gap-2  items-center  ">
+          <div className="flex w-full px-4 py-[17px] gap-2  items-center  second-div-offer">
             <img src={radio} alt="radio" className="w-[12x] h-[12px]" />
-            <p className="text-[15px]  w-[350px]">{offer.message}</p>
-            <p className="text-[12px] text-[#4A55A2] ml-[20px] font-[500]  w-[250px]">
+            <p className="text-[15px]  w-[350px] left-p">{offer.message}</p>
+            <p className="text-[12px] text-[#4A55A2] ml-[20px] font-[500]  w-[250px] right-p">
               {offer.from} - {offer.to}
             </p>
             <img
               src={info}
               alt="right"
-              className="w-[15px] h-[18px]"
+              className="w-[15px] h-[18px] right-p-img"
               onClick={() => openModal(offer)}
             />
           </div>
-          <div className="flex px-4 items-center justify-between">
+          <div className="flex px-4 items-center justify-between inner-bottom-div">
             <p className="text-[13.2px] text-[#6A5F5F]">{offer.description}</p>
 
             <div className="flex px-4 items-center justify-end gap-3 pr-5">

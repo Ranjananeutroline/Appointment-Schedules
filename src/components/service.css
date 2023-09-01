@@ -25,4 +25,97 @@
   } 
 .addservice-btn:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #614BC3;
+}
+
+
+@media only screen and (max-width: 1075px){
+    .t-id{
+      width: 100px;
+    }
+    .t-act{
+      width: 160px;
+    }
+    .action-inner-div{
+      width: 100px;
+      justify-content: end;
+    }
+    .service-name{
+      padding-left: 10px;
+      padding-right: 10px
+    }
+    
+}
+@media only screen and (max-width: 1045px){
+  .service-name{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .t-id {
+    width: 87px;
+  }
+}
+@media only screen and (max-width: 1006px){
+  td{
+    font-size: 14px;
+  }
+  .t-id {
+    width: 80px;
+}
+  th{
+    font-size: 14.5px;
+  }
+  .vis-toggle{
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 872px){
+  .t-ser{
+    width: 360px;
+  }
+}
+@media only screen and (max-width: 832px){
+  .t-ser{
+    width: 570px;
+  }
+  .t-id {
+    width: 140px;
+}
+}
+@media only screen and (max-width: 768px){
+  .t-id {
+    width: 100px;
+  }
+  .t-ser {
+    width: 280px; 
+}
+td{
+  font-size: 15px;
+}
+th{
+  font-size: 15.5px;
+}
+}
+@media only screen and (max-width: 735px){
+  .t-id {
+    width: 115px;
+  }
+  .t-ser {
+    width: 380px; 
+}
+
+}
+@media only screen and (max-width: 675px){
+  .t-act {
+    width: 140px;
+}
+.action-inner-div {
+  width: 85px;
+}
+td{
+  font-size: 14px;
+}
+th{
+  font-size: 14.5px;
+}
 }

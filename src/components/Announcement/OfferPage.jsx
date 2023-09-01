@@ -69,7 +69,7 @@ const OfferPage = () => {
           
         </div>
 
-        <div className="flex ">
+        <div className="flex select-offer-main">
           <button
             className={`border-r offer-select${
               activeTab === "offers"
@@ -102,7 +102,6 @@ const OfferPage = () => {
                 ? {
                     borderWidth: "0.5px",
                     boxShadow: "0px 2px 5px 0px #D2F3FA",
-                    
                   }
                 : { boxShadow: "0px 2px 5px 0px #D2F3FA" }
             }

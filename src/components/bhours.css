@@ -10,3 +10,10 @@
     background:none;
     padding:0;
   }
+
+
+  @media only screen and (max-width: 768px){
+    .bhour-main{
+      padding-bottom: 2rem;
+    }
+  }

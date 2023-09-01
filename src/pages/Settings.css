@@ -7,3 +7,20 @@
 .sett-title{
     padding-bottom: 0.75rem;
 }
+
+
+@media only screen and (max-width: 1006px){
+    .settings-main{
+        padding: 1.25rem 3rem;
+    }
+}
+@media only screen and (max-width: 950px){
+    .settings-main{
+        padding: 1.25rem 2.5rem;
+    }
+}
+@media only screen and (max-width: 920px){
+    .settings-main{
+        padding: 1.25rem 1.5rem;
+    }
+}

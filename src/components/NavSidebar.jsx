@@ -18,7 +18,7 @@ const NavSidebar = () => {
         <Bars />
   
         <NavMenu>
-          <NavLink to='/dashboard' activeStyle>
+          <NavLink to='/' activeStyle>
           <BiSolidDashboard style={{marginTop:"5px"}}/> Dashboard
           </NavLink>
           <NavLink to='/appointment' activeStyle>

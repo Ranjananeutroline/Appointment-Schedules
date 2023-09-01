@@ -11,7 +11,7 @@ import { IoMdSettings } from "react-icons/io";
 export const SidebarData = [
 {
 	title: "Dashboard",
-	path: "/dashboard",
+	path: "/",
 	icon: <BiSolidDashboard/>,
 	iconClosed: <RiIcons.RiArrowDownSFill />,
 	iconOpened: <RiIcons.RiArrowUpSFill />,

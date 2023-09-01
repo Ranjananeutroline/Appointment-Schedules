@@ -31,10 +31,17 @@ export const NavLink = styled(Link)`
   height: 48px;
   border-radius: 10px;
   background: #1a98ecbd;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin-bottom: 10px;
   &.active {
-    background: #3182b8bd;
+    background: #3399FF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: black;
+    // background: #3591cfbd;
+    
   }
   @media screen and (max-width: 885px){
     padding: 12px 17px;
@@ -95,9 +102,5 @@ export const NavBtnLink = styled(Link)`
   text-decoration: none;
   /* Second Nav */
   margin-left: 24px;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #808080;
-  }
+ 
 `;
