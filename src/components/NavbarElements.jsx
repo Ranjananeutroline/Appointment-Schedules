@@ -34,15 +34,19 @@ export const NavLink = styled(Link)`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin-bottom: 10px;
   &.active {
+    box-shadow: inset 1px 2px 5px #5b5b5b;
+    transform: translateY(1px);
     background: #3399FF;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    // background: #3399FF;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
+  
   &:hover {
     transition: all 0.2s ease-in-out;
     color: black;
     // background: #3591cfbd;
-    
   }
+  
   @media screen and (max-width: 885px){
     padding: 12px 17px;
     width: 165px;

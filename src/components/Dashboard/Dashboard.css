@@ -13,6 +13,14 @@
 }
 .cards-box{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    cursor: pointer;
+}
+.cards-box:hover{
+    transform: scale(1.03);
+	transition-duration: 1s;
+}
+.see-all p{
+    font-size: 10px;
 }
 @media only screen and (max-width: 1040px) {
     .dashboard-main{

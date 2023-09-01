@@ -185,7 +185,8 @@ const Service = () => {
                         day.trim() !== "" && (
                           <button
                             key={index}
-                            className=" flex w-[30px] h-[32px] p-[7px 9px 7px 9px] justify-center items-center border  bg-[#FEFEFF] text-[#5B76FC]  rounded-lg cursor-default "
+                            className=" flex w-[30px] h-[32px] p-[7px 9px 7px 9px] justify-center items-center border  bg-[#FEFEFF] text-[#5B76FC] 
+                             rounded-lg cursor-default available-btn"
                           >
                             {getDayLabel(day)}
                           </button>

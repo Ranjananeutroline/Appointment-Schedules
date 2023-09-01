@@ -95,6 +95,7 @@ td{
 th{
   font-size: 15.5px;
 }
+
 }
 @media only screen and (max-width: 735px){
   .t-id {
@@ -117,5 +118,85 @@ td{
 }
 th{
   font-size: 14.5px;
+}
+}
+@media only screen and (max-width: 530px){
+  th{
+    font-size: 14px;
+  }
+  td{
+    font-size: 13px;
+  }
+  .service-name{
+    text-align: center;
+  }
+  .available-btn{
+    height: 30px;
+    width: 25px;
+  }
+  .vis-toggle{
+    width: 25px;
+  }
+  .action-inner-div img{
+    width: 1.05rem;
+  }
+  .action-inner-div {
+    width: 70px;
+}
+}
+@media only screen and (max-width: 515px){
+  .buss-hrs h2{
+    width: auto;
+  }
+  .inner-buss{
+    gap: 1.5rem
+  }
+  .schedule-btn{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 465px){
+  th{
+    font-size: 13px;
+  }
+  td{
+    font-size: 12px;
+  }
+  .t-ser {
+    width: 550px;
+  }
+  .available-btn {
+    height: 23px;
+    width: 20px;
+  }
+  .action-inner-div {
+    width: 55px;
+    gap: 0.2rem;
+  }
+  .buss-hrs-title{
+    font-size: 20px;
+  }
+  .inner-buss h3{
+   font-size: 15px;
+  }
+  .inner-buss h2{
+    font-size: 14px;
+   }
+}
+@media only screen and (max-width: 400px){
+  th{
+    font-size: 12px;
+  }
+  td{
+    font-size: 11px;
+  }
+  .action-inner-div img {
+    width: 0.9rem;
+  }
+  .t-ava{
+    width: 95px;
+  }
+  .t-act {
+    width: 90px;
 }
 }

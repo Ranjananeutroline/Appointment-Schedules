@@ -24,7 +24,7 @@ const Cards = () => {
         </div>
 
         <div className="flex items-center gap-1 justify-end mt-3 see-all">
-          <p className="text-[9px] ">See all Users</p>
+          <p>See all Users</p>
           <img src={arrow} className="h-[12px] w-[12px] " />
         </div>
       </div>
@@ -43,7 +43,7 @@ const Cards = () => {
         </div>
 
         <div className="flex items-center gap-1 justify-end mt-3 see-all">
-          <p className="text-[9px]">See all Appointments</p>
+          <p>See all Appointments</p>
           <img src={arrow} className="h-[12px] w-[12px]" />
         </div>
       </div>
@@ -62,7 +62,7 @@ const Cards = () => {
         </div>
 
         <div className="flex items-center gap-1 justify-end mt-3 see-all">
-          <p className="text-[9px]">See all Requests</p>
+          <p>See all Requests</p>
           <img src={arrow} className="h-[12px] w-[12px] " />
         </div>
       </div>
@@ -83,7 +83,7 @@ const Cards = () => {
         </div>
 
         <div className="flex items-center gap-1 justify-end mt-3 see-all">
-          <p className="text-[9px]">See all</p>
+          <p>See all</p>
           <img src={arrow} className="h-[10px] w-[15px] " />
         </div>
       </div>
