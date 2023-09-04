@@ -4,6 +4,8 @@ import Sidebar from '../components/Sidebar'
 // import SidebarOpt from '../components/SidebarOpt'
 import NavSidebar from '../components/NavSidebar'
 import OfferPage from '../components/Announcement/OfferPage'
+
+
 const Announcement = () => {
   return (
     <div>

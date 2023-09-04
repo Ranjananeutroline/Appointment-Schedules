@@ -127,25 +127,25 @@ function Total() {
 
   return (
     <div className=" flex justify-center ">
-      <table>
+      <table className="today-table-div">
         <thead className="border rounded-[80px]">
           <tr className="h-[50px]  text-[15px] bg-[#E2F2FA] rounded-[100px]">
             <th className="  font-man font-medium  md:w-[50px] ">ID</th>
-            <th className="  font-man font-medium   ">Name</th>
-            <th className=" font-man font-medium md:w-[150px]">Services</th>
-            <th className="font-man font-medium md:w-[100px]">Time</th>
-            <th className="font-man  font-medium  md:w-[110px]">Duration</th>
-            <th className=" font-man font-medium md:w-[100px]">Status</th>
-            <th className="font-man font-medium md:w-[130px]">Action</th>
-            <th className="font-man font-medium md:w-[120px]">Reminder</th>
+            <th className="  font-man font-medium">Name</th>
+            <th className=" font-man font-medium md:w-[160px]">Services</th>
+            <th className="font-man font-medium md:w-[120px]">Time</th>
+            <th className="font-man  font-medium  md:w-[120px]">Duration</th>
+            <th className=" font-man font-medium md:w-[120px]">Status</th>
+            <th className="font-man font-medium md:w-[140px]">Action</th>
+            <th className="font-man font-medium md:w-[130px]">Reminder</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item) => (
             <tr key={item.id} className="border h-[60px]">
               <td className=" text-center">{item.id}</td>
-              <td className=" text-center px-3 ">{item.name}</td>
-              <td className="text-center px-3">{item.services}</td>
+              <td className=" text-left px-3 ">{item.name}</td>
+              <td className="text-left px-3">{item.services}</td>
               <td className=" text-center text-[#0038FF]">{item.time}</td>
               <td className=" text-center  text-[#00AA3A]">{item.duration}</td>
               <td className="  text-center ">

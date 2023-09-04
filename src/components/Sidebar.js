@@ -88,7 +88,9 @@ return (
             src={header_bell}
             className=" h-[25px] w-[23px] md:h-[25px] md:w-[23px] md:mr-[6px] bell-img"
           />
-          <h3 className=" text-[13px] hidden md:mr-[8px] md:text-[15px] md:block ">
+		  <Link to="/profile">
+		  <div style={{display:"flex"}}>
+		  <h3 className=" text-[13px] hidden md:mr-[8px] md:text-[15px] md:block ">
             Pooja Tiwari
           </h3>
           <h3 className=" md:hidden text-[13px] p-1">
@@ -99,9 +101,11 @@ return (
             className="h-[30px] w-[30px] mr-[5px] md:h-[30px] md:w-[30px] avatar-img"
           /> */}
 		  <p style={{paddingRight:"5px", fontSize:"17px"}}><ImUser style={{color:"#adff2fd4"}} /></p>
+		  </div>
+		  </Link>
           <img
             src={header_down}
-            className="h-[13px] w-[13xpx] mr-[10px] md:h-[16px] md:w-[16px] down-img"
+            className="h-[13px] w-[13xpx] mr-[10px] mb-[3px] md:h-[16px] md:w-[16px] down-img"
           />
         </div>
           

@@ -60,7 +60,7 @@
       "status": "Pending",
       "color": "yellow",
       "reminder": "Notify",
-      "notified": false,
+      "notified": true,
       "reschedule": false,
       "id": 2
     },
@@ -75,7 +75,7 @@
       "status": "Pending",
       "color": "yellow",
       "reminder": "Notify",
-      "notified": false,
+      "notified": true,
       "reschedule": false,
       "id": 3
     }

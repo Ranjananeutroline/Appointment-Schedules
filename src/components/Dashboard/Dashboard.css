@@ -16,9 +16,11 @@
     cursor: pointer;
 }
 .cards-box:hover{
-    transform: scale(1.03);
-	transition-duration: 1s;
+    /* transform: scale(1.03);
+	transition-duration: 1s; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .see-all p{
     font-size: 10px;
 }

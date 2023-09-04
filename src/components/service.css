@@ -198,5 +198,11 @@ th{
   }
   .t-act {
     width: 90px;
+  }
+  .inner-wrk-hrs{
+    gap: 1rem;
+  }
+  .inner-buss {
+    gap: 1rem;
 }
 }

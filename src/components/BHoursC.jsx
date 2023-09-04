@@ -85,7 +85,7 @@ const BhoursC = () => {
           </div>
           <div className="flex gap-11 pt-3 inner-buss">
             <h3 className="w-[120px]  font-medium">Business Days</h3>
-            <div className="flex gap-8">
+            <div className="flex gap-8 inner-wrk-hrs">
               <h2 className="w-[60px]">Monday</h2>
               <p>-</p>
               <h2 className="w-[100px] ">Monday</h2>
@@ -93,7 +93,7 @@ const BhoursC = () => {
           </div>
           <div className="flex gap-11 pt-3 inner-buss">
             <h3 className="w-[120px]  font-medium">Work Hours</h3>
-            <div className="flex gap-8">
+            <div className="flex gap-8 inner-wrk-hrs">
               <h2 className="w-[60px] ">9:00</h2>
               <p>-</p>
               <h2 className="w-[100px] ">15:00</h2>
@@ -112,7 +112,7 @@ const BhoursC = () => {
           </div>
           <div className="flex gap-11 pt-3 inner-buss">
             <h3 className="w-[120px]  font-medium">Holidays</h3>
-            <div className="flex gap-8">
+            <div className="flex gap-8 inner-wrk-hrs">
               <h2 className="w-[60px] ">Saturday</h2>
               <p>-</p>
               <h2 className="w-[100px] ">Sunday</h2>
@@ -120,7 +120,7 @@ const BhoursC = () => {
           </div>
           <div className="flex gap-11 pt-3 inner-buss">
             <h3 className="w-[120px]  font-medium">Break</h3>
-            <div className="flex gap-8">
+            <div className="flex gap-8 inner-wrk-hrs">
               <h2 className="w-[60px] ">12:45</h2>
               <p>-</p>
               <h2 className="w-[100px] "> 13:25</h2>

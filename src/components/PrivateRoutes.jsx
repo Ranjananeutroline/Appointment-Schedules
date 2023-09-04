@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import Announcement from "../pages/Announcement";
 import AppointmentsPage from "../pages/AppointmentsPage";
+import ProfilePage from "../pages/ProfilePage";
+
 
 
 const PrivateRoutes = () => {
@@ -14,7 +16,7 @@ const PrivateRoutes = () => {
         <Route path="/appointment" element={<AppointmentsPage />}/>
         <Route path="/announcement" element={<Announcement />}/>
         <Route path="/settings" element={<Settings />} />
-        
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </>
   );

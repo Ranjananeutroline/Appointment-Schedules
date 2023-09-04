@@ -81,9 +81,9 @@ function Appointment() {
   }
   return (
     <AppProvider>
-      <div className="flex  flex-col justify-center items-center px-4  w-[100%] ">
-        <div className="flex w-[100%]  justify-between mt-1 mb-5 items-center">
-          <h1 className="text-[23px]">Appointment</h1>
+      <div className="flex  flex-col  items-center px-4  w-[100%] appointment-main">
+        <div className="w-[100%]">
+          <h1 className="text-[27px] text-[#3F26A5]">Appointment</h1>
           {/* <button
           className="flex  items-center justify-center gap-2 border p-3 text-center text-[#93e4f8] text-inter text=[12px] font-[600] rounded-[3px]"
           onClick={onOpenModal}
@@ -97,14 +97,15 @@ function Appointment() {
         >
           + Appointment
         </button> */}
-          <button
+          {/* <button
             // onClick={onOpenModal2}
             onClick={onOpenModal}
             className="bg-[#f8f8f8] px-[11px] pt-[8px] pb-[10px] text-[#4bd3f5] font-[600] shadow-md rounded-[4px] hover:bg-[#ffffff77]"
           >
             + Appointment
-          </button>
+          </button> */}
         </div>
+        
         <div className="  w-full flex justify-between">
           <div className="flex md:items-center md:justify-center   sm:flex-row md:flex-row ">
             <div className="relative w-full md:w-auto">
@@ -292,7 +293,16 @@ function Appointment() {
             </div>
           )}
         </div>
-        <div className=" mt-[10px] md:mt-[20px] w-full text-right">
+        <div className="add-appoint-div">
+        <button
+            // onClick={onOpenModal2}
+            onClick={onOpenModal}
+            className="bg-[#f8f8f8] px-[11px] pt-[8px] pb-[10px] text-[#4bd3f5] font-[600] shadow-md rounded-[4px] hover:bg-[#ffffff77]"
+          >
+            + Appointment
+          </button>
+        </div>
+        <div className=" mt-[10px] md:mt-[15px] w-full text-right">
           <Date />
         </div>
         <div className=" mt-2 w-[100%]">

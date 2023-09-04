@@ -12,8 +12,8 @@ import AcceptTick from "../../assets/AcceptTick.svg";
 import Reschedule from "../../assets/Reschedule.svg";
 import Delete from "../../assets/delete.svg";
 import Arrow from "../../assets/Arrow_Right_SM.svg";
-
 import Pagination from "../../shared/Pagination/Pagination";
+
 
 const closeIcon = (
   <svg
@@ -284,14 +284,14 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                 ID
               </th>
               <th className="font-man  font-medium w-[25%] md:w-[20%]">Name</th>
-              <th className="font-man  font-medium w-[25%] md:w-[20%] ">
+              <th className="font-man  font-medium w-[20%] md:w-[18%] ">
                 Services
               </th>
-              <th className="font-man font-medium  w-[8%] md:w-[10%] ">Time</th>
-              <th className="font-man  font-medium w-[8%] md:w-[10%]  ">
+              <th className="font-man font-medium  w-[8%] md:w-[11%] ">Time</th>
+              <th className="font-man  font-medium w-[8%] md:w-[12%]  ">
                 Duration
               </th>
-              <th className="font-man font-medium w-[8%] md:w-[14%] ">
+              <th className="font-man font-medium w-[8%] md:w-[12%] ">
                 <span className="hidden md:inline">Status</span>
                 <span className="md:hidden">Sta</span>
               </th>
@@ -312,7 +312,7 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                 className="border text-[13px] md:text-[16px] md:h-[40px]"
               >
                 <td className=" text-center ">{item.id}</td>
-                <td className="text-center text-[13px] md:text-[16px]   py-3.5 md:p-5">
+                <td className="text-left text-[13px] md:text-[16px]   py-3.5 md:p-5">
                   <button
                     type="buttton"
                     onClick={() => onOpenDetailModal(item.id, item.name)}
@@ -320,7 +320,7 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                     {item.name}
                   </button>
                 </td>
-                <td className="text-center text-[13px]   py-3   md:text-[16px] md:p-5">
+                <td className="text-left text-[13px]   py-3   md:text-[16px] md:p-5">
                   {item.services}
                 </td>
                 <td className=" md:text-center   p-2   md:text-[16px] md:p-3 text-[#0038FF] ">
@@ -343,7 +343,7 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                     </div>
                   </div>
                 </td>
-                <td className=" flex flex-col md:flex-row justify-center items-center p-2 gap-1  md:gap-4 md:p-4 md:h-[60px] ">
+                <td className=" flex flex-col md:flex-row justify-center items-center p-2 gap-1  md:gap-3 md:p-4 md:h-[60px] ">
                   <button
                     onClick={() => handleCommit(item.id)}
                     className="group relative"

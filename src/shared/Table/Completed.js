@@ -135,17 +135,17 @@ function Total() {
     setData(updatedData);
   };
   return (
-    <div className="border w-full overflow-x-auto p-2 ">
+    <div className="border w-full overflow-x-auto">
       <table className="w-[800px] md:w-full h-full">
         <thead className="bg-[#E2F2FA]">
           <tr className="h-[50px] text-[16px] md:text-[100%]">
-            <th className="border font-normal w-[3%]">ID</th>
+            <th className="border font-normal w-[4%]">ID</th>
             <th className="border font-normal  w-[20%]">Name</th>
             <th className="border  font-normal w-[15%]">Services</th>
             <th className="border font-normal w-[10%]">Time</th>
             <th className="border font-normal w-[10%]">Duration</th>
-            <th className="border  font-normal w-[10%]">Status</th>
-            <th className="border font-normal w-[15%]">Action</th>
+            <th className="border  font-normal w-[12%]">Status</th>
+            <th className="border font-normal w-[12%]">Action</th>
             <th className="border font-normal w-[15%]">Reminder</th>
           </tr>
         </thead>
@@ -156,12 +156,12 @@ function Total() {
               className="border h-[50%] text-[16px] md:text-[16px] md:h-[60px]"
             >
               <td className="border text-center w-[5%] md:w-[3%]">{item.id}</td>
-              <td className="border text-center w-[25%] md:w-[20%]">
+              <td className="border text-left w-[25%] md:w-[20%]">
                 <button onClick={() => onOpenDetailModal(item.id)}>
                   {item.name}
                 </button>
               </td>
-              <td className="border text-center w-[20%] md:w-[15%]">
+              <td className="border text-left w-[20%] md:w-[15%]">
                 {item.services}
               </td>
               <td className="border  text-center  w-[15%] md:w-[10%]">
@@ -182,7 +182,7 @@ function Total() {
                   <div className="hidden md:block">{item.status}</div>
                 </div>
               </td>
-              <td className="  flex gap-2 flex-col md:flex-row justify-center items-center    md:h-[60px] ">
+              <td className="  flex gap-3 flex-col md:flex-row justify-center items-center    md:h-[60px] ">
                 <button
                   onClick={() => handleCommit(item.id)}
                   className="group relative"

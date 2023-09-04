@@ -139,14 +139,14 @@ function Total() {
       <table className="w-full h-full">
         <thead className="bg-[#E2F2FA]">
           <tr className="h-[50px] text-[12px] md:text-[16px]">
-            <th className="border font-normal  w-[5%] md:w-[3%]">ID</th>
+            <th className="border font-normal  w-[5%] md:w-[4%]">ID</th>
             <th className="border font-normal  w-[25%] md:w-[20%]">Name</th>
             <th className="border  font-normal w-[20%] md:w-[15%]">Services</th>
             <th className="border font-normal w-[15%] md:w-[10%]">Time</th>
             <th className="border font-normal w-[15%] md:w-[10%]">Duration</th>
             <th className="border  font-normal w-[10%] md:w-[10%]">Status</th>
-            <th className="border font-normal w-[10%] md:w-[15%]">Action</th>
-            <th className="border font-normal w-[10%] md:w-[15%]">Reminder</th>
+            <th className="border font-normal w-[10%] md:w-[12%]">Action</th>
+            <th className="border font-normal w-[10%] md:w-[13%]">Reminder</th>
           </tr>
         </thead>
         <tbody>
@@ -158,7 +158,7 @@ function Total() {
               <td className="border text-center w-[5%] md:w-[3%]">{item.id}</td>
               <td className="border text-center w-[25%] md:w-[20%]">
                 <button
-                  className="border "
+                  // className="border "
                   onClick={() => onOpenDetailModal(item.id)}
                 >
                   {item.name}
@@ -185,7 +185,7 @@ function Total() {
                   <div className="hidden md:block">{item.status}</div>
                 </div>
               </td>
-              <td className="  flex flex-col md:flex-row justify-center items-center    md:h-[60px] ">
+              <td className="  flex flex-col md:flex-row justify-center items-center  gap-3  md:h-[60px] ">
                 <button
                   onClick={() => handleCommit(item.id)}
                   className="group relative"
@@ -340,7 +340,8 @@ function Total() {
                   </div>
                 </Modal>
               </td>
-              <td className="text-center w-[10%] md:w-[15%]">
+              <td className="text-center justify-center border">
+              <div className="flex justify-center">
                 {!item.notified ? (
                   <button
                     className="flex p-2  bg-[#C3ECF4] md:px-3 md:gap-1 text-[15px] justify-center items-center rounded-sm md:p-1"
@@ -355,6 +356,7 @@ function Total() {
                     <img className="w-3" src={vector} alt="notified" />
                   </button>
                 )}
+                </div>
               </td>
             </tr>
           ))}
