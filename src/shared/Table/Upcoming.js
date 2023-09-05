@@ -320,7 +320,7 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                     {item.name}
                   </button>
                 </td>
-                <td className="text-left text-[13px]   py-3   md:text-[16px] md:p-5">
+                <td className="text-left text-[13px]  py-3  md:text-[16px] md:p-5">
                   {item.services}
                 </td>
                 <td className=" md:text-center   p-2   md:text-[16px] md:p-3 text-[#0038FF] ">

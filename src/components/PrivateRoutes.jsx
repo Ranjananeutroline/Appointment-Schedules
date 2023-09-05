@@ -7,7 +7,6 @@ import AppointmentsPage from "../pages/AppointmentsPage";
 import ProfilePage from "../pages/ProfilePage";
 
 
-
 const PrivateRoutes = () => {
   return (
     <>

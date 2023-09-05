@@ -297,7 +297,7 @@ function Appointment() {
         <button
             // onClick={onOpenModal2}
             onClick={onOpenModal}
-            className="bg-[#f8f8f8] px-[11px] pt-[8px] pb-[10px] text-[#4bd3f5] font-[600] shadow-md rounded-[4px] hover:bg-[#ffffff77]"
+            className="bg-[#f8f8f8] px-[11px] pt-[8px] pb-[10px] text-[#2cc6ec] font-[600] shadow-md rounded-[4px] add-appoint-btn"
           >
             + Appointment
           </button>

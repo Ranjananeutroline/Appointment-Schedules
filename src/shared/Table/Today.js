@@ -130,14 +130,14 @@ function Total() {
       <table className="today-table-div">
         <thead className="border rounded-[80px]">
           <tr className="h-[50px]  text-[15px] bg-[#E2F2FA] rounded-[100px]">
-            <th className="  font-man font-medium  md:w-[50px] ">ID</th>
-            <th className="  font-man font-medium">Name</th>
-            <th className=" font-man font-medium md:w-[160px]">Services</th>
-            <th className="font-man font-medium md:w-[120px]">Time</th>
-            <th className="font-man  font-medium  md:w-[120px]">Duration</th>
-            <th className=" font-man font-medium md:w-[120px]">Status</th>
-            <th className="font-man font-medium md:w-[140px]">Action</th>
-            <th className="font-man font-medium md:w-[130px]">Reminder</th>
+            <th className="  font-man font-medium  w-[50px] today-id">ID</th>
+            <th className="  font-man font-medium w-[200px] today-n">Name</th>
+            <th className=" font-man font-medium w-[160px] today-s">Services</th>
+            <th className="font-man font-medium w-[120px] today-t">Time</th>
+            <th className="font-man  font-medium w-[120px] today-d">Duration</th>
+            <th className=" font-man font-medium w-[120px] today-st">Status</th>
+            <th className="font-man font-medium w-[140px] today-ac">Action</th>
+            <th className="font-man font-medium w-[130px] today-r">Reminder</th>
           </tr>
         </thead>
         <tbody>
@@ -160,7 +160,7 @@ function Total() {
                   <div>{item.status}</div>
                 </div>
               </td>
-              <td className="  h-[60px] flex justify-center items-center gap-3">
+              <td className="  h-[60px] flex justify-center items-center gap-3 action-display">
                 <button
                   onClick={() => handleCommit(item.id)}
                   className="group relative"

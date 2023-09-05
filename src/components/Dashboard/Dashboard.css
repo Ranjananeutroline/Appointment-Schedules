@@ -13,16 +13,17 @@
 }
 .cards-box{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    cursor: pointer;
+   
 }
 .cards-box:hover{
-    /* transform: scale(1.03);
-	transition-duration: 1s; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.03);
+	transition-duration: 1s;
 }
-
+.see-all:hover{
+    cursor: pointer;
+}
 .see-all p{
-    font-size: 10px;
+    font-size: 11px;
 }
 @media only screen and (max-width: 1040px) {
     .dashboard-main{

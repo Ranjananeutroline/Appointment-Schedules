@@ -11,6 +11,7 @@ import Detail from "../AppointmentDetail/Detail";
 import AcceptTick from "../../assets/AcceptTick.svg";
 import Reschedule from "../../assets/Reschedule.svg";
 import Delete from "../../assets/delete.svg";
+import { IoIosNotifications } from 'react-icons/io';
 
 const closeIcon = (
   <svg
@@ -55,7 +56,7 @@ function Total() {
       contact: "9842411394",
       date: "2023/Jul/06",
       services: "Legal Consultant",
-      time: "6:00AM",
+      time: "6:00 AM",
       duration: "30 Min",
       color: "yellow",
       status: "Pending",
@@ -70,7 +71,7 @@ function Total() {
       contact: "9842411394",
       date: "2023/Jul/06",
       services: "Legal Consultant",
-      time: "6:00AM",
+      time: "6:00 AM",
       duration: "30 Min",
       color: "yellow",
       status: "Pending",
@@ -139,14 +140,14 @@ function Total() {
       <table className="w-[800px] md:w-full h-full">
         <thead className="bg-[#E2F2FA]">
           <tr className="h-[50px] text-[16px] md:text-[100%]">
-            <th className="border font-normal w-[4%]">ID</th>
-            <th className="border font-normal  w-[20%]">Name</th>
-            <th className="border  font-normal w-[15%]">Services</th>
-            <th className="border font-normal w-[10%]">Time</th>
-            <th className="border font-normal w-[10%]">Duration</th>
-            <th className="border  font-normal w-[12%]">Status</th>
-            <th className="border font-normal w-[12%]">Action</th>
-            <th className="border font-normal w-[15%]">Reminder</th>
+            <th className="font-man  font-medium w-[5%]">ID</th>
+            <th className="font-man  font-medium  w-[18%]">Name</th>
+            <th className="font-man  font-medium w-[17%]">Services</th>
+            <th className="font-man  font-medium w-[11%]">Time</th>
+            <th className="font-man  font-medium w-[11%]">Duration</th>
+            <th className="font-man  font-medium w-[12%]">Status</th>
+            <th className="font-man  font-medium w-[13%]">Action</th>
+            <th className="font-man  font-medium w-[15%]">Reminder</th>
           </tr>
         </thead>
         <tbody>
@@ -155,23 +156,23 @@ function Total() {
               key={item.id}
               className="border h-[50%] text-[16px] md:text-[16px] md:h-[60px]"
             >
-              <td className="border text-center w-[5%] md:w-[3%]">{item.id}</td>
-              <td className="border text-left w-[25%] md:w-[20%]">
+              <td className="text-center w-[5%] md:w-[3%]">{item.id}</td>
+              <td className=" text-left w-[25%] md:w-[20%] py-3.5 md:p-5">
                 <button onClick={() => onOpenDetailModal(item.id)}>
                   {item.name}
                 </button>
               </td>
-              <td className="border text-left w-[20%] md:w-[15%]">
+              <td className="text-left w-[20%] md:w-[15%] py-3 md:p-5">
                 {item.services}
               </td>
-              <td className="border  text-center  w-[15%] md:w-[10%]">
+              <td className="text-center  w-[15%] md:w-[10%] text-[#0038FF]  p-2 md:p-3">
                 {item.time}
               </td>
-              <td className="border   text-center w-[15%] md:w-[10%]">
+              <td className="text-center w-[15%] md:w-[10%] text-[#00AA3A] md:p-4">
                 {item.duration}
               </td>
-              <td className="border  text-center  w-[10%] md:w-[10%]">
-                <div className="md:flex md:justify-evenly md:gap-2  md:items-center  ">
+              <td className="text-center  w-[10%] md:w-[10%]">
+                <div className="md:flex md:justify-evenly md:gap-1  md:items-center  ">
                   <div className="flex justify-center items-centers">
                     {item.color === "yellow" ? (
                       <img className="w-2" src={circle} alt="yellow"></img>
@@ -337,7 +338,7 @@ function Total() {
                   </div>
                 </Modal>
               </td>
-              <td className=" border">
+              <td>
                 <div className="flex justify-center">
                   {!item.notified ? (
                     <button
@@ -345,7 +346,8 @@ function Total() {
                       onClick={() => handleNotifyClick(item.id)}
                     >
                       <span className="hidden  md:inline">{item.reminder}</span>
-                      <img className="w-4 " src={bell} alt="notification" />
+                      <IoIosNotifications style={{color:"#FEB139", fontSize:"17px"}}/>
+                      {/* <img className="w-4 " src={bell} alt="notification" /> */}
                     </button>
                   ) : (
                     <button className="flex gap-1 px-2 bg-[#EDEDED] text-[#0038FF] text-[14px] justify-center rounded-sm items-center p-1">

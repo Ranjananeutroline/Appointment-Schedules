@@ -21,3 +21,14 @@
 td{
   border: 1px solid;
 } */
+@media only screen and (max-width: 1075px){
+  .action-display{
+    gap: 0.35rem;
+  }
+  .today-n{
+    width: 165px;
+  }
+  .today-s{
+    width: 140px;
+  }
+}
