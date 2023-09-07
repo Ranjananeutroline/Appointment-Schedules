@@ -37,3 +37,21 @@
     width: 90%; /* Adjust the width for small screens */
   }
 }
+@media screen and (max-width: 915px){
+  .appointment-main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 830px){
+  .appointment-main{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 520px){
+  .appointment-main{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

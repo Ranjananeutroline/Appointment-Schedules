@@ -44,7 +44,7 @@ justify-content: center;
 position: absolute;
 left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
 transition: 300ms;
-z-index: 10;
+z-index: 12;
 `;
 
 const SidebarWrap = styled.div`
@@ -100,7 +100,8 @@ return (
             src={header_avatar}
             className="h-[30px] w-[30px] mr-[5px] md:h-[30px] md:w-[30px] avatar-img"
           /> */}
-		  <p style={{paddingRight:"5px", fontSize:"17px"}}><ImUser style={{color:"#adff2fd4"}} /></p>
+		  <p style={{paddingRight:"5px", fontSize:"17px"}}>
+			<ImUser style={{color:"#adff2fd4", marginTop:"2px"}} className="profileicon-svg" /></p>
 		  </div>
 		  </Link>
           <img
