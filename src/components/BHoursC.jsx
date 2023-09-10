@@ -73,7 +73,7 @@ const BhoursC = () => {
           <div className="flex justify-between ">
             <div className="flex gap-3 items-center ">
             <h1 className="text-[22px] text-[#0C1A97] buss-hrs-title">Business Hours</h1>
-            <img src={info} alt="info" className="h-[16px] w-[16px] " title="Custom"/>
+            <img src={info} alt="info" className="h-[16px] w-[16px] mt-1" title="Custom"/>
 
             </div>
 

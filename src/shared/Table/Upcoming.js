@@ -13,6 +13,7 @@ import Reschedule from "../../assets/Reschedule.svg";
 import Delete from "../../assets/delete.svg";
 import Arrow from "../../assets/Arrow_Right_SM.svg";
 import Pagination from "../../shared/Pagination/Pagination";
+import { IoIosNotifications } from 'react-icons/io';
 
 
 const closeIcon = (
@@ -515,22 +516,28 @@ function Upcoming({ childAddAppointment, searchText, searchTermFromUpcoming }) {
                   {!item.notified ? (
                     <>
                       <div className="  inline-block md:hidden">
-                        <img
+                        {/* <img
                           onClick={() => handleNotifyClick(item.id)}
                           src={bell}
                           alt="notification"
-                        />
+                        /> */}
+                         <IoIosNotifications 
+                          onClick={() => handleNotifyClick(item.id)}
+                         style={{color:"#ffe000", fontSize:"17px"}}/>
                       </div>
 
                       <button className=" p-[1%] hidden md:flex border bg-[#C3ECF4] md:px-3 md:gap-1 text-[15px] justify-center items-center rounded-sm md:p-1">
                         <span className="   ">{item.reminder}</span>
 
-                        <img
+                        {/* <img
                           onClick={() => handleNotifyClick(item.id)}
                           className="w-5 "
                           src={bell}
                           alt="notification"
-                        />
+                        /> */}
+                         <IoIosNotifications 
+                          onClick={() => handleNotifyClick(item.id)}
+                         style={{color:"#ffe000", fontSize:"17px"}}/>
                       </button>
                     </>
                   ) : (

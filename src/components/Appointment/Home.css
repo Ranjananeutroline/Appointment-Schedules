@@ -32,11 +32,11 @@
 }
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .customModal {
-    width: 90%; /* Adjust the width for small screens */
+    width: 90%; 
   }
-}
+} */
 @media screen and (max-width: 915px){
   .appointment-main{
     padding-left: 2rem;

@@ -1,0 +1,24 @@
+.add-announce-input:focus{
+    border: 1px solid rgba(83, 211, 228, 0.438);
+}
+.announce-descript:focus{
+    border: 1px solid rgba(83, 211, 228, 0.438);
+}
+
+@media screen and (max-width: 767px){
+    .add-announce-form{
+      padding-top: 1rem;
+      width: 350px;
+    }
+    .add-announce-form h1{
+      padding-bottom: 0.5rem;
+    }
+    .add-announce-input{
+        padding-left: 12px;
+    }
+    .announce-descript{
+        padding-left: 12px;
+        padding-top: 5px;
+        height: 80px;
+    }
+}

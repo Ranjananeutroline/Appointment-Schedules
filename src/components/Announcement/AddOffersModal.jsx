@@ -5,6 +5,7 @@ import Calendar from "../CalendarModal/Calendar";
 import { Button } from "@mui/material";
 import axios from "axios";
 import { AppContext } from "../../AppContext"; // Import the AppContext
+import "./offermodal.css";
 
 const AddOffersModal = ({ setGetformData, closeModal }) => {
    const { setFormDataFromModal ,setHello} = useContext(AppContext);
@@ -163,15 +164,18 @@ const AddOffersModal = ({ setGetformData, closeModal }) => {
       <div>
         <form
           onSubmit={handleSubmit}
-          className=" flex md:w-[400px] md:h-[auto] mt-4  flex-col bg-[#ffffff] rounded-[10px] "
+          className=" flex md:w-[400px] md:h-[auto] flex-col bg-[#ffffff] rounded-[10px] add-offers-form"
         >
-          <h1 className="text-center  text-[22px] font-[600] md:py-4">
+          <h1 className="text-center  text-[22px] font-[600] md:py-4 text-[#19a7ce]">
             Add Offers
           </h1>
           <div className="flex items-center relative mx-3">
             {/* <img className="w-3.5  absolute left-4" src={user} alt="user"></img> */}
             <input
-              className={`w-full rounded-[5px]  text-[14px] h-[39px] m-2 pl-[20px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[20px]`}
+              className={`w-full rounded-[5px]  text-[14px] h-[39px] m-2 pl-[20px] border-[0.5px]  
+               focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500 
+                placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px]
+                 md:h-[45px] md:placeholder:text-[15px] md:pl-[20px] add-input`}
               type="text"
               name="title"
               value={formData.title}
@@ -188,7 +192,10 @@ const AddOffersModal = ({ setGetformData, closeModal }) => {
           <div className="flex  items-center relative mx-3">
             {/* <img className="w-4 absolute left-4" src={mail} alt="mail"></img> */}
             <input
-              className={`w-full  rounded-[5px]  text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[20px]`}
+              className={`w-full  rounded-[5px]  text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]   
+              focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500 
+               placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] 
+               md:h-[45px] md:placeholder:text-[15px] md:pl-[20px] add-input`}
               type="text"
               name="message"
               value={formData.message}
@@ -209,7 +216,10 @@ const AddOffersModal = ({ setGetformData, closeModal }) => {
           alt="phone"
         ></img> */}
             <textarea
-              className={`w-full rounded-[5px] md:p-2 text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-auto md:placeholder:text-[15px] md:pl-[20px] resize-none`}
+              className={`w-full rounded-[5px] md:p-2 text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]  
+               focus:bg-white focus:outline-none focus:ring-0.5 focus:ring-slate-500  placeholder:text-[#8B8989]
+                bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-auto md:placeholder:text-[15px]
+                 md:pl-[20px] resize-none add-decript`}
               rows={4}
               name="description"
               placeholder="Description"
@@ -224,8 +234,8 @@ const AddOffersModal = ({ setGetformData, closeModal }) => {
         )}
           </div>
 
-          <div className="  mx-3 flex  flex-col md:justify-between md:items-center md:gap-2 md:flex-row  ">
-          <div className=" relative w-[100px] md:w-auto ">
+          <div className="  mx-3 flex  flex-col md:justify-between md:items-center md:gap-2 md:flex-row offers-daterange">
+          <div className=" relative w-[100px] md:w-auto from-to-div">
               {/* <img
             className=" hidden md:block  md:w-4 left-2 absolute md:left-4 top-[1.40rem]"
             src={time}
@@ -257,7 +267,7 @@ const AddOffersModal = ({ setGetformData, closeModal }) => {
             Select Time
           </button>
         </div> */}
-            <div className=" relative w-[100px] md:w-auto ">
+            <div className=" relative w-[100px] md:w-auto from-to-div">
               {/* <img
             className=" hidden md:block  md:w-4 left-2 absolute md:left-4 top-[1.40rem]"
             src={time}

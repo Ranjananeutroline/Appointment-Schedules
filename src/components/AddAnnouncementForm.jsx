@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Addannouncement.css";
 
 const AddAnnouncementForm = () => {
   return (
@@ -31,15 +32,17 @@ const AddAnnouncementForm = () => {
       <div>
         <form
           // onSubmit={handleSubmit}
-          className=" flex md:w-[400px] md:h-[auto] mt-4  flex-col bg-[#ffffff] rounded-[10px] "
+          className=" flex md:w-[400px] md:h-[auto] flex-col bg-[#ffffff] rounded-[10px] add-announce-form"
         >
-          <h1 className="text-center  text-[22px] font-[600] md:py-4">
+          <h1 className="text-center  text-[22px] font-[600] md:py-4 text-[#19a7ce]">
             Add Announcement
           </h1>
           <div className="flex items-center relative mx-3">
             {/* <img className="w-3.5  absolute left-4" src={user} alt="user"></img> */}
             <input
-              className={`w-full rounded-[5px]  text-[14px] h-[39px] m-2 pl-[20px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[20px]`}
+              className={`w-full rounded-[5px]  text-[14px] h-[39px] m-2 pl-[20px] border-[0.5px]   focus:bg-white focus:outline-none  
+              focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  
+              md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[20px] add-announce-input`}
               type="text"
               name="title"
               // value={formData.title}
@@ -56,7 +59,10 @@ const AddAnnouncementForm = () => {
           <div className="flex  items-center relative mx-3">
             {/* <img className="w-4 absolute left-4" src={mail} alt="mail"></img> */}
             <input
-              className={`w-full  rounded-[5px]  text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[20px]`}
+              className={`w-full  rounded-[5px]  text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]  
+               focus:bg-white focus:outline-none focus:ring-slate-500  placeholder:text-[#8B8989] 
+               bg-[#dceaff4d]   placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px]
+                md:pl-[20px] add-announce-input`}
               type="text"
               name="message"
               // value={formData.message}
@@ -77,7 +83,10 @@ const AddAnnouncementForm = () => {
           alt="phone"
         ></img> */}
             <textarea
-              className={`w-full rounded-[5px] md:p-2 text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-auto md:placeholder:text-[15px] md:pl-[20px] resize-none`}
+              className={`w-full rounded-[5px] md:p-2 text-[14px] h-[39px] m-2 pl-[26px] border-[0.5px] 
+                focus:bg-white focus:outline-none  focus:ring-slate-500  placeholder:text-[#8B8989]
+                bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-auto md:placeholder:text-[15px]
+                 md:pl-[20px] resize-none announce-descript`}
               rows={4}
               name="description"
               placeholder="Description"

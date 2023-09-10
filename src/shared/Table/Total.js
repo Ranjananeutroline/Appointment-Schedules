@@ -353,7 +353,7 @@ function Total() {
                     onClick={() => handleNotifyClick(item.id)}
                   >
                     <span className="hidden  md:inline">{item.reminder}</span>
-                    <IoIosNotifications style={{color:"#FEB139", fontSize:"17px"}}/>
+                    <IoIosNotifications style={{color:"#ffe000", fontSize:"17px"}}/>
                     {/* <img className="w-4 " src={bell} alt="notification" /> */}
                   </button>
                 ) : (

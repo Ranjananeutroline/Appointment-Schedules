@@ -10,6 +10,7 @@ import tick2 from "../../assets/tick2.svg";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import "./Today.css";
+import { IoIosNotifications } from 'react-icons/io';
 
 const closeIcon = (
   <svg
@@ -301,11 +302,8 @@ function Total() {
                       onClick={() => handleNotifyClick(item.id)}
                     >
                       {item.reminder}
-                      <img
-                        className="w-5"
-                        src={notification}
-                        alt="notification"
-                      />
+                      <IoIosNotifications style={{color:"#ffe000", fontSize:"17px"}}/>
+                      {/* <img className="w-5" src={notification} alt="notification"/> */}
                     </button>
                   ) : (
                     <button className="flex gap-1  bg-[#EDEDED] text-[#0038FF]  text-[14px] justify-center rounded-sm items-center p-2 today-notified-btn">
