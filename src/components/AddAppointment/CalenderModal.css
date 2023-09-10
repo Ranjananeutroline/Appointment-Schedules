@@ -5,6 +5,14 @@
   background-color: #fafafa;
   padding: 0;
 }
+.add-appoint-form{
+  padding-top: 1rem;
+} 
+.appoint-form-select:focus{
+  border: 1px solid rgba(83, 211, 228, 0.438);
+}
+
+
 @media screen and (max-width: 800px) {
   .customModalSucess {
     width: 80%; /* Adjust the width for small screens */

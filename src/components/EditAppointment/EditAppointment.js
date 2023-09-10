@@ -5,7 +5,7 @@ import mail from "../../assets/mail.svg";
 import calender from "../../assets/calender.svg";
 import time from "../../assets/time.svg";
 import axios from "axios";
-import { AppContext } from "../../components/Appointment/AppContext";
+import { AppContext } from "../../pages/AppContext";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import sucessGreen from "../../assets/sucess-green.svg";

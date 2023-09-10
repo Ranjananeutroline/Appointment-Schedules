@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import { AppContext } from "../../components/Appointment/AppContext";
+import { AppContext } from "../../pages/AppContext";
 import vector from "../../assets/Vector.png";
 import circle from "../../assets/circle.png";
 import notification from "../../assets/notification.png";
@@ -9,8 +9,8 @@ import ReactModal from "react-modal";
 import tick2 from "../../assets/tick2.svg";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import "./Today.css";
 import { IoIosNotifications } from 'react-icons/io';
+import "./Today.css";
 
 const closeIcon = (
   <svg
@@ -70,18 +70,6 @@ function Total() {
     };
   }, []);
 
-  // const handleNotifyClick = (itemId) => {
-  //   // Find the item in the data array and update its notified state
-  //   const updatedData = data.map((item) => {
-  //     if (item.id === itemId) {
-  //       return { ...item, notified: true };
-  //     }
-  //     return item;
-  //   });
-
-  //   // Update the data array with the updatedData
-  //   setData(updatedData);
-  // };
   const handleNotifyClick = (itemId) => {
     axios
       .get(`http://localhost:3030/Today/${itemId}`)
@@ -128,25 +116,25 @@ function Total() {
 
   return (
     <div className=" flex justify-center ">
-      <table className="today-table-div">
+      <table>
         <thead className="border rounded-[80px]">
           <tr className="h-[50px]  text-[15px] bg-[#E2F2FA] rounded-[100px]">
-            <th className="  font-man font-medium  w-[50px] today-id">ID</th>
-            <th className="  font-man font-medium w-[200px] today-n">Name</th>
-            <th className=" font-man font-medium w-[160px] today-s">Services</th>
-            <th className="font-man font-medium w-[120px] today-t">Time</th>
-            <th className="font-man  font-medium w-[120px] today-d">Duration</th>
-            <th className=" font-man font-medium w-[120px] today-st">Status</th>
-            <th className="font-man font-medium w-[140px] today-ac">Action</th>
-            <th className="font-man font-medium w-[130px] today-r">Reminder</th>
+            <th className="  font-man font-medium  md:w-[50px] ">ID</th>
+            <th className="  font-man font-medium   ">Name</th>
+            <th className=" font-man font-medium md:w-[150px]">Services</th>
+            <th className="font-man font-medium md:w-[100px]">Time</th>
+            <th className="font-man  font-medium  md:w-[110px]">Duration</th>
+            <th className=" font-man font-medium md:w-[100px]">Status</th>
+            <th className="font-man font-medium md:w-[130px]">Action</th>
+            <th className="font-man font-medium md:w-[120px]">Reminder</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item) => (
             <tr key={item.id} className="border h-[60px]">
               <td className=" text-center">{item.id}</td>
-              <td className=" text-left px-3 today-item-name">{item.name}</td>
-              <td className="text-left px-3 today-item-ser">{item.services}</td>
+              <td className=" text-center px-3 ">{item.name}</td>
+              <td className="text-center px-3">{item.services}</td>
               <td className=" text-center text-[#0038FF]">{item.time}</td>
               <td className=" text-center  text-[#00AA3A]">{item.duration}</td>
               <td className="  text-center ">
@@ -161,7 +149,7 @@ function Total() {
                   <div>{item.status}</div>
                 </div>
               </td>
-              <td className="  h-[60px] flex justify-center items-center gap-3 action-display">
+              <td className="  h-[60px] flex justify-center items-center gap-3">
                 <button
                   onClick={() => handleCommit(item.id)}
                   className="group relative"
@@ -177,7 +165,6 @@ function Total() {
                         viewBox="0 0 17 12"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className='today-accept-svg'
                       >
                         <path
                           d="M1 5.94979L5.94975 10.8995L15.8482 1"
@@ -196,7 +183,6 @@ function Total() {
                         viewBox="0 0 17 12"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                       
                       >
                         <path
                           d="M1 5.94979L5.98139 10.8995L15.9431 1"
@@ -223,7 +209,6 @@ function Total() {
                     viewBox="0 0 18 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className='today-reschedule-svg'
                   >
                     <path
                       d="M4.91788 3H4.11077C2.98043 3 2.41485 3 1.98312 3.21799C1.60335 3.40973 1.29482 3.71547 1.10133 4.0918C0.881348 4.51962 0.881348 5.08009 0.881348 6.2002V7M4.91788 3H12.9909M4.91788 3V1M12.9909 3H13.7984C14.9288 3 15.4932 3 15.9249 3.21799C16.3046 3.40973 16.6142 3.71547 16.8077 4.0918C17.0275 4.5192 17.0275 5.07899 17.0275 6.19691V7M12.9909 3V1M0.881348 7V15.8002C0.881348 16.9203 0.881348 17.4801 1.10133 17.9079C1.29482 18.2842 1.60335 18.5905 1.98312 18.7822C2.41442 19 2.97933 19 4.10745 19H13.8014C14.9295 19 15.4936 19 15.9249 18.7822C16.3046 18.5905 16.6142 18.2842 16.8077 17.9079C17.0275 17.4805 17.0275 16.9215 17.0275 15.8036V7M0.881348 7H17.0275M12.9909 15H12.993L12.9929 15.002L12.9909 15.002V15ZM8.95441 15H8.95642L8.95638 15.002L8.95441 15.002V15ZM4.91788 15H4.9199L4.91985 15.002L4.91788 15.002V15ZM12.9929 11V11.002L12.9909 11.002V11H12.9929ZM8.95441 11H8.95642L8.95638 11.002L8.95441 11.002V11ZM4.91788 11H4.9199L4.91985 11.002L4.91788 11.002V11Z"
@@ -244,7 +229,6 @@ function Total() {
                     viewBox="0 0 18 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="today-delete-svg"
                   >
                     <path
                       d="M11 8V15M7 8V15M3 4V15.8C3 16.9201 3 17.4798 3.21799 17.9076C3.40973 18.2839 3.71547 18.5905 4.0918 18.7822C4.5192 19 5.07899 19 6.19691 19H11.8031C12.921 19 13.48 19 13.9074 18.7822C14.2837 18.5905 14.5905 18.2839 14.7822 17.9076C15 17.4802 15 16.921 15 15.8031V4M3 4H5M3 4H1M5 4H13M5 4C5 3.06812 5 2.60241 5.15224 2.23486C5.35523 1.74481 5.74432 1.35523 6.23438 1.15224C6.60192 1 7.06812 1 8 1H10C10.9319 1 11.3978 1 11.7654 1.15224C12.2554 1.35523 12.6447 1.74481 12.8477 2.23486C12.9999 2.6024 13 3.06812 13 4M13 4H15M15 4H17"
@@ -295,18 +279,22 @@ function Total() {
                 </Modal>
               </td>
               <td className="text-center  ">
-                <div className=" flex justify-center notify-div">
+                <div className=" flex justify-center">
                   {!item.notified ? (
                     <button
                       className="flex bg-[#C3ECF4]  gap-2 text-[15px] justify-center items-center rounded-sm p-2"
                       onClick={() => handleNotifyClick(item.id)}
                     >
                       {item.reminder}
+                      {/* <img
+                        className="w-5"
+                        src={notification}
+                        alt="notification"
+                      /> */}
                       <IoIosNotifications style={{color:"#ffe000", fontSize:"17px"}}/>
-                      {/* <img className="w-5" src={notification} alt="notification"/> */}
                     </button>
                   ) : (
-                    <button className="flex gap-1  bg-[#EDEDED] text-[#0038FF]  text-[14px] justify-center rounded-sm items-center p-2 today-notified-btn">
+                    <button className="flex gap-1  bg-[#EDEDED] text-[#0038FF]  text-[14px] justify-center rounded-sm items-center p-2">
                       Notified
                       <img className="w-4" src={vector} alt="notified" />
                     </button>

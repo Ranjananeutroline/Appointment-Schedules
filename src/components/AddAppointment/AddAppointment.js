@@ -5,7 +5,7 @@ import mail from "../../assets/mail.svg";
 import calender from "../../assets/calender.svg";
 import time from "../../assets/time.svg";
 import axios from "axios";
-import { AppContext } from "../../components/Appointment/AppContext";
+import { AppContext } from "../../pages/AppContext";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import sucessGreen from "../../assets/sucess-green.svg";
@@ -298,15 +298,15 @@ function AddAppointment(props) {
       <div>
         <form
           onSubmit={handleSubmit}
-          className=" flex  w-[full] md:w-[400px] md:h-[auto] mt-4  flex-col bg-[#F5F5FA]"
+          className=" flex  w-[full] md:w-[400px] md:h-[auto]  flex-col bg-[white] add-appoint-form"
         >
-          <p className="mb-[15px] text-center text-[18px]  tracking-wide font-[500] font-serif md:mb-[10px] md:text-[22px] ">
+          <p className="mb-[15px] text-center text-[18px]  text-[#19a7ce] tracking-wide font-[500] font-serif md:mb-[10px] md:text-[22px] ">
             Appointment
           </p>
           <div className="flex items-center relative md:mx-3">
             <img className="w-3.5  absolute left-4" src={user} alt="user"></img>
             <input
-              className={`w-full border-none rounded-[5px]  text-[14px] h-[39px] m-2 pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none  focus:ring-1 focus:ring-slate-500 placeholder:text-[#8B8989] bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
+              className={`w-full border rounded-[5px]  text-[14px] h-[39px] m-2 pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none  placeholder:text-[#8B8989] bg-[#dceaff8c]  placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
               type="text"
               name="name"
               value={formData.name}
@@ -323,7 +323,7 @@ function AddAppointment(props) {
           <div className="flex  items-center relative md:mx-3">
             <img className="w-4 absolute left-4" src={mail} alt="mail"></img>
             <input
-              className={`w-full border-none rounded-[5px]  text-[14px] h-[39px] m-2 pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-1 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
+              className={`w-full border rounded-[5px]  text-[14px] h-[39px] m-2 pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none  placeholder:text-[#8B8989] bg-[#dceaff8c] placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
               type="email"
               name="email"
               value={formData.email}
@@ -344,7 +344,7 @@ function AddAppointment(props) {
               alt="phone"
             ></img>
             <input
-              className={`w-[100%] border-none rounded-[5px]  text-[14px] h-[39px] m-2  pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none focus:ring-1 focus:ring-slate-500  placeholder:text-[#8B8989] bg-[#dceaff4d] shadow-shado2  placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
+              className={`w-[100%] border rounded-[5px]  text-[14px] h-[39px] m-2  pl-[32px] border-[0.5px]   focus:bg-white focus:outline-none   placeholder:text-[#8B8989] bg-[#dceaff8c]  placeholder:text-[13px]  md:w-[400px] md:h-[45px] md:placeholder:text-[15px] md:pl-[35px]`}
               type="phone"
               name="contact"
               placeholder="Phone No"
@@ -364,7 +364,9 @@ function AddAppointment(props) {
               <select
                 onChange={handleChange}
                 name="services"
-                className="rounded-[8px] border-none w-[95%] m-2 mr-11 text-[14px] text-[#8B8989] h-[39px] md:m-2 pl-[14px] border-[0.5px]  focus:bg-white focus:outline-none focus:ring-1 focus:ring-slate-500  bg-[#dceaff4d] shadow-shado2   md:w-[260px] md:h-[45px] md:pl-[15px]  md:text-[15px]"
+                className="rounded-[8px] border w-[95%] m-2 mr-11 text-[14px] text-[#8B8989] 
+                h-[39px] md:m-2 pl-[14px] border-[0.5px]  focus:bg-white focus:outline-none  
+                bg-[#dceaff8c]  md:w-[260px] md:h-[45px] md:pl-[15px]  md:text-[15px]  appoint-form-select"
               >
                 <option value="">Select a Service</option>
                 <option value="Legal Consultant">Legal Consultant</option>
@@ -381,7 +383,9 @@ function AddAppointment(props) {
               <div className=" my-1 md:my-0 pl-2 md:pl-0">
                 <button
                   type="button"
-                  className="text-[14px] h-[39px] border-none  text-[#ad80d8] w-[80px] rounded-[5px]  md:mt-2  border-[0.5px] outline-none active:outline-none  focus:outline-none   bg-[#dceaff4d] shadow-shado2   md:w-[80px] md:h-[45px]  md:text-[15px] "
+                  className="text-[14px] h-[39px] border  text-[#ad80d8] w-[80px] rounded-[5px]  md:mt-2  border-[0.5px]
+                   outline-none active:outline-none  focus:outline-none   bg-[#dceaff8c]   md:w-[80px] md:h-[45px] 
+                    md:text-[15px]  appoint-form-select"
                 >
                   {formData.duration}
                 </button>
@@ -398,7 +402,9 @@ function AddAppointment(props) {
               <button
                 onClick={onOpenModal}
                 type="button"
-                className="  relative text-[14px] text-left pl-[33px] md:pl-0 border-none h-[39px]  w-full rounded-[5px]  text-[#8B8989]  m-2  border-[0.5px]  focus:bg-white focus:outline-none focus:ring-1 focus:ring-slate-500  bg-[#dceaff4d] shadow-shado2   md:text-center   md:w-[140px] md:h-[45px]  md:text-[15px] "
+                className="  relative text-[14px] text-left pl-[33px] md:pl-0 border h-[39px]  w-full rounded-[5px] 
+                 text-[#8B8989]  m-2  border-[0.5px]  focus:bg-white focus:outline-none bg-[#dceaff8c] md:text-center 
+                   md:w-[140px] md:h-[45px]  md:text-[15px]  appoint-form-select"
               >
                 {formData.date === "" ? (
                   <p>Select Date</p>
@@ -431,7 +437,8 @@ function AddAppointment(props) {
               <select
                 onChange={handleChange}
                 name="time" // Updated from "services" to "time"
-                className="rounded-[5px] w-full relative border-none m-2 mr-11 text-[14px]  text-[#8B8989] h-[39px] md:m-2 pl-[33px] border-[0.5px] focus:bg-white focus:outline-none focus:ring-1 focus:ring-slate-500 bg-[#dceaff4d] shadow-shado2 md:w-[150px] md:h-[45px] md:pl-[30px] md:text-[15px]"
+                className="rounded-[5px] w-full relative border m-2 mr-11 text-[14px]  text-[#8B8989] h-[39px] md:m-2 pl-[33px] border-[0.5px] focus:bg-white focus:outline-none bg-[#dceaff8c]  md:w-[150px] md:h-[45px]
+                 md:pl-[30px] md:text-[15px] appoint-form-select"
                 value={formData.time}
               >
                 <option value="">Select Time</option>

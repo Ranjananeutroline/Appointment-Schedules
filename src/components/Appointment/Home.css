@@ -20,24 +20,20 @@
 .appointment-main h1{
   padding-bottom: 0.75rem;
 }
-.add-appoint-div{
-  width: 100%;
-  text-align: end;
-  margin-top: 1rem;
-}
-
 .add-appoint-btn:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #614BC3;
 }
-
+.add-appoint-form-close-icon{
+  margin-top: 0.8rem!important;
+}
 
 /* @media screen and (max-width: 800px) {
   .customModal {
     width: 90%; 
   }
 } */
-@media screen and (max-width: 915px){
+/* @media screen and (max-width: 915px){
   .appointment-main{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -54,4 +50,4 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-}
+} */

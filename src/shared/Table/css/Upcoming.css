@@ -11,14 +11,36 @@
   padding: 0%;
   background-color: #fafafa;
 }
+.customModal4 {
+  padding: 10px;
+}
+.customOverlay4 {
+  background-color: rgba(0, 0, 0, 0.182);
+}
 .customButton2 {
   top: 12px;
   right: 14px;
-  
 }
- /* th{
-  border: 1px solid;
+.first-scroll-box::-webkit-scrollbar{
+  width: 7px;
+
 }
-td{
-  border: 1px solid;
-}  */
+.first-scroll-box::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.24);
+}
+.first-scroll-box::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 15px; 
+} 
+.second-scroll-box::-webkit-scrollbar{
+  width: 7px;
+}
+.second-scroll-box::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.24);
+}
+.second-scroll-box::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 15px; 
+} 
