@@ -758,17 +758,17 @@ function Completed() {
           </div>
         ))}
       </div> */}
-      {/* <div className=" md:hidden    overflow-y-auto h-[400px]">
+      <div className=" md:hidden  overflow-y-auto h-[465px]">
         {data.map((item) => (
           <div
-            className=" border-b  flex px-2  py-4 justify-center gap-3 items-center"
+            className=" flex px-2  py-4 justify-center gap-3 items-center"
             key={item.id}
           >
             <div className=" relative  w-full">
-              <div className="flex absolute top-2 right-2 text-[15px] font-bold rounded-full bg-indigo-400 text-white w-8 h-8 justify-center items-center">
+              <div className="flex absolute top-3 right-3 text-[15px] font-medium rounded-full bg-[#8FBAF3] text-[white] w-8 h-8 justify-center items-center">
                 {item.id}
               </div>
-              <div className=" bg-[#f8f8f8]   p-2 flex flex-col border  rounded-[0.3rem]  justify-between gap-3">
+              <div className=" bg-[white] flex flex-col  rounded-[0.3rem]  justify-between gap-3 bg-div">
                 <p
                   onClick={() => onOpenDetailModal(item.id)}
                   className="text-[16px] font-semibold "
@@ -776,23 +776,23 @@ function Completed() {
                   {item.name}
                 </p>
                 <div className="flex  justify-start items-center">
-                  <p className=" px-2 pb-0.5 rounded-md border-none bg-[#4FC0D0] font-bold text-[15px] text-[white]  ">
+                  <p className=" rounded-md border-none bg-[#5DA7DB] font-medium text-[14.2px] text-[white] resp-service">
                     {item.services}
                   </p>
                 </div>
                 <div className="flex justify-start items-center">
                   <p
-                    className={`px-2 pb-0.5 rounded-md border-none ${
+                    className={`rounded-md border-none ${
                       item.status === "Pending"
-                        ? "bg-slate-500" // ? "bg-[#F1C93B]"
+                        ? " bg-[#46B5D1]"
                         : "bg-[#63c046]"
-                    } font-bold text-[15px] text-white`}
+                    } font-medium text-[14.2px] text-white resp-status`}
                   >
                     {item.status}
                   </p>
                 </div>
                 <div className="flex justify-start items-center">
-                  <p className=" px-2 pb-0.5 rounded-md border-none bg-[#8062D6] font-bold text-[15px] text-[white]  ">
+                  <p className="rounded-md border-none bg-[#42C2FF] font-medium text-[14px] text-[white] resp-time">
                     {item.time}
                   </p>
                 </div>
@@ -958,8 +958,8 @@ function Completed() {
             </div>
           </div>
         ))}
-      </div> */}
-      <div className=" md:hidden   overflow-y-auto h-[400px]">
+      </div> 
+      {/* <div className=" md:hidden   overflow-y-auto h-[400px]">
         {data.map((item) => (
           <div
             className=" border-b  flex px-2  py-4 justify-center gap-3 items-center"
@@ -1191,7 +1191,7 @@ function Completed() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }

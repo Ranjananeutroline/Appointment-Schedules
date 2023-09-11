@@ -300,7 +300,7 @@ function AddAppointment(props) {
           onSubmit={handleSubmit}
           className=" flex  w-[full] md:w-[400px] md:h-[auto]  flex-col bg-[white] add-appoint-form"
         >
-          <p className="mb-[15px] text-center text-[18px]  text-[#19a7ce] tracking-wide font-[500] font-serif md:mb-[10px] md:text-[22px] ">
+          <p className="mb-[15px] text-center text-[18px]  text-[#19a7ce] tracking-wide font-[500] md:mb-[10px] md:text-[22px] ">
             Appointment
           </p>
           <div className="flex items-center relative md:mx-3">
@@ -366,7 +366,7 @@ function AddAppointment(props) {
                 name="services"
                 className="rounded-[8px] border w-[95%] m-2 mr-11 text-[14px] text-[#8B8989] 
                 h-[39px] md:m-2 pl-[14px] border-[0.5px]  focus:bg-white focus:outline-none  
-                bg-[#dceaff8c]  md:w-[260px] md:h-[45px] md:pl-[15px]  md:text-[15px]  appoint-form-select"
+                bg-[#dceaff8c]  md:w-[260px] md:h-[45px] md:pl-[15px]  md:text-[15px] font-normal appoint-form-select"
               >
                 <option value="">Select a Service</option>
                 <option value="Legal Consultant">Legal Consultant</option>
@@ -392,8 +392,8 @@ function AddAppointment(props) {
               </div>
             )}
           </div>
-          <div className="  md:mx-3 flex  flex-col md:justify-start md:items-center md:gap-5 md:flex-row ">
-            <div className=" relative w-[95%]  md:w-auto ">
+          <div className="  md:mx-3 flex  flex-col md:justify-start md:items-center md:gap-5 md:flex-row appoint-date-form">
+            <div className=" relative w-[95%]  md:w-auto date-appoint">
               <img
                 className="  z-10 w-4  absolute top-[1.20rem] left-4 md:top-[1.40rem]"
                 src={calender}
@@ -404,7 +404,7 @@ function AddAppointment(props) {
                 type="button"
                 className="  relative text-[14px] text-left pl-[33px] md:pl-0 border h-[39px]  w-full rounded-[5px] 
                  text-[#8B8989]  m-2  border-[0.5px]  focus:bg-white focus:outline-none bg-[#dceaff8c] md:text-center 
-                   md:w-[140px] md:h-[45px]  md:text-[15px]  appoint-form-select"
+                   md:w-[140px] md:h-[45px]  md:text-[15px]  appoint-form-select appoint-service-select select-appoint-date"
               >
                 {formData.date === "" ? (
                   <p>Select Date</p>
@@ -428,7 +428,7 @@ function AddAppointment(props) {
                 Select Time
               </button>
             </div> */}
-            <div className=" relative  w-[95%] md:w-[100px]  ">
+            <div className=" relative  w-[95%] md:w-[100px] time-appoint ">
               <img
                 className="  z-10 w-4  absolute top-[1.20rem] left-4 md:top-[1.40rem]"
                 src={time}
@@ -438,7 +438,7 @@ function AddAppointment(props) {
                 onChange={handleChange}
                 name="time" // Updated from "services" to "time"
                 className="rounded-[5px] w-full relative border m-2 mr-11 text-[14px]  text-[#8B8989] h-[39px] md:m-2 pl-[33px] border-[0.5px] focus:bg-white focus:outline-none bg-[#dceaff8c]  md:w-[150px] md:h-[45px]
-                 md:pl-[30px] md:text-[15px] appoint-form-select"
+                 md:pl-[30px] md:text-[15px] appoint-form-select font-normal select-appoint-time"
                 value={formData.time}
               >
                 <option value="">Select Time</option>

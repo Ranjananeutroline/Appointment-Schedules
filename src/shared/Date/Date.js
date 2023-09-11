@@ -1,4 +1,5 @@
 import React from "react";
+import "./Date.css";
 
 const currentDate = new Date();
 
@@ -29,7 +30,7 @@ const getFormattedDate = (date) => {
 
 const App = () => {
   return (
-    <div className="font-[600] text-[13px] md:text-[16px] text-indigo-500">
+    <div className="font-[600] text-[13px] md:text-[16px] text-indigo-500 today-date">
       {getFormattedDate(currentDate)}
     </div>
   );

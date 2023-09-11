@@ -11,6 +11,19 @@
 .appoint-form-select:focus{
   border: 1px solid rgba(83, 211, 228, 0.438);
 }
+.date-appoint{
+  width: 50%;
+}
+.time-appoint{
+  width: 50%;
+}
+.select-appoint-date{
+  width: 90%;
+}
+.select-appoint-time{
+  width: 90%;
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -21,5 +34,32 @@
 @media screen and (max-width: 400px) {
   .customModalSucess {
     width: 90%; /* Adjust the width for small screens */
+  }
+}
+@media screen and (max-width: 767px){
+  .add-appoint-form{
+    width: 350px;
+    padding: 1rem 0.5rem 0 0.5rem;
+  } 
+  .appoint-date-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .appoint-form-select{
+    width: 70%;
+  }
+  .date-appoint{
+    width: 50%;
+  }
+  .time-appoint{
+    width: 50%;
+  }
+  .select-appoint-date{
+    width: 90%;
+  }
+  .select-appoint-time{
+    width: 90%;
   }
 }

@@ -44,3 +44,21 @@
   background-color: rgba(128, 128, 128, 0.24);
   border-radius: 15px; 
 } 
+
+
+
+@media screen and (max-width: 767px){
+  .bg-div{
+    padding: 0.8rem 0.5rem 0.5rem 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .resp-service{
+    padding: 0.25rem 0.5rem;
+  }
+  .resp-status{
+    padding: 0.25rem 0.5rem;
+  }
+  .resp-time{
+    padding: 0.25rem 0.5rem;
+  }
+ }

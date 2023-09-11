@@ -28,26 +28,49 @@
   margin-top: 0.8rem!important;
 }
 
-/* @media screen and (max-width: 800px) {
-  .customModal {
-    width: 90%; 
-  }
-} */
-/* @media screen and (max-width: 915px){
+
+ @media screen and (max-width: 1075px){
   .appointment-main{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
-@media screen and (max-width: 830px){
+@media screen and (max-width: 930px){
+  .appointment-main{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px){
+ .active-btn-div{
+  width: 15%;
+ }
+}
+@media screen and (max-width: 660px){
+  .active-btn-div{
+   width: 17%;
+  }
+ }
+ @media screen and (max-width: 560px){
+  .active-btn-div{
+   width: 19%;
+  }
+ }
+ @media screen and (max-width: 505px){
+  .active-btn-div{
+   width: 21%;
+  }
+ }
+ @media screen and (max-width: 460px){
   .appointment-main{
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-@media screen and (max-width: 520px){
-  .appointment-main{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .active-btn-div button{
+    padding:  0.5rem 0;
   }
-} */
+  .active-btn-div{
+    width: 22%;
+   }
+ }
+ 

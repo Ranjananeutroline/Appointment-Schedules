@@ -132,7 +132,7 @@ function Appointment() {
 
         <div className="w-full flex flex-col  justify-center  items-start gap-2 md:gap-0 md:flex-row md:justify-between">
           <div className="flex   w-full md:w-auto md:items-center md:justify-center sm:flex-row md:flex-row ">
-            <div className="relative  w-auto">
+            <div className="relative  w-auto active-btn-div">
               <button
                 className={`border-r w-[100%] h-[100%] py-3  md:py-3 md:px-3 ${
                   activeTab === "today"
@@ -163,7 +163,7 @@ function Appointment() {
               </p>
             </div>
 
-            <div className="relative w-auto">
+            <div className="relative w-auto active-btn-div">
               <button
                 className={`border-r w-[100%] h-[100%] py-3 md:py-3 md:px-3 ${
                   activeTab === "upcoming"
@@ -193,7 +193,7 @@ function Appointment() {
                 10
               </p>
             </div>
-            <div className="relative w-auto">
+            <div className="relative w-auto active-btn-div">
               <button
                 className={`border-r w-[100%] h-[100%] py-3  md:py-3 md:px-3 ${
                   activeTab === "completed"
@@ -223,7 +223,7 @@ function Appointment() {
                 10
               </p>
             </div>
-            <div className="relative  w-auto">
+            <div className="relative  w-auto active-btn-div">
               <button
                 className={`border-r w-[100%] h-[100%] py-3  md:py-3 md:px-3 ${
                   activeTab === "total"
