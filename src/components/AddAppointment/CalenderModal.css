@@ -17,11 +17,18 @@
 .time-appoint{
   width: 50%;
 }
+.appoint-date-form{
+  gap: 0;
+}
 .select-appoint-date{
-  width: 90%;
+  width: 91%;
 }
 .select-appoint-time{
-  width: 90%;
+  width: 91%;
+}
+.calendar-closebtn{
+  margin-left: 0.5rem;
+  margin-top: 5px;
 }
 
 
@@ -62,4 +69,25 @@
   .select-appoint-time{
     width: 90%;
   }
+  .service-select-appoint{
+    /* border: 1px solid; */
+    margin: auto;
+    flex-direction: row;
+    width: 99%;
+    justify-content: space-between;
+}
+.service-select1-appoint{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.service-select2-appoint{
+  width: 95%;
+}
+.service-time{
+  width: 40%;
+}
+.service-time-btn{
+  width: 90%;
+  margin-top: 4.5px;
+}
 }
