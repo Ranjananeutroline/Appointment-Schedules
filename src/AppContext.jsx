@@ -6,18 +6,18 @@ const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [formDataFromModal, setFormDataFromModal] = useState([
     {
-      title: "Offer 1",
-      message: "20% off for 30 min consultant",
-      description: "Limited offer",
+      title: "20% off for 30 min consultant",
+      message: "Get a 20% discount on a one-hour consultation between June 15 and June 16.",
+      description: "Validity Upto",
       from: "2023-06-15",
       to: "2023-06-16",
     },
     {
-      title: "Offer 2",
-      message: "10% off for 1 hour consultant",
-      description: "Special discount",
-      from: "2023-06-20",
-      to: "2023-06-25",
+      title: "20% off for 30 min consultant",
+      message: "Get a 20% discount on a one-hour consultation between June 15 and June 16.",
+      description: "Validity Upto",
+      from: "2023-06-15",
+      to: "2023-06-16",
     },
   ]);
 

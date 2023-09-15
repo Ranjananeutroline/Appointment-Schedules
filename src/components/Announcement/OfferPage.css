@@ -73,9 +73,8 @@
     font-size: 14px;
   }
   .right-p{
-    font-size: 11px;
     width: 220px;
-    margin-left: 10px;
+  
   }
   .announce-box{
     padding-bottom: 1rem;
@@ -88,9 +87,7 @@
   .a-left-p{
     font-size: 14px;
   }
-  .a-right-p{
-    font-size: 11px;
-  }
+  
   .inner-expire{
     width: 400px;
   }
@@ -105,6 +102,12 @@
     font-size: 13px;
     margin-left: 0;
   }
+  .offer-info-modal{
+    width: 400px;
+  }
+  .announce-info-modal{
+    width: 400px;
+  }
 }
 @media only screen and (max-width: 470px){
   .offer-box{
@@ -117,8 +120,8 @@
     font-size: 13px;
   }
   .right-p{
-    font-size: 10.5px;
-    width: 230px;
+    
+    width: 175px;
   }
   .right-p-img{
     height: 13px;
@@ -133,9 +136,7 @@
   .a-left-p{
     font-size: 13px;
   }
-  .a-right-p{
-    font-size: 10.5px;
-  }
+  
   .a-right-p-img{
     height: 13px;
     width: 13px;
@@ -145,6 +146,47 @@
   .inner-expire {
     width: 370px;
 }
+}
+@media only screen and (max-width: 430px){
+  .offer-info-modal{
+    width: 350px;
+  }
+  .announce-info-modal{
+    width: 350px;
+  }
+  .text-offer-info{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .text-announce-info{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .offer-valid-div{
+    padding-left: 0.5rem;
+  }
+  .announce-valid-div{
+    padding-left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 395px){
+.a-left-p {
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 370px){
+  .offer-info-modal{
+    width: 320px;
+  }
+  .announce-info-modal{
+    width: 320px;
+  }
+  .offer-valid-div p{
+    font-size: 13.5px;
+  }
+  .announce-valid-div p{
+    font-size: 13.5px;
+  }
 }
 @media only screen and (max-width: 415px){
   .inner-expire {
@@ -165,7 +207,7 @@
     width: 360px;
   }
   .right-p{
-    width: 205px;
+    width: 155px;
   }
   .announce-box{
     width: 360px;
@@ -174,7 +216,7 @@
     width: 360px;
   }
   .left-p{
-    font-size: 14px;
+    font-size: 12.5px;
   }
   .inner-a-box{
     padding-left: 1rem;
@@ -194,7 +236,7 @@
     width: 338px;
   }
   .right-p{
-    width: 130px;
+    width: 140px;
   }
   .announce-box{
     width: 338px;
@@ -205,9 +247,7 @@
   .select-offer-main{
     width: 90%;
   }
-  .a-right-p{
-    margin-left: 45px;
-  }
+  
   .inner-expire {
     width: 330px;
   }
@@ -234,8 +274,9 @@
   .announce-box-title{
     width: 322px;
   }
-  .a-right-p{
-    margin-left: 30px;
+  .offer-edit-r{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 355px){

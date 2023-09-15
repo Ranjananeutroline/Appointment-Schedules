@@ -268,18 +268,14 @@ padding: 0.5rem 2rem!important;
     padding: 8px 15px !important;
   }
 }
-@media only screen and (max-width: 445px) {
+/* @media only screen and (max-width: 445px) {
   .react-calendar {
     width: 93% !important;
   }
-}
+} */
 @media only screen and (max-width: 430px) {
-  .react-calendar {
-    height: 345px !important;
-  }
-  .times {
-    width: 99.5% !important;
-    height: 345px !important;
+  .react-calendar{
+    width: 385px!important;
   }
   .react-calendar__navigation button {
     font-size: 16px !important;
@@ -291,28 +287,23 @@ padding: 0.5rem 2rem!important;
     font-size: 13.5px !important;
   }
   .react-calendar__viewContainer {
-    padding: 0 10px !important;
+    padding: 1.8rem 10px !important;
   }
 }
-@media only screen and (max-width: 415px) {
-  /* .react-calendar,.times{
-  width: 370px!important;
-}  */
 
-  .react-calendar__navigation {
-    padding: 1.5rem 0.5rem 0.5rem 0.5rem !important;
-  }
-}
 @media only screen and (max-width: 400px) {
   .react-calendar {
-    height: 335px !important;
-  }
-
+    width: 372px!important;
+}
   abbr[title] {
     font-size: 11px !important;
   }
   .react-calendar__tile {
     font-size: 12px !important;
+  }
+  .react-calendar__navigation {
+    margin: 0 1rem;
+    padding: 1.5rem 1rem 0.5rem 1rem !important;
   }
 }
 @media only screen and (max-width: 395px) {
@@ -325,22 +316,16 @@ padding: 0.5rem 2rem!important;
   .react-calendar__tile {
     font-size: 13px !important;
   }
-  .react-calendar__viewContainer {
-    padding: 0 5px !important;
-  }
-
-  .timeslot-div {
-    max-height: 168px !important;
-  }
+  .react-calendar {
+    width: 368px!important;
+    height: 305px;
+}
 }
 
 @media only screen and (max-width: 375px) {
-  .react-calendar {
-    height: 327px !important;
-  }
-  .times {
-    width: 98% !important;
-    height: 327px !important;
+  .react-calendar{
+    width: 350px!important;
+    height: 295px;
   }
   .react-calendar__navigation button {
     font-size: 14px !important;
@@ -351,11 +336,25 @@ padding: 0.5rem 2rem!important;
   .react-calendar__tile {
     font-size: 12px !important;
   }
-  .react-calendar__viewContainer {
-    padding: 0 5px !important;
-  }
+  
 }
-
+@media only screen and (max-width: 365px){
+  .react-calendar {
+    width: 325px!important;
+}
+.react-calendar__navigation button {
+  min-width: 30px !important;
+  
+}
+}
+@media only screen and (max-width: 345px){
+.react-calendar {
+    width: 310px!important;
+}
+.react-calendar__navigation button {
+  min-width: 25px !important;
+}
+}
 @media only screen and (max-width: 337px) {
   .react-calendar__navigation button {
     font-size: 12.5px !important;

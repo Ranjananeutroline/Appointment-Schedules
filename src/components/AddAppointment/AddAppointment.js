@@ -473,7 +473,7 @@ function AddAppointment(props) {
               </span>
             </p>
           </div>
-          <div className="flex justify-center items-center mt-5 mb-5">
+          <div className="flex justify-center items-center mt-5 mb-5 appoint-submit-form">
             {/* <button
               type="button"
               onClick={onOpenSucess}

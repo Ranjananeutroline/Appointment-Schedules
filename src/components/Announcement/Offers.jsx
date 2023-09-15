@@ -30,19 +30,20 @@ const Offers = () => {
   };
   const offersData = [
     {
-      title: "Offer 1",
-      message: "20% off for 30 min consultant",
-      description: "Limited offer",
+      title: "20% off for 30 min consultant",
+      message: "Get a 20% discount on a one-hour consultation between June 15 and June 16.",
+      description: "Validity Upto",
       from: "06-15",
       to: "06-16",
     },
     {
-      title: "Offer 2",
-      message: "10% off for 1 hour consultant",
-      description: "Special discount",
+      title: "10% off for 1 hour consultant",
+      message: "Get a 20% discount on a one-hour consultation between June 20 and June 25.",
+      description: "Validity Upto",
       from: "06-20",
       to: "06-25",
     },
+    
     // Add more offers as needed
   ];
   useEffect(() => {
@@ -68,16 +69,16 @@ const Offers = () => {
       </Modal>
 
       {formDataFromModal.map((offer, index) => (
-        <div key={index} className="w-[450px] h-[145px] rounded-[7px] bg-white offer-box">
+        <div key={index} className="w-[450px] h-[180px] rounded-[7px] bg-white offer-box">
           <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center offer-box-title">
             <h2 className="text-white text-[17px] font-[600]">{offer.title}</h2>
           </div>
-          <div className="flex w-full px-4 py-[17px] gap-2  items-center  second-div-offer">
+          <div className="flex w-full px-4 py-[17px] gap-3  items-center  second-div-offer">
             <img src={radio} alt="radio" className="w-[12x] h-[12px]" />
             <p className="text-[15px]  w-[350px] left-p">{offer.message}</p>
-            <p className="text-[12px] text-[#4A55A2] ml-[20px] font-[500]  w-[250px] right-p">
+            {/* <p className="text-[12px] text-[#4A55A2] ml-[20px] font-[500]  w-[250px] right-p">
               {offer.from} - {offer.to}
-            </p>
+            </p> */}
             <img
               src={info}
               alt="right"
@@ -86,10 +87,13 @@ const Offers = () => {
             />
           </div>
           <div className="flex px-4 items-center justify-between inner-bottom-div">
-            <p className="text-[13.2px] text-[#6A5F5F]">{offer.description}</p>
-
-            <div className="flex px-4 items-center justify-end gap-3 pr-5">
-              <p className="text-[13.2px] text-[#6A5F5F]">20 views</p>
+            <div style={{display:"flex", gap:"10px", paddingLeft:"3px"}}>
+            <p className="text-[13px] font-normal">{offer.description}:</p>
+            <p className="text-[12px] text-[#4A55A2] font-[500]  w-[250px] mt-[1px] right-p">
+              {offer.from} - {offer.to}
+            </p>
+            </div>
+            <div className="flex px-4 items-center justify-end gap-3 pr-4 offer-edit-r">
               <div className="flex gap-1">
                 <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
                 <img src={trash} alt="trash" className="w-[14px] h-[16px]" />

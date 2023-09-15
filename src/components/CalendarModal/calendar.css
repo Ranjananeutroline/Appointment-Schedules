@@ -251,7 +251,7 @@
   @media only screen and (max-width: 630px) {
     .react-calendar {
       margin: auto !important;
-      height: 353px !important;
+      /* height: 353px !important; */
       width: 83% !important;
     }
     .times {
@@ -331,13 +331,7 @@
     }
   }
   @media only screen and (max-width: 430px) {
-    .react-calendar {
-      height: 345px !important;
-    }
-    .times {
-      width: 99.5% !important;
-      height: 345px !important;
-    }
+    
     .react-calendar__navigation button {
       font-size: 16px !important;
     }
@@ -361,10 +355,7 @@
     }
   }
   @media only screen and (max-width: 400px) {
-    .react-calendar {
-      height: 335px !important;
-    }
-  
+    
     abbr[title] {
       font-size: 11px !important;
     }
@@ -392,13 +383,7 @@
   }
   
   @media only screen and (max-width: 375px) {
-    .react-calendar {
-      height: 327px !important;
-    }
-    .times {
-      width: 98% !important;
-      height: 327px !important;
-    }
+   
     .react-calendar__navigation button {
       font-size: 14px !important;
     }

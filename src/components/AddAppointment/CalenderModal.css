@@ -43,6 +43,20 @@
     width: 90%; /* Adjust the width for small screens */
   }
 }
+@media screen and (max-width: 365px){
+.add-appoint-form {
+    width: 335px!important;
+}
+.appoint-submit-form{
+  margin-top: 0.5rem;
+}
+}
+@media screen and (max-width: 350px){
+  .add-appoint-form {
+      width: 310px!important;
+  }
+  
+  }
 @media screen and (max-width: 767px){
   .add-appoint-form{
     width: 350px;

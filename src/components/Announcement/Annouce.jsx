@@ -37,101 +37,108 @@ const Annouce = () => {
           {activeTab === "completed" && <Completed />}
           {activeTab === "total" && <Total />}
         </div> */}
-          <div className="w-[450px] h-[145px] rounded-[7px] bg-white announce-box">
+          <div className="w-[450px] h-[180px] rounded-[7px] bg-white announce-box">
             <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center announce-box-title">
-              <h2 className="text-white text-[17px] font-[600]">Holiday</h2>
+              <h2 className="text-white text-[17px] font-[600]">20% off for 30 min consultant</h2>
             </div>
-            <div className=" flex w-full  px-8 py-[17px] justify-between inner-a-box">
+            <div className=" flex w-full  px-4 py-[17px] justify-between inner-a-box">
               <div className='flex items-center gap-4 second-a-box'>
-              <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
-              <p className="text-[16px] a-left-p">20% off for 30 min consultant</p>
+              <img src={radio} alt="radio" className="w-[12px] h-[12px] " />
+              <p className="text-[15px] a-left-p">Get a 20% discount on a one-hour consultation between June 15 and June 16.</p>
+              <img src={info} alt="right" className="w-[16px] h-[16px] mr-1 a-right-p-img"onClick={openModal} />
               </div>
-              
+              </div>
              
-              <div  className='flex items-center gap-4 a-right-box'>
-              <p className="text-[14px] text-[#4A55A2] ml-[50px] font-[500] a-right-p">
+            <div className="flex px-[20px] items-center justify-between gap-5">
+              <div style={{display:"flex", gap:"10px"}}>
+                <p className="text-[13px] font-normal">Validity Upto:</p>
+                <p className="text-[13px] text-[#4A55A2]  font-[500] a-right-p">
                 Jun 15
               </p>
-              <img src={info} alt="right" className="w-[16px] h-[16px] a-right-p-img"onClick={openModal} />
               </div>
-              </div>
-             
+            <div style={{display:"flex", gap:"8px"}}>
+              <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
+             <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
+            </div>
             
-            <div className="flex px-[32px] items-center justify-end gap-1">
-             
-             <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
-             <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
             </div>
           </div>
-          <div className="w-[450px] h-[145px] rounded-[7px] bg-white announce-box">
+          <div className="w-[450px] h-[180px] rounded-[7px] bg-white announce-box">
             <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center announce-box-title">
-              <h2 className="text-white text-[17px] font-[600]">Holiday</h2>
+              <h2 className="text-white text-[17px] font-[600]">20% off for 30 min consultant</h2>
             </div>
-            <div className=" flex w-full  px-8 py-[17px] justify-between inner-a-box">
+            <div className=" flex w-full  px-4 py-[17px] justify-between inner-a-box">
               <div className='flex items-center gap-4 second-a-box'>
-              <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
-              <p className="text-[16px] a-left-p">20% off for 30 min consultant</p>
+              <img src={radio} alt="radio" className="w-[12px] h-[12px] " />
+              <p className="text-[15px] a-left-p">Get a 20% discount on a one-hour consultation between June 15 and June 16.</p>
+              <img src={info} alt="right" className="w-[16px] h-[16px] mr-1 a-right-p-img"onClick={openModal} />
               </div>
-              
+              </div>
              
-              <div  className='flex items-center gap-4 a-right-box'>
-              <p className="text-[14px] text-[#4A55A2] ml-[50px] font-[500] a-right-p">
+            <div className="flex px-[20px] items-center justify-between gap-5">
+              <div style={{display:"flex", gap:"10px"}}>
+                <p className="text-[13px] font-normal">Validity Upto:</p>
+                <p className="text-[13px] text-[#4A55A2]  font-[500] a-right-p">
                 Jun 15
               </p>
-              <img src={info} alt="right" className="w-[16px] h-[16px] a-right-p-img"onClick={openModal} />              </div>
               </div>
-              <div className="flex px-[32px] items-center justify-end gap-1">
-             
-             <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
+            <div style={{display:"flex", gap:"8px"}}>
+              <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
+            </div>
+            
             </div>
           </div>
-          <div className="w-[450px] h-[145px] rounded-[7px] bg-white announce-box">
+          <div className="w-[450px] h-[180px] rounded-[7px] bg-white announce-box">
             <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center announce-box-title">
-              <h2 className="text-white text-[17px] font-[600]">Holiday</h2>
+              <h2 className="text-white text-[17px] font-[600]">20% off for 30 min consultant</h2>
             </div>
-            <div className=" flex w-full  px-8 py-[17px] justify-between inner-a-box">
+            <div className=" flex w-full  px-4 py-[17px] justify-between inner-a-box">
               <div className='flex items-center gap-4 second-a-box'>
-              <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
-              <p className="text-[16px] a-left-p">20% off for 30 min consultant</p>
+              <img src={radio} alt="radio" className="w-[12px] h-[12px] " />
+              <p className="text-[15px] a-left-p">Get a 20% discount on a one-hour consultation between June 15 and June 16.</p>
+              <img src={info} alt="right" className="w-[16px] h-[16px] mr-1 a-right-p-img"onClick={openModal} />
               </div>
-              
+              </div>
              
-              <div  className='flex items-center gap-4 a-right-box'>
-              <p className="text-[14px] text-[#4A55A2] ml-[50px] font-[500] a-right-p">
+            <div className="flex px-[20px] items-center justify-between gap-5">
+              <div style={{display:"flex", gap:"10px"}}>
+                <p className="text-[13px] font-normal">Validity Upto:</p>
+                <p className="text-[13px] text-[#4A55A2]  font-[500] a-right-p">
                 Jun 15
               </p>
-              <img src={info} alt="right" className="w-[16px] h-[16px] a-right-p-img"onClick={openModal} />
               </div>
-              </div>
-              <div className="flex px-[32px] items-center justify-end gap-1">
-             
-             <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
+            <div style={{display:"flex", gap:"8px"}}>
+              <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
+            </div>
+            
             </div>
           </div>
-          <div className="w-[450px] h-[145px] rounded-[7px] bg-white announce-box">
+          <div className="w-[450px] h-[180px] rounded-[7px] bg-white announce-box">
             <div className="w-[450px] h-[50px] bg-[#8FCEDD] rounded-t-[7px] flex items-center justify-center announce-box-title">
-              <h2 className="text-white text-[17px] font-[600]">Holiday</h2>
+              <h2 className="text-white text-[17px] font-[600]">20% off for 30 min consultant</h2>
             </div>
-            <div className=" flex w-full  px-8 py-[17px] justify-between inner-a-box">
+            <div className=" flex w-full px-4 py-[17px] justify-between inner-a-box">
               <div className='flex items-center gap-4 second-a-box'>
-              <img src={radio} alt="radio" className="w-[12x] h-[12px] " />
-              <p className="text-[16px] a-left-p">20% off for 30 min consultant</p>
+              <img src={radio} alt="radio" className="w-[12px] h-[12px] " />
+              <p className="text-[15px] a-left-p">Get a 20% discount on a one-hour consultation between June 15 and June 16.</p>
+              <img src={info} alt="right" className="w-[16px] h-[16px] mr-1 a-right-p-img"onClick={openModal} />
               </div>
-              
+              </div>
              
-              <div  className='flex items-center gap-4 a-right-box'>
-              <p className="text-[14px] text-[#4A55A2] ml-[50px] font-[500] a-right-p">
+            <div className="flex px-[20px] items-center justify-between gap-5">
+              <div style={{display:"flex", gap:"10px"}}>
+                <p className="text-[13px] font-normal">Validity Upto:</p>
+                <p className="text-[13px] text-[#4A55A2]  font-[500] a-right-p">
                 Jun 15
               </p>
-              <img src={info} alt="right" className="w-[16px] h-[16px] a-right-p-img"onClick={openModal} />
               </div>
-              </div>
-              <div className="flex px-[32px] items-center justify-end gap-1">
-             
-             <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
+            <div style={{display:"flex", gap:"8px"}}>
+              <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
+            </div>
+            
             </div>
           </div>
         </div>

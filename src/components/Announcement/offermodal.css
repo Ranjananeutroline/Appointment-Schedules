@@ -52,6 +52,17 @@
   }
 
 }
+@media screen and (max-width: 370px){
+.add-offers-form {
+    width: 315px;
+}
+.from-to-div {
+  width: 120px;
+}
+.offers-daterange {
+  width: 87%;
+}
+}
 /* .react-responsive-modal-closeButton {
   top: 10px !important;
   right: 8px;
