@@ -4,8 +4,9 @@ import React from 'react'
 
 const OfferModal = () => {
   return (
-    <div className='w-[450px]  bg-[#E4F0FC] rounded-[10px] offer-info-modal'>
-      <div className='w-[450px] h-[60px] bg-[#84aedd]  rounded-t-[10px] flex items-center justify-center offer-info-modal'>
+    <div className='info-main-modal'>
+    <div className='w-[450px]  bg-[white] rounded-[10px] offer-info-modal'>
+      <div className='w-[450px] h-[60px] bg-[#83aab1]  rounded-t-[10px] flex items-center justify-center offer-info-modal'>
         <h1 className='text-[20px] text-white'>20% off for 30 min consultant</h1>
       </div>
       {/* <div className='w-[450px] h-[60px] flex py-5 px-4 justify-between'>
@@ -18,7 +19,7 @@ const OfferModal = () => {
 
       </div>
       <div className='w-[450px] h-[60px]  flex px-4 mx-5 pb-7 pt-2 gap-2 offer-valid-div'>
-      <p className='font-normal'>Validity Upto:</p>
+      <p className='font-normal'>Valid:</p>
         <p className='text-[#3A4DF8] font-[500]'>June 15 - 16,</p>
         <p className='text-[#3A4DF8] font-[500]'>5:00 - 17:00</p>
         
@@ -40,6 +41,7 @@ const OfferModal = () => {
             </button> </div>  */}
 
       
+    </div>
     </div>
   )
 }

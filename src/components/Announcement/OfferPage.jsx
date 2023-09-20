@@ -133,7 +133,7 @@ const OfferPage = () => {
         <div className="addoffer-div">
         {activeTab === "announcement" || activeTab === "offers" ? (
             <button
-              className="flex items-center justify-center gap-2  p-3 text-center text-[#5B76FC] text-inter text-[16px] font-[600] rounded-[6px] bg-[#fbfbfb] shadow-shado2 hover:text-[#4d61ba] hover:bg-[#fdfdfd]
+              className="flex items-center justify-center gap-2  p-3 text-center text-[#5B76FC] text-inter text-[16px] font-[600] rounded-[6px] bg-[#fbfbfb] hover:text-[#4d61ba] hover:bg-[#fdfdfd]
   "
               onClick={() =>
                 activeTab === "announcement"

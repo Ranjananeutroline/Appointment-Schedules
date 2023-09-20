@@ -2,7 +2,7 @@ import React from "react";
 
 const AnnounceModal = () => {
   return (
-    <div className="w-[450px] bg-[#E4F0FC] rounded-[10px] announce-info-modal">
+    <div className="w-[450px] bg-[white] rounded-[10px] announce-info-modal">
       <div className="w-[450px] h-[60px] bg-[#84aedd] rounded-t-[10px] flex items-center justify-center announce-info-modal">
         <h1 className="text-[20px] text-white">ANNOUNCEMENT</h1>
       </div>
@@ -15,7 +15,7 @@ const AnnounceModal = () => {
         </p>
       </div>
       <div className="w-[450px]  flex px-4 mx-5 pb-7 pt-2 announce-valid-div">
-      <p className='font-normal'>Validity Upto:</p>
+      <p className='font-normal'>Valid:</p>
         <p className="text-[#3A4DF8] font-[500] mx-3">June 15 - 16</p>
       </div>
       {/* <div className="flex  h-[45px] mt-5 gap-3 justify-end px-5 mx-4 ">

@@ -14,7 +14,10 @@
     display: flex;
     justify-content: right;
     width: 90%;
-    
+}
+
+.addoffer-div button{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .addoffer-div button:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -34,13 +37,81 @@
 .offer-box{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 } 
+.offer-box:hover .edit-trash-container{
+  display: block;
+}
+.edit-trash-container{
+  display: none;
+}
 .announce-box{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.announce-box:hover .edit-trash-container{
+  display: block;
+  
 }
 .expired-main{
   gap: 3rem;
   margin-top: 2.5rem;
 }
+.offer-info-img{
+  cursor: pointer;
+}
+.off-info-tooltiptext
+{
+    visibility: hidden;
+    width: 70px;
+    /* background-color: skyblue; */
+    /* color: rgb(3, 141, 221); */
+    color: gray;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 5px;
+    font-family: sans-serif;
+    /* Position the tooltip */
+    position: relative; 
+    z-index: 1;
+    right: 100%;
+    font-size: 12px;
+}
+.offer-info-img:hover + .off-info-tooltiptext
+{
+    visibility: visible;
+}
+.a-right-p-img{
+  cursor: pointer;
+}
+.ann-info-tooltiptext
+{
+    visibility: hidden;
+    width: 70px;
+    /* background-color: skyblue; */
+    /* color: rgb(3, 141, 221); */
+    color: gray;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 5px;
+    font-family: sans-serif;
+    /* Position the tooltip */
+    position: relative; 
+    z-index: 1;
+    right: 100%;
+    font-size: 12px;
+}
+.a-right-p-img:hover + .ann-info-tooltiptext
+{
+    visibility: visible;
+    
+}
+.viewoff-btn{
+  display: none;
+}
+.etv-container{
+  display: none;
+}
+
 
 @media only screen and (max-width: 1075px){
   .addoffer-div{
@@ -53,6 +124,41 @@
   }
   .inner-expire{
     margin-bottom: 2rem;
+  }
+  .offinfo-div{
+    display: none;
+  }
+  .offer-box:hover .edit-trash-container{
+    display: none;
+  }
+  .inner-bottom-div{
+    padding-right: 2rem;
+  }
+  .edit-trash-container{
+    display: none;
+  }
+  .viewoff-btn-container{
+    transition: 0.3s ease-out;
+    background: white;
+    /* padding: 5px 12px; */
+    /* border-radius: 5px; */
+    /* border: 1px solid rgba(135, 207, 235, 0.363); */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+  }
+  .viewoff-btn{
+    display: block;
+  }
+  .viewoff-btn svg{
+    font-size: 25px;
+    color: rgb(0, 155, 245);
+  } 
+  .etv-container{
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 }
 @media only screen and (max-width: 560px){
@@ -159,6 +265,7 @@
     margin-right: 0.5rem;
   }
   .text-announce-info{
+    margin-top: 0.7rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -167,6 +274,12 @@
   }
   .announce-valid-div{
     padding-left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 370px){
+  .text-announce-info{
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 }
 @media only screen and (max-width: 395px){

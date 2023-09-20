@@ -8,16 +8,16 @@ const AppProvider = ({ children }) => {
     {
       title: "20% off for 30 min consultant",
       message: "Get a 20% discount on a one-hour consultation between June 15 and June 16.",
-      description: "Validity Upto",
-      from: "2023-06-15",
-      to: "2023-06-16",
+      description: "Valid",
+      from: "June 15",
+      to: "June 16",
     },
     {
       title: "20% off for 30 min consultant",
       message: "Get a 20% discount on a one-hour consultation between June 15 and June 16.",
-      description: "Validity Upto",
-      from: "2023-06-15",
-      to: "2023-06-16",
+      description: "Valid",
+      from: "June 15",
+      to: "June 16",
     },
   ]);
 
