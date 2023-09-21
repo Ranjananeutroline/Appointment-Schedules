@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import radio from "../../assets/radio1.png";
 import right from "../../assets/right.png";
 import "react-responsive-modal/styles.css";
@@ -9,7 +9,7 @@ import trash from "../../assets/trash2.png";
 import info from "../../assets/info.svg";
 import AddOffersModal from "./AddOffersModal";
 import { AppContext } from "../../AppContext";
-import { TbDots } from 'react-icons/tb';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 import "./OfferPage.css";
 
 const Offers = () => {
@@ -26,16 +26,32 @@ const Offers = () => {
   const [hideViewButton, setHideViewButton] = useState({});
 
   const toggleETVContainer = (index) => {
-    setShowETVContainers((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
-    setHideViewButton((prev) => ({
-      ...prev,
-      [index]: true,
-    }));
+    // Check if the tooltip for this index is currently open
+    if (showETVContainers[index]) {
+      // If open, close it by resetting the state for this index
+      setShowETVContainers((prev) => ({
+        ...prev,
+        [index]: false,
+      }));
+      // Also, show the "viewoff-btn" again
+      setHideViewButton((prev) => ({
+        ...prev,
+        [index]: false,
+      }));
+    } else {
+      // If closed, open it by setting the state for this index
+      setShowETVContainers((prev) => ({
+        ...prev,
+        [index]: true,
+      }));
+      // Hide the "viewoff-btn" when the tooltip is open
+      setHideViewButton((prev) => ({
+        ...prev,
+        [index]: true,
+      }));
+    }
   };
-
+    
 
   const initialFormData = {
     title: "",
@@ -103,8 +119,14 @@ const Offers = () => {
               onClick={() => openModal(offer)}
             />
             <span className="off-info-tooltiptext">view</span>
+
+           
             </div>
+
+            
           </div>
+
+          
           <div className="flex px-4 items-center justify-between inner-bottom-div">
             <div style={{display:"flex", gap:"10px", paddingLeft:"25px", width:"70%"}}>
             <p className="text-[13px] font-normal">{offer.description}:</p>
@@ -121,7 +143,7 @@ const Offers = () => {
             </div>
             </div>
             
-            <div className="viewoff-btn-container">
+            {/* <div className="viewoff-btn-container">
               {!hideViewButton[index] && (
                 <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
                   <TbDots/>
@@ -129,7 +151,7 @@ const Offers = () => {
               )}
               {showETVContainers[index] && (
                 <div className="etv-container">
-                  {/* Contents of etv-container */}
+                  
                   <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
                   <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
                   <img
@@ -140,8 +162,34 @@ const Offers = () => {
                   />
                 </div>
               )}
-            </div>
+            </div> */}
+            
           </div>
+
+          <div className="tooltip-container">
+            <div className="viewoff-btn-container">
+              {!hideViewButton[index] && (
+                <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
+                  <BsThreeDotsVertical />
+                </button>
+              )}
+            </div>
+            {showETVContainers[index] && (
+            <div className="tooltip-inner">
+              {/* Contents of the tooltip */}
+              <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
+              <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
+              <img
+                src={info}
+                alt="right"
+                className="w-[15px] h-[18px] right-p-img offer-info-img"
+                onClick={() => openModal(offer)}
+              />
+            </div>
+            )}
+            </div>
+
+
         </div>
       ))}
       {/* {formDataFromModal !== null ? (

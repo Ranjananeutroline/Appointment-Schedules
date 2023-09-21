@@ -72,7 +72,7 @@
     /* Position the tooltip */
     position: relative; 
     z-index: 1;
-    right: 100%;
+    right: 120%;
     font-size: 12px;
 }
 .offer-info-img:hover + .off-info-tooltiptext
@@ -97,7 +97,7 @@
     /* Position the tooltip */
     position: relative; 
     z-index: 1;
-    right: 100%;
+    right: 120%;
     font-size: 12px;
 }
 .a-right-p-img:hover + .ann-info-tooltiptext
@@ -140,6 +140,7 @@
   .viewoff-btn-container{
     transition: 0.3s ease-out;
     background: white;
+    margin-left: 0.8rem;
     /* padding: 5px 12px; */
     /* border-radius: 5px; */
     /* border: 1px solid rgba(135, 207, 235, 0.363); */
@@ -152,13 +153,23 @@
     font-size: 25px;
     color: rgb(0, 155, 245);
   } 
-  .etv-container{
-    display: flex;
-    gap: 10px;
+  .tooltip-container{
+    width: 7%;
+    position: relative;
+    top: -4.5rem;
+    left: 24.3rem;
+  }
+  .tooltip-inner{
+    padding: 5px 8px;
+    /* position: absolute; */
+    right: 19.2rem;
+    height: 75px;
+    bottom: 9rem;
     border-radius: 5px;
-    padding: 5px 12px;
-    
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  .tooltip-inner img{
+    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 560px){
