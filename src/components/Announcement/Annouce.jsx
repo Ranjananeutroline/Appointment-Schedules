@@ -61,7 +61,7 @@ const Annouce = () => {
               </p>
               </div>
             <div className="edit-trash-container">
-            <div style={{display:"flex", gap:"10px",marginRight:"2rem"}}>
+            <div style={{display:"flex", gap:"10px",marginRight:"0.8rem"}}>
               <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
             </div>
@@ -93,7 +93,7 @@ const Annouce = () => {
               </p>
               </div>
              <div className="edit-trash-container">
-            <div style={{display:"flex", gap:"10px",marginRight:"2rem"}}>
+            <div style={{display:"flex", gap:"10px",marginRight:"0.8rem"}}>
               <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
             </div>
@@ -125,7 +125,7 @@ const Annouce = () => {
               </p>
               </div>
             <div className="edit-trash-container">
-            <div style={{display:"flex", gap:"10px",marginRight:"2rem"}}>
+            <div style={{display:"flex", gap:"10px",marginRight:"0.8rem"}}>
               <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
             </div>
@@ -157,7 +157,7 @@ const Annouce = () => {
               </p>
               </div>
             <div className="edit-trash-container">
-            <div style={{display:"flex", gap:"10px",marginRight:"2rem"}}>
+            <div style={{display:"flex", gap:"10px",marginRight:"0.8rem"}}>
               <img src={edit} alt="edit" className='w-[15px] h-[15px]'/>
              <img src={trash} alt='trash' className='w-[14px] h-[16px]'/>
             </div>

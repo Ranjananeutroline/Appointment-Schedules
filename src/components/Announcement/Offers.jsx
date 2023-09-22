@@ -22,36 +22,46 @@ const Offers = () => {
   const onCloseModal = () => setModalOpen(false);
   const [getformData, setGetformData] = useState(null);
 
-  const [showETVContainers, setShowETVContainers] = useState({});
-  const [hideViewButton, setHideViewButton] = useState({});
+  // const [showETVContainers, setShowETVContainers] = useState({});
+  // const [hideViewButton, setHideViewButton] = useState({});
+
+  // const toggleETVContainer = (index) => {
+   
+  //   if (showETVContainers[index]) {
+      
+  //     setShowETVContainers((prev) => ({
+  //       ...prev,
+  //       [index]: false,
+  //     }));
+     
+  //     setHideViewButton((prev) => ({
+  //       ...prev,
+  //       [index]: false,
+  //     }));
+  //   } else {
+     
+  //     setShowETVContainers((prev) => ({
+  //       ...prev,
+  //       [index]: true,
+  //     }));
+      
+  //     setHideViewButton((prev) => ({
+  //       ...prev,
+  //       [index]: true,
+  //     }));
+  //   }
+  // };
+    
+  const [showTooltips, setShowTooltips] = useState({});
 
   const toggleETVContainer = (index) => {
-    // Check if the tooltip for this index is currently open
-    if (showETVContainers[index]) {
-      // If open, close it by resetting the state for this index
-      setShowETVContainers((prev) => ({
-        ...prev,
-        [index]: false,
-      }));
-      // Also, show the "viewoff-btn" again
-      setHideViewButton((prev) => ({
-        ...prev,
-        [index]: false,
-      }));
-    } else {
-      // If closed, open it by setting the state for this index
-      setShowETVContainers((prev) => ({
-        ...prev,
-        [index]: true,
-      }));
-      // Hide the "viewoff-btn" when the tooltip is open
-      setHideViewButton((prev) => ({
-        ...prev,
-        [index]: true,
-      }));
-    }
+    // Toggle the visibility of the tooltip for this index
+    setShowTooltips((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
   };
-    
+
 
   const initialFormData = {
     title: "",
@@ -134,7 +144,7 @@ const Offers = () => {
               {offer.from} - {offer.to}
             </p>
             </div>
-            <div className="edit-trash-container">
+            <div className="edit-trash-container mr-5">
             <div className="flex  items-center justify-end  offer-edit-r">
               <div className="flex gap-3">
                 <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
@@ -143,51 +153,29 @@ const Offers = () => {
             </div>
             </div>
             
-            {/* <div className="viewoff-btn-container">
-              {!hideViewButton[index] && (
-                <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
-                  <TbDots/>
-                </button>
-              )}
-              {showETVContainers[index] && (
-                <div className="etv-container">
-                  
-                  <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
-                  <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
-                  <img
-                    src={info}
-                    alt="right"
-                    className="w-[15px] h-[18px] right-p-img offer-info-img"
-                    onClick={() => openModal(offer)}
-                  />
-                </div>
-              )}
-            </div> */}
+            
             
           </div>
 
-          <div className="tooltip-container">
-            <div className="viewoff-btn-container">
-              {!hideViewButton[index] && (
-                <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
-                  <BsThreeDotsVertical />
-                </button>
-              )}
-            </div>
-            {showETVContainers[index] && (
-            <div className="tooltip-inner">
-              {/* Contents of the tooltip */}
-              <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
-              <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
-              <img
-                src={info}
-                alt="right"
-                className="w-[15px] h-[18px] right-p-img offer-info-img"
-                onClick={() => openModal(offer)}
-              />
-            </div>
+          <div className="viewoff-btn-container">
+              <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
+                <BsThreeDotsVertical />
+              </button>
+              {showTooltips[index] && (
+              <div className="tooltip-inner">
+                <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
+                <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
+                <img
+                  src={info}
+                  alt="right"
+                  className="w-[15px] h-[18px] right-p-img offer-info-img"
+                  onClick={() => openModal(offer)}
+                />
+              </div>
             )}
             </div>
+         
+
 
 
         </div>

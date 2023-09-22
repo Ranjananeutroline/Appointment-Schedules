@@ -138,16 +138,21 @@
     display: none;
   }
   .viewoff-btn-container{
+    width: 1.5%;
+    bottom: 5rem;
+    left: 24rem;
+    position: relative;
     transition: 0.3s ease-out;
     background: white;
     margin-left: 0.8rem;
-    /* padding: 5px 12px; */
-    /* border-radius: 5px; */
-    /* border: 1px solid rgba(135, 207, 235, 0.363); */
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
   }
   .viewoff-btn{
     display: block;
+    padding-left: 0.5rem;
+  }
+  .viewoff-btn:focus {
+    outline: none!important;
+    background: transparent!important;
   }
   .viewoff-btn svg{
     font-size: 25px;
@@ -160,11 +165,9 @@
     left: 24.3rem;
   }
   .tooltip-inner{
+    margin-left: -1.5rem;
     padding: 5px 8px;
-    /* position: absolute; */
-    right: 19.2rem;
-    height: 75px;
-    bottom: 9rem;
+    height: 78px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
@@ -180,7 +183,7 @@
 @media only screen and (max-width: 499px){
   .offer-box{
     padding-bottom: 1rem;
-    height: auto;
+    /* height: auto; */
     width: 420px;
   }
   .offer-box-title{
@@ -188,6 +191,7 @@
   }
   .left-p{
     font-size: 14px;
+    width: 290px;
   }
   .right-p{
     width: 220px;
@@ -225,8 +229,16 @@
   .announce-info-modal{
     width: 400px;
   }
+  .viewoff-btn-container{
+    bottom: 5rem;
+    left: 22rem;
+  }
 }
 @media only screen and (max-width: 470px){
+  .viewoff-btn-container{
+    bottom: 4.5rem;
+    left: 21rem;
+  }
   .offer-box{
     width: 400px;
   }
@@ -324,12 +336,18 @@
 }
 }
 @media only screen and (max-width: 447px){
+  .viewoff-btn-container {
+    left: 18.8rem;
+}
   .offer-box{
     width: 360px;
   }
   .offer-box-title{
     width: 360px;
   }
+  .left-p {
+    width: 240px;
+}
   .right-p{
     width: 155px;
   }
@@ -347,12 +365,27 @@
     padding-right: 1rem;
   }
 }
+@media only screen and (min-width: 1253px) and (max-width: 1300px){
+  .addoffer-div{
+    display: grid;
+    justify-content: right;
+    width: 100%;
+  }
+  .addoffer-div button{
+    margin-bottom: 0.3rem;
+   
+  }
+}
 @media only screen and (max-width: 405px){
   .offer-main{
     padding: 1.25rem 1rem;
   }
 }
 @media only screen and (max-width: 395px){
+  .viewoff-btn-container {
+    left: 18.5rem;
+    margin-left: 0;
+}
   .offer-box{
     width: 338px;
   }
@@ -386,6 +419,14 @@
   }
 }
 @media only screen and (max-width: 380px){
+  .left-p {
+    width: 215px;
+}
+.viewoff-btn-container {
+  bottom: 5.5rem;
+  left: 17.2rem;
+  
+}
   .offer-box{
     width: 322px;
   }
