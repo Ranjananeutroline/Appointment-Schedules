@@ -12,8 +12,8 @@
 }
 .addoffer-div{
     display: flex;
-    justify-content: right;
-    width: 90%;
+    justify-content: flex-end;
+    /* width: 90%; */
 }
 
 .addoffer-div button{
@@ -108,6 +108,9 @@
 .viewoff-btn{
   display: none;
 }
+.viewann-button{
+  display: none;
+}
 .etv-container{
   display: none;
 }
@@ -128,8 +131,15 @@
   .offinfo-div{
     display: none;
   }
+  .anninfo-div{
+    display: none;
+  }
   .offer-box:hover .edit-trash-container{
     display: none;
+  }
+  .announce-box:hover .edit-trash-container{
+    display: none;
+    
   }
   .inner-bottom-div{
     padding-right: 2rem;
@@ -138,42 +148,37 @@
     display: none;
   }
   .viewoff-btn-container{
-    width: 1.5%;
-    bottom: 5rem;
-    left: 24rem;
-    position: relative;
     transition: 0.3s ease-out;
     background: white;
-    margin-left: 0.8rem;
+    position: relative;
+    bottom: 4.7rem;
+    left: 24.8rem;
+    width: 8%;
   }
   .viewoff-btn{
     display: block;
-    padding-left: 0.5rem;
-  }
-  .viewoff-btn:focus {
-    outline: none!important;
-    background: transparent!important;
   }
   .viewoff-btn svg{
     font-size: 25px;
     color: rgb(0, 155, 245);
   } 
-  .tooltip-container{
-    width: 7%;
-    position: relative;
-    top: -4.5rem;
-    left: 24.3rem;
-  }
-  .tooltip-inner{
-    margin-left: -1.5rem;
-    padding: 5px 8px;
-    height: 78px;
+  .etv-container{
+    display: block;
+    gap: 10px;
     border-radius: 5px;
+    padding: 5px 12px;
+    height: 78px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
-  .tooltip-inner img{
+  .etv-container img{
     margin-bottom: 8px;
   }
+  
+  
+  .second-a-box p{
+    width: 80%;
+  }
+  
 }
 @media only screen and (max-width: 560px){
   .offer-main{
@@ -199,7 +204,6 @@
   }
   .announce-box{
     padding-bottom: 1rem;
-    height: auto;
     width: 420px;
   }
   .announce-box-title{
@@ -233,11 +237,21 @@
     bottom: 5rem;
     left: 22rem;
   }
+  .viewann-btn-container{
+    left: 22rem;
+  }
+  .etv-container{
+    padding: 5px 11px;
+  }
 }
 @media only screen and (max-width: 470px){
   .viewoff-btn-container{
     bottom: 4.5rem;
     left: 21rem;
+  }
+  .viewann-btn-container{
+    left: 21rem;
+    bottom: 4.5rem;
   }
   .offer-box{
     width: 400px;
@@ -309,6 +323,9 @@
 .a-left-p {
     font-size: 12px;
 }
+.viewann-btn-container {
+  left: 17rem!important;
+}
 }
 @media only screen and (max-width: 370px){
   .offer-info-modal{
@@ -339,6 +356,14 @@
   .viewoff-btn-container {
     left: 18.8rem;
 }
+.viewann-btn-container {
+  left: 18.5rem;
+  bottom: 5.5rem;
+}
+.second-a-box p{
+  width: 70%;
+}
+
   .offer-box{
     width: 360px;
   }
@@ -364,18 +389,20 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .etv-container{
+    padding: 5px 9px;
+  }
 }
-@media only screen and (min-width: 1253px) and (max-width: 1300px){
+@media only screen and (min-width: 1370px) and (max-width: 1440px){
   .addoffer-div{
-    display: grid;
-    justify-content: right;
-    width: 100%;
-  }
-  .addoffer-div button{
-    margin-bottom: 0.3rem;
-   
+    margin-right: 5.5rem;
   }
 }
+/* @media only screen and (min-width: 1433px) and (max-width: 1440px){
+  .addoffer-div{
+    margin-right: 5rem;
+  }
+}   */
 @media only screen and (max-width: 405px){
   .offer-main{
     padding: 1.25rem 1rem;
@@ -412,6 +439,9 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .etv-container{
+    padding: 5px 8px;
+  }
 }
 @media only screen and (max-width: 360px){
   .inner-expire {
@@ -426,6 +456,10 @@
   bottom: 5.5rem;
   left: 17.2rem;
   
+}
+.viewann-btn-container {
+  left: 16rem!important;
+  bottom: 5.3rem;
 }
   .offer-box{
     width: 322px;
@@ -445,6 +479,15 @@
   }
 }
 @media only screen and (max-width: 355px){
+  .viewoff-btn-container {
+    bottom: 5.5rem;
+    left: 16rem;
+    
+  }
+  .viewann-btn-container {
+    left: 15rem!important;
+    bottom: 5.3rem;
+  }
   .offer-select{
     font-size: 13.5px;
   }
@@ -486,6 +529,9 @@
 .e-radio-img{
   height: 8px;
   width: 8px;
+}
+.etv-container{
+  padding: 5px 7px;
 }
 }
 @media only screen and (max-width: 332px){

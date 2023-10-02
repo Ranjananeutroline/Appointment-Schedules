@@ -22,46 +22,39 @@ const Offers = () => {
   const onCloseModal = () => setModalOpen(false);
   const [getformData, setGetformData] = useState(null);
 
-  // const [showETVContainers, setShowETVContainers] = useState({});
-  // const [hideViewButton, setHideViewButton] = useState({});
-
-  // const toggleETVContainer = (index) => {
-   
-  //   if (showETVContainers[index]) {
-      
-  //     setShowETVContainers((prev) => ({
-  //       ...prev,
-  //       [index]: false,
-  //     }));
-     
-  //     setHideViewButton((prev) => ({
-  //       ...prev,
-  //       [index]: false,
-  //     }));
-  //   } else {
-     
-  //     setShowETVContainers((prev) => ({
-  //       ...prev,
-  //       [index]: true,
-  //     }));
-      
-  //     setHideViewButton((prev) => ({
-  //       ...prev,
-  //       [index]: true,
-  //     }));
-  //   }
-  // };
-    
-  const [showTooltips, setShowTooltips] = useState({});
+  const [showETVContainers, setShowETVContainers] = useState({});
+  const [hideViewButton, setHideViewButton] = useState({});
 
   const toggleETVContainer = (index) => {
-    // Toggle the visibility of the tooltip for this index
-    setShowTooltips((prev) => ({
+    setShowETVContainers((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  
+    setHideViewButton((prev) => ({
       ...prev,
       [index]: !prev[index],
     }));
   };
+  
+  const etvContainerRef = useRef(null);
+  useEffect(() => {
+  function handleClickOutside(event) {
+    if (etvContainerRef.current && !etvContainerRef.current.contains(event.target)) {
+      // Clicked outside the etv-container, so close it and show viewoff-btn
+      setShowETVContainers({});
+      setHideViewButton({});
+    }
+  }
 
+  // Add the event listener when the component mounts
+  document.addEventListener("mousedown", handleClickOutside);
+
+  // Remove the event listener when the component unmounts
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
 
   const initialFormData = {
     title: "",
@@ -152,28 +145,49 @@ const Offers = () => {
               </div>
             </div>
             </div>
-            
-            
-            
           </div>
 
-          <div className="viewoff-btn-container">
-              <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
-                <BsThreeDotsVertical />
-              </button>
-              {showTooltips[index] && (
+         <div className="viewoff-btn-container">
+              {!hideViewButton[index] && (
+                <button className="viewoff-btn" onClick={() => toggleETVContainer(index)}>
+                <BsThreeDotsVertical/>
+                
+                </button>
+              )}
+              {showETVContainers[index] && (
+                <div ref={etvContainerRef} className="etv-container">
+                  {/* Contents of etv-container */}
+                  <img
+                    src={info}
+                    alt="right"
+                    className="w-[15px] h-[18px] right-p-img offer-info-img"
+                    onClick={() => openModal(offer)}
+                  />
+                  <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
+                  <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
+                </div>
+              )}
+            </div>
+          {/* <div className="offer-container">
+            <button className="viewoff-btn" onClick={showTooltip ? closeTooltip : openTooltip}>
+              <BsThreeDotsVertical />
+            </button>
+
+            {showTooltip && (
               <div className="tooltip-inner">
-                <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
-                <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
                 <img
                   src={info}
                   alt="right"
                   className="w-[15px] h-[18px] right-p-img offer-info-img"
-                  onClick={() => openModal(offer)}
+                  onClick={closeTooltip}
                 />
+                <img src={edit} alt="edit" className="w-[15px] h-[15px]" />
+                <img src={trash} alt="trash" className="w-[14px] h-[16px]" />
               </div>
             )}
-            </div>
+          </div> */}
+           
+           
          
 
 
