@@ -1,0 +1,245 @@
+.header_container {
+  background-color: #1f68ae;
+  color: white;
+  height: 20rem;
+}
+.header_btn_container {
+  margin-top:1rem;
+  margin-left: 9rem;
+  width: 60%;
+  z-index: 2;
+}
+.header_btn {
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.header_btn:nth-child(2){
+  margin-left:.4rem;
+}
+.header_center {
+  width: 100%;
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  /* top: -6%; */
+  left: 50%;
+  padding: 1rem;
+  transform: translate(-50%, -1%);
+  /* justify-content: center; */
+}
+.heading {
+  margin: 0.5rem 3rem;
+  z-index: 2;
+}
+.header-heading {
+  width: 28rem;
+  font-size: 28px;
+  font-family: "Rubik", sans-serif;
+}
+.header-paragraph {
+  /* width: 27.5%; */
+  width:24rem;
+  text-align: justify;
+  
+}
+.header_btn.blue_background{
+  background-color: #23abe5; 
+  border: 1.5px solid #23abe5;
+}
+
+
+.header_btn.blue_border {
+  border: 1.5px solid #23abe5;
+  background-color: transparent;
+}
+
+.header_btn.blue_background:hover{
+   box-shadow: 0 4px 4px 0 rgba(10, 171, 230, 0.582), 0 -1px 5px 0 rgba(16, 143, 234, 0.5); 
+}
+.header_btn.blue_border:hover{
+  box-shadow: 0 4px 8px 0 rgba(10, 171, 230, 0.688), 0 -1px 5px 0 rgba(16, 143, 234, 0.74); 
+}
+.header_btn a{
+  color:white;
+  text-decoration: none;
+}
+.header_btn a:hover{
+  color:white;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .header_center {
+    width: 100%;
+    top: 5%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+ 
+  .header_btn_container {
+    margin-left: 2.8rem;
+    width: 100%;
+  }
+  .header_btn:nth-child(2){
+    margin-left:0;
+  }
+}
+@media only screen and (max-width: 600px){
+  .header_container {
+    height: 280px; 
+  }
+  .header_center{
+    top: 10%;
+  }
+  .heading{
+    margin: 0.5rem 2rem;
+  }
+} 
+@media only screen and (max-width: 515px){
+  .heading{
+    margin: 0.5rem 1rem;
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 450px){
+  .header-paragraph{
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 442px){
+  
+  .header_btn_container {
+    margin-left: 1rem;
+  }
+  /* .header_btn{
+    font-size: 0.7rem;
+  } */
+  .header_btn.blue_background{
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 407px){
+  .header_btn.blue_background{
+    margin-right: 5px;
+  }
+  .header_btn{
+    /* font-size: 0.6rem; */
+    padding: 0.5rem 1.2rem;
+  }
+  .heading{
+    margin: 0.5rem 0.3rem;
+  }
+  .header_btn_container {
+    margin-top: 0.5rem;
+  }
+  .header-paragraph{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .header-heading{
+    width: 19rem;
+    margin: 0.1rem 0.3rem;
+    font-size: 25.5px;
+  }
+  .header_btn_container{
+    margin-left: 8px;
+  }
+  .header-paragraph{
+    width: 18rem;
+  }
+  .header_btn{
+    /* font-size: 0.6rem; */
+    margin-right: 0;
+  }
+  .header_center{
+    top: 10%;
+  }
+} 
+@media only screen and (max-width: 344px){
+  .header-heading{
+    width: 17rem;
+    font-size: 20px;
+  }
+  .header-paragraph{
+    width: 17rem;
+    font-size: 0.9rem;
+  }
+  .header_btn{
+    /* font-size: 0.5rem; */
+    margin-right: 0;
+  }
+ 
+} 
+
+@media only screen and (max-width: 310px){
+  .header-heading{
+    width: 16rem;
+    font-size: 1.3rem;
+  }
+  .header-paragraph{
+    width: 15.5rem;
+    
+  }
+  .header_btn{
+    /* font-size: 0.5rem; */
+    margin-right: 0;
+  }
+  .header_btn_container {
+    width: 100%;
+  }
+} 
+@media only screen and (max-width: 320px){
+  .header_btn{
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 333px){
+  /* .header_center{
+    top: 10%;
+  } */
+  .header_btn{
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 278px){
+  .heading{
+    margin: 0.5rem 0rem;
+  }
+  /* .header_center{
+    top: 10%;
+  } */
+  .header-heading{
+    width: 15rem;
+  }
+  .header-paragraph{
+    width: 14.5rem;
+  }
+  .header_btn_container {
+   margin-left: 3px;
+  }
+  .header_btn{
+    padding: 0.4rem 1rem;
+  }
+
+}
+@media only screen and (max-width: 239px){
+  .header_btn.blue_background{
+    margin-right: 2px;
+  }
+  .header_btn_container {
+    margin-left: 0px;
+   }
+}
+
+  

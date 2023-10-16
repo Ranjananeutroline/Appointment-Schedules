@@ -1,0 +1,145 @@
+.services_container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.services_container h2 {
+  margin: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+
+.services_items {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  /* grid-column-gap: 2%; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto auto;
+}
+
+.services_item {
+  width: 90%;
+  height: 100%;
+  /* margin: auto; */
+  background-color: white;
+  /* border: 1px solid grey; */
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 16px 0px,
+    rgb(0 0 0 / 7%) 0px 6px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  z-index: 5;
+  margin: auto;
+}
+.services_item:nth-child(1) {
+  width: 85%;
+  margin-right: auto;
+}
+/* .service_item_img{
+  height: 60%;
+  
+} */
+.services_item p{
+  margin:0 1rem 1rem 1rem;
+  text-align: justify;
+  font-size: 14px;
+  hyphens: auto;
+  padding-bottom: 1rem;
+}
+.services_item img {
+  width: 60%;
+  height: 90px;
+  margin:0.5rem 0;
+}
+.services_item h4{
+  font-size: 1.15rem;
+  margin-bottom: -0.5rem;
+}
+.services_item h2 {
+  width: 50%;
+  margin: auto;
+}
+.services_design {
+  width: 100%;
+  /* background-color: #d3eefa; */
+  height: 100px;
+  position: absolute;
+  bottom: 40%;
+  z-index: -2;
+}
+.services_learnmore {
+  margin: 1rem;
+}
+/* .learn-more-btn-div{
+  text-align: center;
+  margin-top: 2rem;
+}
+.learn-btn{
+  background: #390ca3b9;
+  padding: 10px 18px;
+  border: none;
+  color: white;
+  z-index: 5;
+  font-weight: 470;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.learn-btn:hover{
+  background: #390ca3e7;
+} */
+.services_learnmore a {
+  text-decoration: none;
+  color: blue;
+} 
+.services_learnmore a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .services_items {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem 1rem;
+  }
+  .services_item {
+    width: 80%;
+    margin: auto;
+  }
+  .services_design {
+    bottom: 46%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .services_item {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1920px){
+  .services_item img{
+    width: 40%;
+    
+  }
+  
+} 
+@media screen and (min-width: 1920px) and (max-width: 2024px){
+  .services_item img{
+    width: 40%;
+    
+  }
+  .services_item{
+    height: 300px;
+     
+   }
+} 
+@media screen and (min-width: 1549px) and (max-width: 1920px){
+  .services_item{
+   height: 300px;
+    
+  }
+}  

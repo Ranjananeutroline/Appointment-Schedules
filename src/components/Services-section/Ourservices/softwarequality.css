@@ -1,0 +1,130 @@
+
+.softwarequality h4{
+    /* background-color: bisque; */
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: -5px;
+    margin-bottom: 1rem;
+}
+.qualityitem{
+    margin: .6rem 0.3rem 0 0.3rem ;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    /* grid-column-gap: 2%; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 1rem;
+   
+}
+.mainitem{
+    padding: .3rem 0;
+}
+.mainitem  img{
+    
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: .8rem;
+    margin-bottom: .2rem;
+}
+.qitemtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; 
+    margin-bottom: .2rem;
+    margin-top: 0.4rem;
+    color: #0092ca;
+}
+
+.qitemp{
+    width: 90%;
+    margin: 0 auto;
+   /* font-size: 14px;  */
+    /* margin-bottom: .2rem; */
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.03em;
+}
+
+
+
+.qualityitem:nth-of-type(odd){
+    background: #FFFFFF; 
+    /* background-color: blue; */
+}
+
+.qualityitem :nth-of-type(even){
+    background: rgba(217, 217, 217, 0.15); 
+    /* background: rgba(217, 217, 217, 0.24); */
+} 
+.qualityitem :nth-of-type(n+4){
+    margin: 0.5rem 0 0 0;
+} 
+.mainitem:nth-child(-n+3){
+    /* box-shadow: rgba(115, 177, 238, 0.15) 1px 1px 2px 0px, rgba(115, 177, 238, 0.15) 0px 0px 0px 0.5px; */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    /* background-color:#e9ecef8a; */
+    border: 1px solid rgba(168, 166, 166, 0.308); 
+    border-radius: 0.8rem;
+    padding-bottom: 1rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.mainitem:nth-child(2){
+    background-color: white;
+}
+.mainitem:nth-child(-n+3) .qitemp{
+    font-size: 13.6px;
+   
+}
+.mainitem:nth-child(n+4) img{
+    width: 7%;
+}
+.mainitem:nth-child(n+4) .qitemtitle{
+    font-size: 13.5px;
+}
+.mainitem:nth-child(n+4) .qitemp{
+    font-size: 13.2px;
+}
+
+
+@media only screen and (max-width: 750px){
+    .qualityitem{
+        grid-template-columns: 50% 50%;
+    }
+    .mainitem:nth-child(3){
+       margin-top: 0.5rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    .qualityitem{
+        grid-template-columns: 100%;
+    }   
+    
+    .mainitem  img{
+    
+        
+        margin-top: 1rem ;
+    }
+    .mainitem p{
+        width: 80%;
+    }
+    .mainitem:nth-child(1){
+        margin-bottom: 0.5rem;
+     }
+     .qitemtitle{
+        font-size: 1.2rem;
+     }
+     .mainitem:nth-child(n+4) .qitemtitle{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 415px){
+    .qualityitem{
+        grid-template-columns: 100%;
+    }   
+}

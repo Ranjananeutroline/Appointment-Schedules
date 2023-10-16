@@ -1,0 +1,252 @@
+.features {
+    /* padding: 20px 0; */
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin: 25px 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+  }
+  
+  .content {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    /* text-align: left; */
+    text-align: justify;
+    padding-bottom: 1rem;
+    hyphens: auto;
+    justify-content: center;
+    font-size: 15px;
+    /* border: 1px solid;  */
+  }
+  
+  .part1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
+  
+  .part2 {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .difference-circle {
+    /* border:1px dashed black; */
+    width: 300px;
+    height: 300px;
+  
+    /* border-radius:50%; */
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='300' ry='300' stroke='%23333' stroke-width='3' stroke-dasharray='15' stroke-dashoffset='50' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 300px;
+  }
+  .part2 {
+    position: relative;
+  }
+  .difference-image1 {
+    /* left: -1.7rem; */
+    left:0;
+  }
+  .difference-image2 {
+    top: 1.5rem;
+  }
+  .difference-image3 {
+    /* right: -1.7rem; */
+    right:0;
+  }
+  .difference-image4 {
+    bottom: 1rem;
+  }
+  
+  .diff-img-white {
+    background-color: white;
+  }
+  .diff-img {
+    /* height: 3rem; */
+    width: 8rem;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+  }
+  
+  .part3 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 9.4rem; 
+    margin: 0;
+  }
+  
+  .part-content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .different-title {
+    /* font-weight: 550; */
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #3498db;
+  }
+
+
+ 
+  @media screen and (max-width: 1071px){
+    .part1{
+      gap: 6.3rem;
+    }
+  }
+  @media screen and (max-width:983px){
+    .part3{
+      gap: 10.4rem;
+    }
+  }
+  @media screen and (max-width: 950px) {
+  .difference-image2{
+    top:3.5rem;
+  }
+  .difference-image4{
+    bottom:3rem;
+  }
+  }
+  @media screen and (max-width: 900px) {
+    .difference-cirle {
+      width: 250px;
+      height: 250px;
+      border-radius: 250px;
+    }
+    .difference-image2 {
+      top: 6rem;
+    }
+    .difference-image4 {
+      bottom: 5rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    .features {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .part1,
+  
+    .part3 {
+      width: 100%;
+      gap: 1rem;
+    }
+  .part2{
+    width:400px;
+    
+    margin:3rem auto;
+  }
+    .part-content {
+      width: 80%;
+      text-align: center;
+    }
+    .different-title {
+      margin-bottom: 0;
+      font-size: 1.4rem;
+    }
+  .diff-img{
+    width:6rem;
+  }
+    .difference-image1{
+      left:1rem;
+    }
+    .difference-image2{
+      top:-2rem;
+    }
+    .difference-image3{ 
+      right:1rem;
+    }
+    .difference-image4{
+      bottom:-2rem;
+    }
+  }
+
+
+  @media screen and (max-width: 613px){
+    .content {
+     
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+     
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .features {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* overflow: none; */
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      /* width: 250px; */
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .part1,
+    .part3 {
+      width: 95%;
+    }
+    .part2{
+      width:300px;
+    }
+  .difference-circle{
+    width:230px;
+    height:230px;
+    border-radius: 230px;
+  }
+  .difference-image1{
+    left:-1rem;
+  }
+  .difference-image3{
+    right:-1rem; 
+  }
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .different-title {
+      font-size: 20px;
+    }
+  
+    .part-content {
+      padding: 0;
+      /* width: 250px; */
+      margin: 0;
+    }
+  
+    .part1 {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  

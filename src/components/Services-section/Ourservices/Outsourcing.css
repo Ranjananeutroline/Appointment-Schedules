@@ -1,0 +1,137 @@
+.outsourcingmain h4{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+.hrcontent hr{
+    width: 20%;
+    margin: 10px auto;
+   color: #000000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.outsourcingbox{
+    display: flex;
+    padding: 1.5rem 1rem;
+    
+    /* margin: 2rem 0 4rem 0; */
+}
+
+.outbox1{
+    flex: 4;
+}
+.outbox2{
+    flex: 4;
+    text-align: center;
+    
+}
+.outbox2 img{
+    width:80%;
+    margin-top: 2rem;
+}
+.outbox3{
+    flex: 4;
+}
+ .box11{
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+.box111{
+    display: flex;
+}
+
+.box11 h5{
+    margin-bottom:.8rem;
+    margin-top: -.9px;
+    margin-left: 11px;
+    font-size: 1rem;
+    color: #0092ca;
+}
+
+
+.outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
+    margin-top: 3rem;
+}
+.box11 p{
+   width: 90%;
+   text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.03em;
+   font-size: 15px;
+
+}
+
+
+@media only screen and (max-width: 1047px){
+   
+}
+@media only screen and (max-width: 890px){
+    .outbox2 img{
+        margin-top: 4.5rem;
+    }
+}
+@media only screen and (max-width: 750px){
+    .outbox2 img{
+        margin-top: 6.5rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .boxproject{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 660px){
+    .outbox2 img{
+        margin-top: 8.5rem;
+    }
+}
+@media only screen and (max-width: 625px){
+    .outsourcingbox{
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem 1rem 1rem 1rem;
+    }
+    .box11{
+        margin-top: 1%;
+    }
+    .outbox2 img{
+        margin-top: 0;
+        width:50%;
+        /* margin-top:5%; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
+        margin-top: 0.5rem;
+    }
+    .outbox2{
+        margin: 1rem 0;
+    }
+    .box11 h5{
+        font-size: 1.2rem;
+    }
+    .box11 p{
+        width: 80%;
+        /* justify-content: center;
+         text-align: justify; */
+         text-align: justify;
+         margin-top: -5px;
+     }
+    
+  }
+
+
+/* .iconbox .staffBoxHeadicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

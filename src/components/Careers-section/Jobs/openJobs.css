@@ -1,0 +1,358 @@
+.outer-row
+{
+    /* border: 1px solid orangered;       */
+    /* margin-top: 2rem; */
+    justify-content: center;
+    text-align: center;
+   
+}
+
+
+.more-job-btn{
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 7px 10px;
+    border: none;
+    background: #5d99e7;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.container.bgjob
+{
+    /* border: 1px solid red; */
+    height: 40px; 
+    display: flex;
+    justify-content: space-between;    
+    /* background-color: #CDE2B8; */
+    background: #91BBF2;
+    padding: 0.5rem 1rem;
+    width:100%;
+}
+.openjob-container{
+    margin-top: 1.5rem;
+}
+.openjob-container h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
+.alljob-div h3
+{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 450;
+    
+}
+.navbar-brand{
+    font-size: 1.1rem;
+    color: white;
+}
+.div-right
+{
+    /* border: 1px solid red; */
+    /* float: right; */
+    text-align: center;
+    display: flex;
+    
+    gap:1rem;
+    /* margin: 6px 0 0 0px; */
+}
+
+#dropdown-custom-1
+{
+    background: #91BBF2;
+    color: white;
+    border: none;
+    height: 35px;
+    margin: auto;
+    font-size: 13.5px;
+    /* margin-right: 35px; */
+   
+}
+
+.filter-btn
+{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-right: 0px;
+    /* background:#035AA6; */
+    background: #0077b6;
+    font-size: 13.3px;
+}
+.super-colors
+{
+    /* background: #91BBF2; */
+    width: 210px;
+    margin:auto;
+    font-size: 13px;
+}
+
+.super-colors2
+{
+    /* background: #91BBF2; */
+    width: 200px;
+    margin:auto;
+    font-size: 13px;
+}
+.super-colors3
+{
+    /* background: #91BBF2; */
+   margin:auto;
+   width:200px;
+   font-size: 13px;
+}
+.locationeg
+{
+    height: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* font-size: 13px; */
+}
+.jobitems
+{
+    
+    padding-left: 1rem;
+    text-align: left;
+}
+.locationeg {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.644); 
+    border-radius: 10px;
+  }
+#tech
+{
+    height: 12px;
+    width: 12px;
+    margin-right: 8px; 
+    margin-top: 0;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+.inner-row
+{
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    /* border-bottom: 2px dotted gray; */
+    width:100%;
+    
+}
+
+.div-bggrey
+{
+    /* border: 1px solid red; */
+    /* background-color: rgba(128, 128, 128, 0.068); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+    width:100%;
+}
+/* .white-box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+} */
+/* .inner-col
+{
+    border: 1px solid; 
+    
+} 
+.inner-col2
+{
+    border: 1px solid; 
+    
+}  */
+.inner-col h5
+{
+    text-align: left;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+}
+.inner-col h5 a:hover
+{
+    text-decoration: underline;
+   
+}
+
+.inner-col h5 a
+{
+    text-decoration: none;
+}
+
+.inner-col h6
+{
+    text-align: left;
+    font-size: 14.5px;
+    padding-left: 1.3rem;
+}
+.inner-col p
+{
+    text-align: left;
+    font-size: 13.7px;
+    padding-left: 1.3rem;
+    
+}
+/* .inner-col2
+{
+    border: 1px solid;
+} */
+.inner-col2 h5
+{
+    text-align: right;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    padding-right: 20px;
+    font-weight: 400;
+    color: blue;
+
+}
+.inner-col2 h5 a:hover
+{
+    text-decoration: underline;
+}
+.inner-col2 h5 a
+{
+    text-decoration: none;
+    padding-right: 1rem;
+}
+.num-p
+{
+    padding-left: 1.2rem;
+    font-size: 1rem;
+}  
+.contract-morejob{
+    /* border: 1px solid; */
+    text-align: left;
+    margin-top: 1rem;
+} 
+.contract-morejob-btn{
+    /* background: rgb(236, 115, 70); */
+    background: rgb(0, 0, 255); 
+    /* background: #90e0ef; */
+    padding: 10px 20px;
+    margin-top: 0.5rem;
+    border: none;
+    z-index: 5;
+    color: white;
+    font-weight: 470;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px; */
+    border-radius: 20px; 
+  }
+  .contract-morejob-btn:hover{
+    background: rgba(0, 0, 255, 0.726); 
+  }
+
+
+
+@media only screen and (max-width: 1000px){
+    .outer-col{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .container.bgjob{
+        height: 100%;
+    }
+    .bgjob{
+        /* flex-direction: column; */
+        gap:.2rem;
+    }
+    .div-right{
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap:wrap;
+        gap:.5rem;
+    }
+    button.filter-btn.my-2.btn.btn-primary {
+        width: 6rem;
+        /* margin: auto; */
+    }
+    .show.dropdown.btn-group {
+        flex-direction: column;
+    }
+    .navbar-nav .dropdown-menu{
+            position:absolute;
+    }
+}
+@media only screen and (max-width: 480px){
+ 
+    .filter-btn{
+        width:20%;
+        margin:auto;
+    }
+    #dropdown-custom-1.openpos-btn{
+        padding:.4rem;
+        font-size:14px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .inner-col2 h5{
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+    }
+    .inner-col{
+        padding-right: 1.5rem;
+    }
+    .inner-col p{
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 540px){
+    .div-right{
+        gap:.4rem;
+    }
+    button.filter-btn.my-2.btn.btn-primary{
+        width:4rem;
+        margin:0;
+    }
+}
+@media only screen and (max-width: 410px){
+.div-right{
+    gap:0;
+    /* justify-content: space-between; */
+}
+.div-right button{
+    /* padding:10px; */
+    font-size: .9rem;
+}
+}
+@media only screen and (max-width: 415px){
+    .inner-col{
+        padding-right: 1rem;
+    }
+}
+@media only screen and (max-width: 370px){
+.container.bgjob{
+    padding:0.4rem;
+}
+}
+@media only screen and (max-width: 665px){
+    .outer-col{
+        padding:0;
+    }
+    .openjob-container{
+        width:95%;
+    }
+    .bgjob{
+        width:100%;
+    }
+
+}

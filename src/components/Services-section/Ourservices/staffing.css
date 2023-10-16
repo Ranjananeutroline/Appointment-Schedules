@@ -1,0 +1,91 @@
+.mainStaffBox{
+    display: flex;
+   
+    padding: 1rem 2rem 2rem 2rem;
+    /* margin: 2rem 0; */
+    
+}
+
+.hrcontent hr{
+    width: 20%;
+    margin: 10px auto;
+    color: #05A5FF;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.mainStaffBox1{
+    flex: 6;
+}
+.mainStaffBox2{
+    /* background-color: #05A5FF; */
+    flex: 5.5;
+
+}
+.mainStaffBox11{
+    display: flex;
+   
+}
+.mainStaffBox2 img{
+width: 100%;
+height: 100%;
+border-radius: 2rem;
+}
+
+.staffBoxHead{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    margin-top: -1px;
+    
+}
+.staffBoxHead h5{
+    font-size: 1rem;
+    color: #0092ca;
+}
+.staffBoxHeadicon{
+
+color: #05A5FF;
+
+    
+}
+.staffheading h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+/* .staffBoxHead h5{
+    margin-left: 7px;
+    margin-top: -3px;
+} */
+.mainStaffBox1 p{
+  margin-bottom: 1rem;
+   /* margin: auto; */
+   width: 93%;
+   font-size: 15px;
+   text-align: justify;
+   /* line-height: 1.4rem; */
+}
+.mainStaffBox11{
+    margin: .6rem 0;
+}
+@media only screen and (max-width: 700px){
+    .mainStaffBox{
+        display: flex;
+        flex-direction: column-reverse;
+
+        
+    }
+    .mainStaffBox11{
+        margin-top: 1rem;
+       
+    }
+    .box111{
+        margin-top: 1.5rem;
+    }
+    .staffBoxHead h5{
+        font-size: 1.2rem;
+    }
+}

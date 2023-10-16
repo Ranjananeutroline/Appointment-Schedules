@@ -1,0 +1,128 @@
+.letschatmain{
+    /* margin-top: 1rem; */
+  
+    
+    background: rgb(228 231 232 / 52%);
+   /* padding: 2rem ; */
+}
+.letschatcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0 1rem  0;
+    /* margin: 10px auto; */
+}
+.letschatcontent h2{
+    /* color: white; */
+   padding: 1rem 0 0 0;
+   margin-bottom: 0.2rem;
+   font-family: "Rubik", sans-serif;
+   font-size: 30px;
+  
+}
+.letschatcontent p{
+   width: 60%;
+   margin: 1px auto;
+   font-size: 15px;
+   text-align: center;
+  
+}
+.letschatcontent button{
+    /* height: 4vh; */
+    /* width:7vw; */
+    margin-top: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background: #23ABE6;
+}
+
+
+
+
+
+@media only screen and (max-width: 950px){
+    .letschatcontent h2{
+        font-size: 1.6rem;
+       padding: 0;
+    }  
+    
+}
+
+@media only screen and (max-width: 670px){
+    .letschatcontent h2{
+        font-size: 1.4rem;
+    }  
+}
+@media only screen and (max-width: 613px){
+    .letschatmain{
+        margin-top:3rem;
+    }
+    .letschatcontent h2{
+        font-size:1.3rem;
+      
+    }  
+    .letschatcontent p{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+    .letschatcontent{
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 540px){
+    .letschatcontent h2{
+        font-size: 1.15rem;
+        
+
+    }  
+}
+@media only screen and (max-width: 480px){
+    .letschatcontent h2{
+        font-size: 1.05rem;
+      
+    }  
+    .letschatcontent p{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .letschatcontent h2{
+        font-size: .95rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px ; 
+       margin-left: 0.5rem;
+       margin-right: 0.5rem;
+    }  
+    .letschatcontent p{
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width: 370px){
+    .letschatcontent h2{
+        font-size: 0.8rem;
+    } 
+    .letschatcontent p{
+        font-size: 10.4px;
+    }
+}
+@media only screen and (max-width: 330px){
+    .letschatcontent h2{
+        font-size: 12px;
+    }
+    .letschatcontent p{
+        font-size: 9px
+    }
+}
+@media only screen and (max-width: 290px){
+    .letschatcontent h2{
+        font-size: 8px;
+    }
+    .letschatcontent p{
+        font-size: 7px
+    }
+}

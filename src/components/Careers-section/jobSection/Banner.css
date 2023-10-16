@@ -1,0 +1,42 @@
+.jobs-header-image {
+  height: 350px;
+  width: 100%;
+}
+
+.jobs-header-image img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+.jobs-header-image::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 350px;
+  background-color: rgba(49, 158, 221, 0.555);
+  z-index: 2;
+}
+.jobs-text {
+  z-index: 5;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  text-align: left;
+  /* border: 1px solid red; */
+  width: 55%;
+}
+.jobs-heading-career {
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 2rem;
+}
+.jobs-text p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+

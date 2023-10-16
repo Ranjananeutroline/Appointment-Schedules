@@ -1,0 +1,61 @@
+.buttonjobs-maindiv {
+  /* border: 1px solid; */
+  text-align: center;
+  padding-top:  0.5rem;
+  border-top: 2px solid rgba(128, 128, 128, 0.11);
+  /* background-color: rgba(187, 180, 180, 0.13); */
+}
+
+.contract-btn {
+  border-radius: 30px;
+  width: 200px;
+  /* font-weight: 550; */
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 255, 0.336);  
+  border: 1px solid #0d6efd;
+}
+
+
+.primary-btn {
+  border-radius: 30px;
+  width: 200px;
+  /* font-weight: 550; */
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 255, 0.336);  
+  border: 1px solid #0d6efd;
+}
+
+
+.job-btn {
+  height: 100%;
+  display: block;
+  margin: 0 auto; 
+}
+.btns-div{
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  margin-top: 2.5rem;
+  /* border: 1px solid red; */
+}
+
+@media only screen and (max-width: 576px) {
+  .contract-btn, .primary-btn {
+    width: 45%;
+  }
+  div .btn-lg{
+    padding:.5rem;
+  }
+
+  .primary-btn:focus,
+  .contract-btn:focus {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .btns-div{
+    gap: 0.5rem;
+  }
+}

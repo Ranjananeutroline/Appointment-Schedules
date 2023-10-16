@@ -1,0 +1,40 @@
+.readytohelp_container{
+    background-color:rgba(135, 207, 235, 0.627);
+    padding:1rem;
+    text-align: center;
+}   
+.readytohelp_container h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
+.readytohelp_container p{
+    width:55%;
+    /* padding:1rem 0; */
+    margin:auto;
+    padding-bottom:1rem;
+    font-size: 15px;
+}
+.readytohelp_btn{
+    padding:.5rem 1rem;
+    border-radius: 2rem;
+    border:none;
+    background-color: #0b9ddb;
+    cursor:pointer;
+    color:white;
+}
+.readytohelp_btn:hover{
+    background-color: #28afe9;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .readytohelp_container p{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .readytohelp_container p{
+        width:95%;
+    }
+}

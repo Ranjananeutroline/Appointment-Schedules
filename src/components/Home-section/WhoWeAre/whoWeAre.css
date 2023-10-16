@@ -1,0 +1,93 @@
+.whoweare_container {
+  /* background-color: #aadcfe; */
+  background-color: hsla(0,0%,85%,.281);
+  text-align: center;
+  padding: 3rem 0.5rem;
+  /* margin:2rem 0; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.whoweare_container h1 {
+  margin: 0;
+}
+.whoweare_container p {
+  width: 90%;
+
+  margin: 1rem auto;
+}
+.whoweare_image {
+  width: 80%;
+  margin: auto;
+  padding-left: 3rem;
+}
+.whoweare_image img {
+  width: 100%;
+}
+.whoweare_desc {
+  height: 90%;
+  margin: auto;
+  margin-right: 2rem;
+}
+.whoweare_desc h2{
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  
+}
+.whoweare_desc p{
+  text-align: justify;
+  font-size: 15px;
+  margin: 0;
+}
+.know-more-btn-div{
+  text-align: left;
+  margin-top: 1rem;
+  /* border: 1px solid; */
+  /* padding: 0 2rem; */
+}
+.know-btn{
+  /* background: rgb(236, 115, 70); */
+  background: #f4a361bd; 
+  /* background: #90e0ef; */
+  padding: 10px 18px;
+  margin-top: 0.2rem;
+ 
+  border: none;
+  z-index: 5;
+  font-weight: 470;
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px; */
+  border-radius: 5px; 
+}
+.know-btn:hover{
+  background: #f4a361;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+.whoweare_container {
+grid-template-columns: 100%;
+
+}
+.whoweare_desc{
+  margin:1rem 0;
+}
+.know-more-btn-div{
+  text-align: center;
+}
+.know-btn{
+  margin-top: 0.5rem;
+}
+.whoweare_image{
+  padding-left: 0;
+}
+.whoweare_desc h2{
+  text-align: center;
+}
+.whoweare_desc p{
+  text-align: justify;
+  margin: auto;
+}
+}

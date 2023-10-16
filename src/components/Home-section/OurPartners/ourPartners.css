@@ -1,0 +1,72 @@
+
+/* new carousel */
+.mainbg-div {
+  background-color: rgba(135, 207, 235, 0.363);
+}
+.mainbg-div h2 {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 5px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.partners-bg {
+  background-color: rgba(135, 207, 235, 0.055);
+  margin-bottom: 2rem;
+}
+.partner-row {
+  justify-content: center;
+  text-align: center;
+}
+.partner-col {
+  background-color: white;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px 0 rgba(133, 200, 245, 0.3),
+    0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+div .carousel-indicators{
+  bottom:-12px;
+}
+.partner-col .inner-row {
+  padding: 2rem 0.5rem;
+  justify-content: center;
+}
+.inner-row .cirleimage {
+  margin-top: 25px;
+  border-radius: 50%;
+  width: unset;
+}
+.cirleimage img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+.textparagraph {
+  background-color: rgba(250, 235, 215, 0.705);
+  margin: 2rem;
+  box-shadow: 0 2px 4px 0 rgba(224, 230, 235, 0.178),
+    0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.textparagraph p {
+  padding: 15px;
+  text-align: justify;
+  font-size: 15px;
+  color: black;
+}
+
+
+@media screen and (min-width: 1526px) and (max-width: 2024px){
+  .partner-col{
+    height: 280px;
+  }
+  .textparagraph{
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 2024px){
+  .col-lg-7.partner-col{
+    max-width: 50%;
+    margin: auto;
+  }
+}

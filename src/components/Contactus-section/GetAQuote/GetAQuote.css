@@ -1,0 +1,66 @@
+.modalbox-size{
+    max-width: 60%!important;
+  
+}
+.modal-backdrop.show{
+    opacity: 0.7!important;
+}
+.getaquote-form{
+    width: 100%!important;
+}
+.getaquote-form-col{
+    padding: 0.5rem 1rem!important;
+    margin-bottom: 0!important;
+    /* background: #6187c4!important; */
+    background: #669bbc!important; 
+    /* background: #48cae4!important;  */
+     /* background: #00b4d8!important;  */
+}
+.quote-header{
+    /* background: #48cae4;   */
+     /* background: #00b4d8;  */
+    background: #669bbc; 
+    /* background: #4ccaf0b9; */
+}
+.heading-quote{
+    color: white;
+    padding-left: 0.8rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+.quote-btn-submit{
+    margin-top: 1rem!important;
+}
+
+
+@media only screen and (max-width:575px){
+    .modalbox-size{
+       margin: 1rem auto!important;
+       
+    }
+    .getaquote-form-col{
+        padding: 0.5rem 0.5rem!important;
+    } 
+}
+
+@media only screen and (max-width:700px){
+    .modalbox-size{
+        max-width: 85%!important;
+    }
+} 
+
+@media only screen and (max-width:400px){
+    .modalbox-size{
+        max-width: 90%!important;
+    }
+    
+} 
+
+@media only screen and (max-width:425px){
+    .getaquote-form-col{
+        padding: 0!important;
+    }
+    
+} 
+
+

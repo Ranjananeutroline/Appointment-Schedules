@@ -1,0 +1,117 @@
+.softwaretesting h4{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+
+}
+.hrcontent hr{
+    width: 20%;
+    margin: 10px auto;
+   color: #000000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.softwaredatabox{
+    /* margin: 1rem; */
+    padding: .2rem 2rem 1rem 2rem;
+    display: grid;
+   grid-template-columns: 50% 49%;
+   grid-row-gap: 1%;
+   /* grid-column-gap: 1%; */
+   /* height: 35rem; */
+   /* width: 90%; */
+   margin-bottom: 1.5rem;
+  
+   
+}
+.dataitems{
+    margin-top: .3rem ;
+    text-align: center;
+    /* padding: 2rem; */
+    /* border: 1px solid #F5E9E9;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem; */
+}
+.dataitems:nth-child(3){
+    margin-top: .8rem;
+}
+.dataitems:nth-child(4){
+    margin-top: .8rem;
+}
+.dataitems h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #CF1865F7; */
+    color: #0092ca;
+    font-size: 1rem;
+}
+/* className="border-0"  */
+.dataitems p{
+    width: 85%;
+   margin: 0 auto;
+   text-align: justify;
+    hyphens: auto;
+    font-size: 15px;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+    
+}
+
+.images img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 16%;  */
+   height: 50px;
+    margin-bottom: .2rem;
+    /* width: 50%; */
+}
+.free-quote-div{
+   
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.freequote-btn{
+    padding: 10px 18px;
+    border-radius: 10px;
+    /* background: #f28482; */
+    /* background: #2ec4b6; */
+    background: #457b9d;
+    border: none;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+.freequote-btn:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #2e688b;
+}
+
+
+@media only screen and (max-width: 570px){
+  .softwaredatabox {
+    grid-template-columns: 100%;
+    grid-row-gap: 1%;
+    padding-bottom: 2rem;
+   
+  }
+  .dataitems{
+    margin: 1rem 0;
+  }
+  .dataitems h5{
+    font-size: 1.2rem;
+  }
+  .dataitems p{
+    width: 85%;
+   margin: 0 auto;
+   
+    
+    
+}
+}
